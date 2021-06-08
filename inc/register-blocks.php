@@ -15,11 +15,12 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+
 acf_register_block_type(array(
-    'name'              => 'new-block',
-    'title'             => __('New'),
-    'description'       => __('bg-cta-section'),
-    'render_template'   => 'template-parts/blocks/new-block/index.php',
+    'name'              => 'proudly-addictive',
+    'title'             => __('proudly_addictive'),
+    'description'       => __('bloque rojo'),
+    'render_template'   => 'template-parts/blocks/proudly-addictive/index.php',
     'icon'              => 'admin-comments',
     'keywords'          => array('panel', 'cta', 'card', 'article'),
     'category' => 'widgets'
