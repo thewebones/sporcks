@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="" />
+    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/EN-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ES-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/MG_1286.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/MG_1383.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/MG_1430.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/MG_6526.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/amex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/app-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/athlete1-h.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/athlete1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-img1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-img4.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-img5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-gallery-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-gallery-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-gallery-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-gallery-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-hero-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog-post-img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/brand-img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/brand-img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/brand-img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/chevron-down-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/close-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/db-cart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/dhl-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/essential-ss21_2000w.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gallery-image1.webp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gallery-image2.webp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gallery-image3.webp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gallery-image4.webp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gallery-image5.webp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/gb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/heart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icon-checkbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-bolsa-vacia.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-buscar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-instagram.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-mi-cuenta-negro.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-mi-cuenta.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icono-youtube.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/information.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/kick-ass-blue-sox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/kick-ass-pink-sox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/laura-philipp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/maestro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/mc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pair-red-sox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pexels-chris-peeters-12838.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/proudly-addictive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/quotes-img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/quotes-img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/service-img1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/service-img2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/service-img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/service-img3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/service-img4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/settings-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/single-blue-sox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/single-orange-sox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/single-white-sox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/woodsy-hero.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +156,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template-parts/blocks/bg-cta-section/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="300">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
               </folding>
@@ -88,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/inc/register-blocks.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+              <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -194,6 +285,110 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new-block" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bg-cta-section" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,12 +503,12 @@
       <workItem from="1623077905341" duration="109000" />
       <workItem from="1623089550626" duration="1907000" />
       <workItem from="1623124553974" duration="3352000" />
-      <workItem from="1623160782421" duration="21000" />
+      <workItem from="1623160782421" duration="853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8067000" />
+    <option name="totallyTimeSpent" value="8899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="718" extended-state="0" />
@@ -677,7 +872,7 @@
     <entry file="file://$PROJECT_DIR$/inc/register-blocks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -702,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/blocks/bg-cta-section/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="72" />
+        <state relative-caret-position="300">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
           </folding>
