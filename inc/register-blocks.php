@@ -46,3 +46,13 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+acf_register_block_type(array(
+    'name'              => 'services-block',
+    'title'             => __('services'),
+    'description'       => __('servicios con iconos'),
+    'render_template'   => 'template-parts/blocks/services-block/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('panel', 'cta', 'card', 'article'),
+    'category' => 'widgets'
+
+));
