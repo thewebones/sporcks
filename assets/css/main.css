@@ -7549,6 +7549,8 @@ html, body {
     z-index: 1;
 }
 .gallery-section__mention {
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
