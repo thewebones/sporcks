@@ -38,21 +38,7 @@
               <div class="quotes-section__quote"><?php echo get_field("slider_subtexto2")?></div>
             </div>
           </div>
-        <div class="swiper-slide quotes-section__item swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 6" style="width: 526.5px;">
-        <a class="quotes-section__img-wrap" href="<?php echo get_field("slider_enlace1")?>"><img class="quotes-section__img" src="<?php echo get_field("slider_imagen1")?>"></a>
-            <div class="quotes-section__content">
-              <div class="quotes-section__reference"><?php echo get_field("slider_texto1")?></div>
-              <q class="quotes-section__quote"><?php echo get_field("slider_subtexto1")?></q>
-            </div>
-          </div>
-          <div class="swiper-slide quotes-section__item swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" role="group" aria-label="6 / 6" style="width: 526.5px;">
-          <a class="quotes-section__img-wrap" href="<?php echo get_field("slider_enlace2")?>"><img class="quotes-section__img" src="<?php echo get_field("slider_imagen2")?>"></a>
-            <div class="quotes-section__content">
-            <div class="quotes-section__reference"><?php echo get_field("slider_texto2")?></div>
-              <div class="quotes-section__quote"><?php echo get_field("slider_subtexto2")?></div>
-            </div>
-          </div>
-          </div>
+       
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </section>
  

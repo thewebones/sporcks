@@ -7951,20 +7951,25 @@ html, body {
         order: 1;
     }
 }
-.brand-features-section__title {
+features-section__title {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.4rem;
+    color: #000000;
+    
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .brand-features-section__title {
         font-size: 2rem;
+        color: #000000;
     }
 }
 .brand-features-section__text {
     font-weight: 300;
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    color: #000000;
 }
 
 .founders-section {

@@ -29,10 +29,18 @@ acf_register_block_type(array(
 acf_register_block_type(array(
     'name'              => 'slider-home',
     'title'             => __('slider'),
-    'description'       => __('bg-cta-section'),
+    'description'       => __('slider'),
     'render_template'   => 'template-parts/blocks/slider-home/index.php',
-    'icon'              => 'admin-comments',
     'keywords'          => array('panel', 'slider',),
+    'category' => 'widgets'
+
+));
+acf_register_block_type(array(
+    'name'              => 'two-seccion-image-text',
+    'title'             => __('two-seccion-image-text'),
+    'description'       => __('two-seccion'),
+    'render_template'   => 'template-parts/blocks/two-seccion-image-text/index.php',
+    'keywords'          => array('panel', 'two-seccion', 'image-text'),
     'category' => 'widgets'
 
 ));
