@@ -244,8 +244,9 @@ html, body {
     outline: none;
 }
 .lang-selector__toggle img {
-    height: 100%;
+    height: 2rem;
     width: auto;
+    margin-top: -5px;
 }
 .lang-selector__menu {
     min-width: 6rem;
@@ -8722,4 +8723,7 @@ html, body {
 }
 .checkout__wrapper {
     padding: 2rem 0;
+}
+#primary{
+    margin-top: -35px;
 }
