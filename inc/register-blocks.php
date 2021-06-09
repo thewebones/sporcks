@@ -29,8 +29,9 @@ acf_register_block_type(array(
 acf_register_block_type(array(
     'name'              => 'slider-home',
     'title'             => __('slider'),
-    'description'       => __('slider'),
+    'description'       => __('bg-cta-section'),
     'render_template'   => 'template-parts/blocks/slider-home/index.php',
+    'icon'              => 'admin-comments',
     'keywords'          => array('panel', 'slider',),
     'category' => 'widgets'
 
@@ -74,3 +75,14 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+acf_register_block_type(array(
+    'name'              => 'titulo-texto-imagenabajo',
+    'title'             => __('titulo_texto_imagenabajo'),
+    'description'       => __('fondo blanco con texto e imagen abajo'),
+    'render_template'   => 'template-parts/blocks/titulo-texto-imagenabajo/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('panel', 'cta', 'card', 'article'),
+    'category' => 'widgets'
+
+));
+

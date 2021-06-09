@@ -7626,29 +7626,38 @@ html, body {
     justify-content: center;
 }
 .hero-content-section__title {
-    font-weight: 800;
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 800 !important;
     margin-bottom: 4rem;
     font-size: 3.2rem;
+    color: #000000;
+
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .hero-content-section__title {
         font-size: 2.8rem;
         margin-bottom: 3rem;
-    }
+        color: #000000;
+
+}
 }
 .hero-content-section__subtitle {
+    font: 1.6rem/1.618 Prompt, sans-serif;
     font-weight: 600;
     margin-bottom: 2.4rem;
     font-size: 2rem;
+    color: #000000;
 }
 .hero-content-section__title, .hero-content-section__subtitle {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 .hero-content-section__description {
+    font: 1.6rem/1.618 Prompt, sans-serif;
     text-align: justify;
     margin-bottom: 0;
     font-weight: 300;
+
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .hero-content-section__description {
