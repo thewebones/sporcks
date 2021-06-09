@@ -36,13 +36,14 @@ acf_register_block_type(array(
 
 ));
 acf_register_block_type(array(
-<<<<<<< HEAD
     'name'              => 'two-seccion-image-text',
     'title'             => __('two-seccion-image-text'),
     'description'       => __('two-seccion'),
     'render_template'   => 'template-parts/blocks/two-seccion-image-text/index.php',
     'keywords'          => array('panel', 'two-seccion', 'image-text'),
-=======
+    'category' => 'widgets'
+));
+acf_register_block_type(array(
     'name'              => 'instagram-block',
     'title'             => __('instagram'),
     'description'       => __('seccion de fotos de instagram'),
@@ -59,7 +60,6 @@ acf_register_block_type(array(
     'render_template'   => 'template-parts/blocks/services-block/index.php',
     'icon'              => 'admin-comments',
     'keywords'          => array('panel', 'cta', 'card', 'article'),
->>>>>>> f4ce6acc853e840d55be5a9bcc0cfc663b7aff65
     'category' => 'widgets'
 
 ));
