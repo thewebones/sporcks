@@ -7312,13 +7312,13 @@ html, body {
     margin-top: 2rem;
 }
 .proudly-addictive-section__link {
-    color: inherit;
+    color: white !important;
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .proudly-addictive-section__link:hover {
-    color: #ffd204;
+    color: #ffd204 !important;
     border-color: #ffd204;
     text-decoration: none;
 }
