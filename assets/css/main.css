@@ -8030,11 +8030,14 @@ features-section__title {
 .founders-section__description p {
     margin-bottom: 0;
     line-height: 1.25;
+    font: 1.6rem/1.618 Prompt, sans-serif;
 }
 .founders-section__lonely-text {
     text-align: center;
+    font: 1.6rem/1.618 Prompt, sans-serif;
     font-weight: 600;
     margin-bottom: 0;
+    
 }
 
 .athlete-details-section__header {
