@@ -56,3 +56,14 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+
+acf_register_block_type(array(
+    'name'              => 'fundadores-block',
+    'title'             => __('fundadores'),
+    'description'       => __('parrafo grande de fundadores'),
+    'render_template'   => 'template-parts/blocks/fundadores-block/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('panel', 'cta', 'card', 'article'),
+    'category' => 'widgets'
+
+));
