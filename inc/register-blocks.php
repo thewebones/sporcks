@@ -16,10 +16,10 @@ acf_register_block_type(array(
 
 ));
 acf_register_block_type(array(
-    'name'              => 'new-block',
-    'title'             => __('New'),
-    'description'       => __('bg-cta-section'),
-    'render_template'   => 'template-parts/blocks/new-block/index.php',
+    'name'              => 'instagram-block',
+    'title'             => __('instagram'),
+    'description'       => __('seccion de fotos de instagram'),
+    'render_template'   => 'template-parts/blocks/instagram-block/index.php',
     'icon'              => 'admin-comments',
     'keywords'          => array('panel', 'cta', 'card', 'article'),
     'category' => 'widgets'
