@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="titulo-texto-imagen">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template-parts/blocks/titulo-texto-imagenabajo/index.php" />
+    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/register-blocks.php" afterPath="$PROJECT_DIR$/inc/register-blocks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php" afterPath="$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +25,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="7664" column="5" lean-forward="true" selection-start-line="7664" selection-start-column="5" selection-end-line="7664" selection-end-column="5" />
+            <state relative-caret-position="176">
+              <caret line="7229" column="19" lean-forward="false" selection-start-line="7229" selection-start-column="19" selection-end-line="7229" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-tags.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/template-tags.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,15 +67,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register-blocks.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register-blocks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/register-blocks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <marker date="1623255291385" expanded="true" signature="923:1044" ph="..." />
-                <marker date="1623255291385" expanded="true" signature="929:1044" ph="..." />
-              </folding>
+            <state relative-caret-position="294">
+              <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +80,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/blocks/titulo-texto-imagenabajo/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="323">
               <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -125,6 +140,7 @@
       <find>button--</find>
       <find>hero-content-section__subtitle</find>
       <find>hero-content-section__description</find>
+      <find>atlhete-card_img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,6 +167,7 @@
         <option value="$PROJECT_DIR$/template-parts/blocks/proudly-addictive/index.php" />
         <option value="$PROJECT_DIR$/template-parts/blocks/titulo-texto-imagenabajo/index.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php" />
       </list>
     </option>
   </component>
@@ -271,7 +288,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="proudly-addictive" />
+              <option name="myItemId" value="lista-atletas" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,8 +371,7 @@
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/css/main.css</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/inc/register-blocks.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/instagram-block/index.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/slider-home/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/fundadores-block/index.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -363,9 +379,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/fundadores-block/index.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/services-block/index.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/two-seccion-image-text/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -556,7 +570,7 @@
       <workItem from="1623167702241" duration="4447000" />
       <workItem from="1623202795468" duration="4782000" />
       <workItem from="1623243019729" duration="7134000" />
-      <workItem from="1623254228613" duration="1351000" />
+      <workItem from="1623254228613" duration="16498000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -565,11 +579,18 @@
       <option name="project" value="LOCAL" />
       <updated>1623172052077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="titulo-texto-imagen">
+      <created>1623255613798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623255613798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26613000" />
+    <option name="totallyTimeSpent" value="41760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -636,24 +657,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="173" column="56" lean-forward="false" selection-start-line="173" selection-start-column="56" selection-end-line="173" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/blocks/bg-cta-section/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -703,10 +706,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <marker date="1623255291385" expanded="true" signature="923:1044" ph="..." />
-            <marker date="1623255291385" expanded="true" signature="929:1044" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -977,20 +977,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/register-blocks.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1623255291385" expanded="true" signature="923:1044" ph="..." />
-            <marker date="1623255291385" expanded="true" signature="929:1044" ph="..." />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="7229" column="19" lean-forward="false" selection-start-line="7229" selection-start-column="19" selection-end-line="7229" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/template-tags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/blocks/titulo-texto-imagenabajo/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="323">
           <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -998,10 +1003,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/template-parts/blocks/lista-atletas/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="7664" column="5" lean-forward="true" selection-start-line="7664" selection-start-column="5" selection-end-line="7664" selection-end-column="5" />
+        <state relative-caret-position="493">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/register-blocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
           <folding />
         </state>
       </provider>
