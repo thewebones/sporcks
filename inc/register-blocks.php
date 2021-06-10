@@ -96,4 +96,14 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
 }
+acf_register_block_type(array(
+    'name'              => 'lista-atletas',
+    'title'             => __('Lista de Atletas'),
+    'description'       => __('Lista de todos los atletas del sitio'),
+    'render_template'   => 'template-parts/blocks/lista-atletas/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('atletas', 'lista', 'card', 'biografia'),
+    'category' => 'widgets'
+
+));
 
