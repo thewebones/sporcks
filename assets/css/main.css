@@ -7963,7 +7963,7 @@ html, body {
         order: 1;
     }
 }
-features-section__title {
+.brand-features-section__title {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -7980,7 +7980,8 @@ features-section__title {
 }
 .brand-features-section__text {
     font-weight: 300;
-    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-size: 16px !important;
+    font-family: Prompt !important;
     color: #000000;
 }
 

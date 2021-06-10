@@ -12,15 +12,15 @@
 <img class="brand-features-section__img" src="<?php echo get_field("image")?>">
           <div class="brand-features-section__content">
             <h2 class="brand-features-section__title"><?php echo get_field("titulo")?></h2>
-            <p class="brand-features-section__text"><?php echo get_field("subtitulo")?></p>
-            <p class="brand-features-section__text"><?php echo get_field("parrafo")?></p>
+            <p class="brand-features-section__text">&quot;<?php echo get_field("subtitulo")?>&quot;</p>
+            <p class="brand-features-section__text">&quot;<?php echo get_field("parrafo")?>&quot;</p>
           </div>
 <?php } else {?>      
 
   <div class="brand-features-section__content">
             <h2 class="brand-features-section__title"><?php echo get_field("titulo")?></h2>
-            <p class="brand-features-section__text"><?php echo get_field("subtitulo")?></p>
-            <p class="brand-features-section__text"><?php echo get_field("parrafo")?></p>
+            <p class="brand-features-section__text">&quot;<?php echo get_field("subtitulo")?>&quot;</p>
+            <p class="brand-features-section__text">&quot;<?php echo get_field("parrafo")?>&quot;</p>
   </div>
   <img class="brand-features-section__img" src="<?php echo get_field("image")?>">
 <?php } ?> 
