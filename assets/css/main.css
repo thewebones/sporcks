@@ -146,8 +146,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: #000000;
-    font: 1.6rem/1.618 Prompt, sans-serif;
-    font-weight: 300;
+   /*  font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300; */
     background-color: #fff;
 }
 
@@ -2469,6 +2469,10 @@ html, body {
 .footer__socials .socials {
     text-align: left;
 }
+.footer__socials .socials {
+    margin:0;
+}
+
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .footer__socials .socials {
         text-align: center;
@@ -2556,12 +2560,25 @@ html, body {
     margin-bottom: 1rem;
 }
 .footer__list-item a {
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300;
     color: inherit;
 }
+.footer__list-item span{
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300;
+}
+.footer__list-item a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 .footer__list-item a:hover {
     color: #ffd204;
     text-decoration: none;
 }
+
+
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .footer__contact-column {
         margin-bottom: 1rem;

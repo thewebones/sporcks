@@ -2,6 +2,7 @@
       <div class="gallery-section__wrap animated-grid">
       
        <?php 
+       if(get_field("instagram")){
        foreach (get_field("instagram") as $item) {?>
        <div>
         <a class="gallery-section__item" href="<?php echo $item["link_img_instagram"]?>">
@@ -10,7 +11,7 @@
       </a>
       </div>
 
-      <?php } ?>
+      <?php }} ?>
       </div> 
     </section>
     
