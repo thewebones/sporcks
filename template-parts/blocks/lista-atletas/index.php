@@ -14,11 +14,11 @@ $the_query = new WP_Query( $args );
     while ( $the_query->have_posts() ) :
         $the_query->the_post();?>
     <div class="athlete-card">
-        <a class="athlete-card__img-wrap" href="get_permalink">
+        <a class="athlete-card__img-wrap" href="<?php the_permalink(); ?> ">
             <?php $id_perfil=get_post_meta( get_the_ID(), 'perfil', true ); ?>
-            <img class="athlete-card__img" src="<?php echo   wp_get_attachment_image_src($id_perfil)[0] ; ?>">
+            <img class="athlete-card__img" src="<?php echo   wp_get_attachment_image_src($id_perfil,'full')[0] ; ?>">
             <?php $id_imagen_hover=get_post_meta( get_the_ID(), 'imagen_hover', true ); ?>
-            <img class="athlete-card__img athlete-card__img--hidden" src="<?php echo   wp_get_attachment_image_src($id_imagen_hover)[0] ; ?>">
+            <img class="athlete-card__img athlete-card__img--hidden" src="<?php echo   wp_get_attachment_image_src($id_imagen_hover,'full')[0] ; ?>">
         </a>
         <div class="athlete-card__content">
             <p class="athlete-card__name"><?php echo get_post_meta( get_the_ID(), 'nombre', true );?> </p>

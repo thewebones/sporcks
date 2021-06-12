@@ -146,8 +146,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: #000000;
-    font: 1.6rem/1.618 Prompt, sans-serif;
-    font-weight: 300;
+   /*  font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300; */
     background-color: #fff;
 }
 
@@ -2523,6 +2523,10 @@ html, body {
 .footer__socials .socials {
     text-align: left;
 }
+.footer__socials .socials {
+    margin:0;
+}
+
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .footer__socials .socials {
         text-align: center;
@@ -2610,12 +2614,25 @@ html, body {
     margin-bottom: 1rem;
 }
 .footer__list-item a {
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300;
     color: inherit;
 }
+.footer__list-item span{
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    font-weight: 300;
+}
+.footer__list-item a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 .footer__list-item a:hover {
     color: #ffd204;
     text-decoration: none;
 }
+
+
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .footer__contact-column {
         margin-bottom: 1rem;
@@ -7938,15 +7955,15 @@ html, body {
 }
 
 .image-section__image {
-    width: 100%;
-    max-height: 60rem;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+    width: 100% !important;
+    max-height: 60rem !important;
+    -o-object-fit: cover !important;
+    object-fit: cover !important;
+    -o-object-position: center !important;
+    object-position: center !important;
 }
 .image-section--bigger .image-section__image {
-    max-height: 80rem;
+    max-height: 80rem !important;
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .image-section--bigger .image-section__image {
@@ -8310,7 +8327,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    margin-right: 3rem;
+    margin-right: 3rem !important;
     font-weight: 300;
 }
 .athlete-details-section__age-container * {
@@ -8320,6 +8337,12 @@ html, body {
 .athlete-details-section__age {
     font-size: 3.2rem;
     font-weight: 700;
+    color: #000000;
+
+}
+.athlete-details-section__age-container p {
+    color: #000000 !important;
+    font: 1.6rem/1.618 Prompt, sans-serif !important;
 }
 .athlete-details-section__body {
     margin-bottom: 8rem;
@@ -8329,16 +8352,21 @@ html, body {
     text-transform: uppercase;
     font-style: italic;
     font-weight: 500;
+    color: #000000;
 }
 .athlete-details-section__biography {
     margin-bottom: 2rem;
     font-weight: 300;
     text-align: justify;
+    color: #000000;
+    font: 1.6rem/1.618 Prompt, sans-serif;
 }
 .athlete-details-section__highlights {
     margin-bottom: 3rem;
-    font-style: italic;
+    font-style: italic !important;
     font-weight: 300;
+    color: #000000;
+    font: 1.6rem/1.618 Prompt, sans-serif;
 }
 .athlete-details-section__highlights p {
     margin-bottom: 0;
