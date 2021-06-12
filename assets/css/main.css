@@ -1477,6 +1477,35 @@ html, body {
 .blog-post-content {
     margin: 4rem 0;
 }
+
+.flex{
+    display: flex;
+    width: 100%;
+    max-width: 1438px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .flex {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        justify-content: center;
+    }
+    .blog-post-content p {
+        margin:auto;
+        width: 90% !important;
+        text-align: justify !important;
+        margin-bottom: 5rem;
+        color: #000000 !important;
+        font: 1.6rem/1.618 Prompt, sans-serif !important;
+        margin-top: 5rem;     
+    }
+}
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .blog-post-content {
         margin: 2rem 0;
@@ -1484,9 +1513,11 @@ html, body {
 }
 .blog-post-content__title {
     margin-bottom: 6rem;
-    font-weight: 600;
+    font-weight: 600 !important;
     display: block;
     text-align: center;
+    font: 1.6rem/1.618 Prompt, sans-serif;
+    color: #000000;
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .blog-post-content__title {
@@ -1500,6 +1531,24 @@ html, body {
 }
 .blog-post-content__text + * {
     margin-top: 2.5rem;
+    color: #000000 !important;
+    font: 1.6rem/1.618 Prompt, sans-serif !important;
+    text-align: justify;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+.blog-post-content p {
+    margin:auto;
+    width: 50%;
+    text-align: justify !important;
+    margin-bottom: 5rem;
+    color: #000000 !important;
+    font: 1.6rem/1.618 Prompt, sans-serif !important;
+    margin-top: 5rem;
+}
+
+.wp-block-image img {
+    width: 100%;
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .blog-post-content__text + * {
@@ -1537,6 +1586,11 @@ html, body {
     -o-object-fit: cover;
     object-fit: cover;
 }
+.blog-post-gallery--2 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .blog-post-gallery--2-1 *:nth-child(3n) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
