@@ -75,6 +75,17 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+
+acf_register_block_type(array(
+    'name'              => 'lista-blog',
+    'title'             => __('Lista de Blog'),
+    'description'       => __('Lista de Blog del sitio'),
+    'render_template'   => 'template-parts/blocks/lista-blog/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('blog', 'lista', 'card', 'article'),
+    'category' => 'widgets'
+
+));
 acf_register_block_type(array(
     'name'              => 'titulo-texto-imagenabajo',
     'title'             => __('titulo_texto_imagenabajo'),
@@ -96,4 +107,14 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
 }
+acf_register_block_type(array(
+    'name'              => 'lista-atletas',
+    'title'             => __('Lista de Atletas'),
+    'description'       => __('Lista de todos los atletas del sitio'),
+    'render_template'   => 'template-parts/blocks/lista-atletas/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('atletas', 'lista', 'card', 'biografia'),
+    'category' => 'widgets'
+
+));
 
