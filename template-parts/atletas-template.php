@@ -5,8 +5,7 @@
  * Date: 10/06/21
  * Time: 13:37
  */
-$id_perfil=get_post_meta( get_the_ID(), 'perfil', true );
-echo  '<h1>'.   wp_get_attachment_image_src($id_perfil)[0].'</h1>';
+
 ?>
 
 <div class="breadcrumb-simple"><a class="breadcrumb-simple__item" href="<?php get_field ("back")["link"] ?>"><?php get_field ("back")["title"] ?> </a>
