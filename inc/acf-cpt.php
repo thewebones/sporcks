@@ -207,19 +207,19 @@ if( function_exists('acf_add_local_field_group') ):
 
 endif;
 
-function cptui_register_my_cpts_la_meta() {
+function cptui_register_my_cpts_meta_post() {
 
     /**
-     * Post Type: La meta.
+     * Post Type: La Meta.
      */
 
     $labels = [
-        "name" => __( "La meta", "empty-theme" ),
-        "singular_name" => __( "La meta", "empty-theme" ),
+        "name" => __( "La Meta", "empty-theme" ),
+        "singular_name" => __( "La Meta", "empty-theme" ),
     ];
 
     $args = [
-        "label" => __( "La meta", "empty-theme" ),
+        "label" => __( "La Meta", "empty-theme" ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -236,13 +236,13 @@ function cptui_register_my_cpts_la_meta() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => [ "slug" => "la-meta", "with_front" => true ],
+        "rewrite" => [ "slug" => "meta_post", "with_front" => true ],
         "query_var" => true,
         "supports" => [ "title", "editor", "thumbnail" ],
         "show_in_graphql" => false,
     ];
 
-    register_post_type( "la-meta", $args );
+    register_post_type( "meta_post", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_la_meta' );
+add_action( 'init', 'cptui_register_my_cpts_meta_post' );
