@@ -22,6 +22,7 @@ get_header();
                 get_template_part( 'template-parts/atletas-template', get_post_type() );
             if ( 'meta_post' === get_post_type() )
 		        get_template_part( 'template-parts/meta-template', get_post_type() );
+                
 
 
 
