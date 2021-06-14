@@ -138,3 +138,13 @@ acf_register_block_type(array(
 
 ));
 
+acf_register_block_type(array(
+    'name'              => 'card-metas',
+    'title'             => __('Cartas de meta'),
+    'description'       => __('Lista de cada meta'),
+    'render_template'   => 'template-parts/blocks/cards-meta/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('meta'),
+    'category' => 'widgets'
+));
+
