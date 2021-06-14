@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/css/main.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
  
  
 	<?php wp_head(); ?>
