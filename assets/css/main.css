@@ -129,6 +129,9 @@ RESPONSIVE BREAKPOINTS
     font-weight: 900;
     src: local("Prompt BlackItalic"), url(webfonts/Prompt-BlackItalic.ttf) format("truetype");
 }
+
+
+
 *,
 *::after,
 *::before {
@@ -153,6 +156,10 @@ body {
 
 html, body {
     height: 100%;
+}
+
+.fondo_dinamico{
+    background:black;
 }
 
 *:focus {
@@ -2289,6 +2296,7 @@ html, body {
     list-style: none;
     margin: 0 auto;
 }
+
 @media (max-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
     .navbar__list {
         margin-left: 4rem;

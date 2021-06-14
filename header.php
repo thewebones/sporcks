@@ -129,7 +129,8 @@
                 </div>
              </div>
             </div>
-                <div class="grid grid--fluid">
+            
+                <div class="grid grid--fluid <?php if (!is_home()) echo "fondo_dinamico"?>">
                     <nav class="navbar__nav col-start-1 col-width-12 navbar__nav--animated">
                         <button class="navbar__toggle" id="navbarToggle"></button>
                         <a class="navbar__logo-wrap" href="<?php echo get_site_url(); ?>">
@@ -141,7 +142,7 @@
                             <li class="navbar__item"><a class="navbar__link" href="<?php echo $item["link_menu"]["url"] ?>"><?php echo $item["texto_menu"] ?></a></li>
                            
                         <?php }} ?>
-                        </ul>
+                            </ul>
                         <div class="navbar__tools">
                             <a class="navbar__tool-btn mobile-hidden" href="<?php echo get_field("boton_usuario_link","option")["url"]  ?>">
                             <img src="<?php echo get_field("boton_usuario_icono","option")?>">
