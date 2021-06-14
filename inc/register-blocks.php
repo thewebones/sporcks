@@ -117,6 +117,16 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+acf_register_block_type(array(
+    'name'              => 'galeria-blog',
+    'title'             => __('Galeria del Blog'),
+    'description'       => __('Galeria personailzada para el blog'),
+    'render_template'   => 'template-parts/blocks/galeria-blog/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('galeria', 'blog'),
+    'category' => 'widgets'
+
+));
 
 acf_register_block_type(array(
     'name'              => 'card-metas',
