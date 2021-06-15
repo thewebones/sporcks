@@ -9033,8 +9033,14 @@ html, body {
 #primary{
     margin-top: -35px;
 }
-.meta-invisible-content h2 {
-    font-family: "GTAmericaExpandedBlack";
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: bolder;
+
+@media (min-width: 768px) {
+    .imagenmeta {
+        margin-right:250px;
+    }
+    .reflexionmeta {
+       padding-left: 80px;
+    }
+
+}
+
