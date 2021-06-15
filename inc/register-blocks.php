@@ -127,6 +127,16 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+acf_register_block_type(array(
+    'name'              => 'icon-modal-meta',
+    'title'             => __('Meta Iconos'),
+    'description'       => __('Iconos con descripción de la página meta'),
+    'render_template'   => 'template-parts/blocks/icon-modal-meta/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('galeria', 'blog'),
+    'category' => 'widgets'
+
+));
 
 acf_register_block_type(array(
     'name'              => 'card-metas',

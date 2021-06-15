@@ -1,65 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: PAPO
- * Date: 6/14/2021
- * Time: 10:44 AM
- */
-?>
-
-<!-- slider -->
-<div id="carouselControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <?php 
-       $active="active";
-       $count=0;
-       if(get_field("galeria")){
-       foreach (get_field("galeria") as $item) {?>  
-        <div class="carousel-item <?php if($count == 0) {
-        echo $active; 
-        }?>">
-            <img class="d-block w-100" src="<?php echo $item["imagen_galeria"] ?>" alt="slide" style="width: 100% !important">
-        </div>
-        <?php $count ++; ?>
-    <?php }} ?>  
-  </div>
-  <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div id="metainvisible" class="vc_row wpb_row vc_row-fluid container vc_custom_1608687844730">
-    <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="wpb_text_column wpb_content_element  col-xl-7 col-lg-10 centered mb-0">
-                    <div class="wpb_wrapper">
-                        <h2 class="lowercase-font" style="text-align: center;"><span style="color: #ffffff;">La meta de</span></h2>
-
-                    </div>
-                </div>
-                
-                <div class="wpb_text_column wpb_content_element  col-xl-7 col-lg-10 centered mb-0">
-                    <div class="wpb_wrapper">
-                        <h2 class="size-font" style="text-align: center;"><span style="color: #ffffff;">Gómez noya</span></h2>
-                        <p>&nbsp;</p>
-                        <p style="text-align: center;"><span style="color: #ffffff;">Cómo vive el confinamiento un profesional del Triatlon, qué pasa por su mente al saber que sus principales metas han sido canceladas. Para qué seguir entrenando. Nos adentramos en la realidad de Noya en el año más raro de su carrera.</span></p>
-
-
-<!-- Iconos con modal -->
 <?php 
 $arrayColStart=[3,5,7,9];
 $arraytablet=[1,7,1,7];
@@ -104,9 +42,6 @@ $arraytablet=[1,7,1,7];
 
           </div>
         </div>
-    </div>
-    
-</div>
 
 <?php } }?>
        

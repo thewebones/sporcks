@@ -699,6 +699,10 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+.btn-icon:hover {
+    background-color: #ffd204 !important;
+    border: none !important;
+}
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .service-card {
         margin-top: 1rem;
