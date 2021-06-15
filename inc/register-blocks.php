@@ -157,4 +157,12 @@ acf_register_block_type(array(
     'keywords'          => array('meta'),
     'category' => 'widgets'
 ));
-
+acf_register_block_type(array(
+    'name'              => 'titulo_meta',
+    'title'             => __('Titulo Meta'),
+    'description'       => __('titulo pagina meta'),
+    'render_template'   => 'template-parts/blocks/Titulo Meta/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('meta'),
+    'category' => 'widgets'
+));
