@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template-parts/la-meta-template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/meta-template.php" afterPath="$PROJECT_DIR$/template-parts/meta-template.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -545,7 +542,7 @@
       <workItem from="1623254228613" duration="16874000" />
       <workItem from="1623378172708" duration="3242000" />
       <workItem from="1623419236180" duration="13380000" />
-      <workItem from="1623683091761" duration="41917000" />
+      <workItem from="1623683091761" duration="41962000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -589,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1623683130524</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="meta-template">
+      <created>1623782763497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623782763497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100675000" />
+    <option name="totallyTimeSpent" value="100720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -910,12 +914,12 @@
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#10158#10164#0" expanded="true" />
-            <element signature="e#10210#10216#0" expanded="true" />
-            <element signature="e#25721#25726#0" expanded="true" />
-            <element signature="e#26092#26097#0" expanded="true" />
-            <element signature="e#27828#27834#0" expanded="true" />
-            <element signature="e#28613#28619#0" expanded="true" />
+            <element signature="e#10158#10164#0" expanded="false" />
+            <element signature="e#10210#10216#0" expanded="false" />
+            <element signature="e#25721#25726#0" expanded="false" />
+            <element signature="e#26092#26097#0" expanded="false" />
+            <element signature="e#27828#27834#0" expanded="false" />
+            <element signature="e#28613#28619#0" expanded="false" />
           </folding>
         </state>
       </provider>
