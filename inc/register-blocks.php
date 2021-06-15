@@ -148,3 +148,13 @@ acf_register_block_type(array(
     'category' => 'widgets'
 ));
 
+acf_register_block_type(array(
+    'name'              => 'seccion-comparte',
+    'title'             => __('seccion comparte'),
+    'description'       => __('compartir la meta'),
+    'render_template'   => 'template-parts/blocks/seccion-comparte/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('meta'),
+    'category' => 'widgets'
+));
+
