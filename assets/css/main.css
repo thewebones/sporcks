@@ -162,6 +162,7 @@ html, body {
     background:black;
 }
 
+
 .all-cards{
     background-color:black;
     display :flex;
@@ -169,57 +170,143 @@ html, body {
     flex-flow: row wrap;
     padding:30px 40px;
 }
-.imge{
+.imageDiv{
     width:100%;
-    height:250px;
-    
-}
-.imagen{
-    position:relative;
-}
-.imagen:hover .aux{
-   position:absolute;
-   top:0;
-   background-color: rgba(255, 255, 255, 0.8);
-   width:100%;
-   height:250px;
-   display: flex !important;
-   justify-content:center;
-   align-items:center;
+    height:350px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
-.ocultarHover{
-display:none;
+.hover{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:250px;
+    transform-origin: center right;
+    transform-style: preserve-3d;
+    transition:transform 1s;
+    perspective:600px;
 }
+.hover-face{
+    width:100%;
+    height:250px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    background-color:red;
+}
+.front{
+    background-color:rgba(0, 0, 255,0.3);
+}
+.scene{
+    width: 100%;
+    height: 250px;
+    border: 1ox solif #CCC;
+    margin: 40px 0;
+    perspective: 600px;
+}
+
+.cardPrueba{
+    width:100%;
+    height:100%;
+    position: absolute;
+    cursor:pointer;
+    transform-style:preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.8s;
+    top:0;
+}
+.card__face{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.card__face--back{
+    background-color: rgba(223, 211, 211, 0.788);
+    transform:rotateY(180deg);
+}
+
+
+.cardPrueba.is-flipped{
+    transform:translateX(-100%) rotateY(-180deg) ;
+}
+.card__face--front{
+    background-color: rgba(133, 4, 4, 0);
+}
+
+
+
 .linkHover{
     font-size:15px;
-    color:rgb(109, 102, 102);
+    color:rgb(109, 102, 102) !important;
 }
 .linkHover:hover{
     text-decoration:none;
-    color:rgb(109, 102, 102);
+    color:rgb(109, 102, 102)!important;
 }
 
 .card{
-    width:30%;
+    width:28%;
     background-color:black;
     display:flex;
     justify-content:center;
     flex-direction:column;
     margin:15px;
-    
 }
+
+
 .card p,h4,h1{
     color:white;
+    font-family:Prompt, sans-serif;
 }
 .pMeta{
     font-size:12px;
+    font-family:Prompt, sans-serif;
 }
 .btn-mio{
     border:1px solid #e0dddd;
     width:fit-content;
-    font-size: 15px;
+    font: 1.6rem/1.618 Prompt, sans-serif;
+}
+.comparteGeneral{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background:black;
+    padding:50px;
+}
 
+.comparteContenedor{
+      width:540px;
+}
+.comparte{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.comparte h1,h4,p{
+    color:white;
+    font-weight: bold !important;
+    font-family:Prompt, sans-serif;
+}
+.comparte h1{
+    font-size:3rem;
+}
+.comparte h4{
+    font-size:1.8rem;
+}
+.comparte p{
+    font-size:1.2rem;
 }
 .btn-mio a{
     color:white;
@@ -232,6 +319,33 @@ display:none;
     outline: none !important;
 }
 
+@media (max-width: 576px)and (min-width: 320px) {
+    .comparte h1 {
+        font-size: 20px;
+    }
+    .comparte h4 {
+        font-size: 15px;
+    }
+    .comparte p {
+        font-size: 13px;
+        color:white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog-post-gallery *:nth-child(n) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/span 1;
+    }
+
+    .card{
+        width:23% !important;
+    }
+    .scene{
+        height:180px !important;
+    }
+}
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .mobile-hidden {
         display: none !important;
@@ -254,6 +368,7 @@ display:none;
     .mobile-port-visible {
         display: none !important;
     }
+
 }
 
 .button {
@@ -1578,6 +1693,9 @@ display:none;
         font: 1.6rem/1.618 Prompt, sans-serif !important;
         margin-top: 5rem;     
     }
+    .card{
+        width:80%;
+    }
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .blog-post-content {
@@ -1596,6 +1714,8 @@ display:none;
     .blog-post-content__title {
         margin-bottom: 3rem;
     }
+
+    
 }
 .blog-post-content__text {
     text-align: justify;
@@ -1872,6 +1992,8 @@ display:none;
     .login-form__title {
         margin-bottom: 3rem;
     }
+   
+   
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .login-form__title {
@@ -1885,6 +2007,7 @@ display:none;
     .login-form--register .login-form__title {
         margin-bottom: 3rem;
     }
+    
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .login-form--register .login-form__title {

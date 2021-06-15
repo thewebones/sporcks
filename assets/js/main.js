@@ -1,5 +1,21 @@
 
 
+   var card=document.getElementsByClassName("cardPrueba")[0];
+  function mostrar(event){
+    if(!event.currentTarget.classList.contains("is-flipped"))
+    event.currentTarget.classList.add("is-flipped");
+  /* card.classList.add('is-flipped'); */
+  }
+    
+
+
+  const ocultar=(event)=>{
+    event.currentTarget.classList.remove("is-flipped");
+  } 
+
+  
+
+
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

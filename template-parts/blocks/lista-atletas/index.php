@@ -9,7 +9,9 @@ $args = array(
 $the_query = new WP_Query( $args );
 ?>
     <section class="athletes-section">
+    
     <div class="athletes-section__grid">
+    
 <?php if($the_query->have_posts() ) :
     while ( $the_query->have_posts() ) :
         $the_query->the_post();?>

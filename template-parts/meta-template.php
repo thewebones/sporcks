@@ -16,6 +16,7 @@
 
                     </div>
                 </div>
+                
                 <div class="wpb_text_column wpb_content_element  col-xl-7 col-lg-10 centered mb-0">
                     <div class="wpb_wrapper">
                         <h2 class="size-font" style="text-align: center;"><span style="color: #ffffff;">Gómez noya</span></h2>
@@ -27,4 +28,5 @@
             </div>
         </div>
     </div>
+    
 </div>
