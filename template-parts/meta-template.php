@@ -7,6 +7,7 @@
  */
 
 ?>
+
 <!-- slider -->
 <div id="carouselControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner <?php echo  get_post_meta( get_the_ID(), "galeria", true );?>">
@@ -25,7 +26,7 @@
         <div class="carousel-item <?php if($count == 0) {
         echo $active;
         }?>">
-            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important">
+            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important; height:650px; background-size: cover ">
         </div>
         <?php $count ++; ?>
     <?php } ?>
@@ -116,9 +117,7 @@
                         <p>&nbsp;</p>
                         <p style="text-align: center;"><span style="color: #ffffff;">Cómo vive el confinamiento un profesional del Triatlon, qué pasa por su mente al saber que sus principales metas han sido canceladas. Para qué seguir entrenando. Nos adentramos en la realidad de Noya en el año más raro de su carrera.</span></p>
 
-<<<<<<< HEAD
           
-=======
                     </div>
                 </div>
             </div>
@@ -176,4 +175,3 @@ $arraytablet=[1,7,1,7];
        
       </div>
     </section>
->>>>>>> 5980f662c80eee4edca479c08c7d2ea9ff6a71e3
