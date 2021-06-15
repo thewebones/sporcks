@@ -181,3 +181,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function repeater_get_post_meta( $repeater_key, $post_id, $sub_field_keys ) {
+    if ( ! $post_id ) {
+        $post_id = get_the_ID();
+    }
+
+    // get repeater field
+    $repeater = get_post_meta( get_the_ID(), $repeater_key, true );
+
+    $repeater_output = array();
+
+    if( $repeater ) {
+        // loop through repeater fields
+        for( $i = 0; $i < $repeater; $i++ ) {
+
+            // loop through subfields
+            for( $j = 0; $j < $sub_field_keys; $j++ ) {
+                $repeater_output[$i][$sub_field_keys[$j]] = get_post_meta( get_the_ID(), $repeat_key . '_' . $i . '_' . $sub_field_keys[$j], true );
+            }
+        }
+    }
+
+    return $repeater_output;
+}
+
