@@ -9,19 +9,26 @@
 
 <!-- slider -->
 <div id="carouselControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <?php 
+  <div class="carousel-inner <?php echo  get_post_meta( get_the_ID(), "galeria", true );?>">
+
+    <?php
        $active="active";
        $count=0;
-       if(get_field("galeria")){
-       foreach (get_field("galeria") as $item) {?>  
+
+
+           $galeria_cont=get_post_meta( get_the_ID(), "galeria", true );
+           for( $i = 0; $i < $galeria_cont; $i++ ) {
+               $item = get_post_meta( get_the_ID(), 'galeria_' . $i . '_imagen_galeria', true );
+               update_post_meta(get_the_ID(),'imagen-'.$i,wp_get_attachment_image_src($item,'full')[0]);
+
+           ?>
         <div class="carousel-item <?php if($count == 0) {
-        echo $active; 
+        echo $active;
         }?>">
-            <img class="d-block w-100" src="<?php echo $item["imagen_galeria"] ?>" alt="slide" style="width: 100% !important">
+            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important">
         </div>
         <?php $count ++; ?>
-    <?php }} ?>  
+    <?php } ?>
   </div>
   <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -51,13 +58,18 @@
 
                     </div>
                 </div>
-                
                 <div class="wpb_text_column wpb_content_element  col-xl-7 col-lg-10 centered mb-0">
                     <div class="wpb_wrapper">
                         <h2 class="size-font" style="text-align: center;"><span style="color: #ffffff;">Gómez noya</span></h2>
                         <p>&nbsp;</p>
                         <p style="text-align: center;"><span style="color: #ffffff;">Cómo vive el confinamiento un profesional del Triatlon, qué pasa por su mente al saber que sus principales metas han sido canceladas. Para qué seguir entrenando. Nos adentramos en la realidad de Noya en el año más raro de su carrera.</span></p>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Iconos con modal -->
 <?php 
@@ -104,9 +116,6 @@ $arraytablet=[1,7,1,7];
 
           </div>
         </div>
-    </div>
-    
-</div>
 
 <?php } }?>
        

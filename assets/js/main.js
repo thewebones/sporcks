@@ -263,3 +263,7 @@ eval("$(function () {\n  updateTopBarWidth();\n  $(window).on('resize', function
 /***/ })
 
 /******/ });
+
+$fecha=jQuery('.elementor-post-date').html();
+$mod=$fecha.replace(" ","<br>");
+jQuery('.elementor-post-date').html($mod);

@@ -8972,6 +8972,8 @@ html, body {
     -ms-grid-column: 5;
     grid-area: right;
 }
+
+
 @media (max-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
     .login__title {
         -ms-grid-row: 1;
