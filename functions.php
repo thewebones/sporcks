@@ -172,7 +172,7 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 require get_template_directory() . '/inc/register-blocks.php';
-require get_template_directory() . '/inc/acf-cpt.php';
+
 
 /**
  * Load Jetpack compatibility file.

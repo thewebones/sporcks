@@ -295,12 +295,13 @@ html, body {
     align-items:center;
 }
 .comparte h1,h4,p{
-    color:white;
+
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
 }
 .comparte h1{
     font-size:3rem;
+    color: black !important;
 }
 .comparte h4{
     font-size:1.8rem;
@@ -7892,6 +7893,7 @@ html, body {
 
 .hero-content-section {
     padding: 6rem 0;
+
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .hero-content-section {
@@ -7936,7 +7938,7 @@ html, body {
     text-align: justify;
     margin-bottom: 0;
     font-weight: 300;
-
+    color: black !important;
 }
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
     .hero-content-section__description {
@@ -9047,6 +9049,25 @@ html, body {
     }
 
 }
+.convictory {
+    font-size: 18px;
+    padding: 3px 25px;
+    font-weight: 800;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.convictory:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+
 
 .reflexionmeta p {
     color: white;
