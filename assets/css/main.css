@@ -129,7 +129,13 @@ RESPONSIVE BREAKPOINTS
     font-weight: 900;
     src: local("Prompt BlackItalic"), url(webfonts/Prompt-BlackItalic.ttf) format("truetype");
 }
-
+@font-face {
+    font-family: "UniSansRegular";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Uni Sans Regular"), url(webfonts/Uni-Sans-Regular.ttf) format("truetype");
+}
+    
 
 
 *,
@@ -295,7 +301,7 @@ html, body {
     flex-direction: column;
     align-items:center;
 }
-.comparte h1,.comparte h4 ,.comparte p{
+.comparte h1,.comparte h4,.comparte p{
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
 }
@@ -704,6 +710,8 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+
+
 .btn-icon:hover {
     background-color: #ffd204 !important;
     border: none !important;
@@ -734,6 +742,12 @@ html, body {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
 }
+@media only screen and (max-width: 600px) {
+    .service-card__title {
+        text-align: center !important;
+    }
+}
+
 .service-card__desc {
     text-align: center;
     margin-bottom: 0;
@@ -9049,6 +9063,10 @@ html, body {
     }
 
 }
+@media (min-width: 768px) {
+    .reflexionmeta p {
+        color: white;
+    }
 .convictory {
     font-size: 18px;
     padding: 3px 25px;
@@ -9073,3 +9091,10 @@ html, body {
     color: white;
 }
 
+@media only screen and (max-width: 600px)  {
+    
+    #carouselControls .carousel-inner img {
+        height: 350px !important;
+        object-fit: cover !important;
+    }
+}

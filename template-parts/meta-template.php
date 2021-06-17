@@ -77,7 +77,7 @@
     ?>
 
 
-          <section class="services-section" style="padding: 3em;">
+          <section class="services-section" style="padding: 3em; style=background: #fff">
           <div class="grid">
                 <?php  
                 if (get_field("tarjeta", "option")){
@@ -85,7 +85,7 @@
                   <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-2 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
                     <div class="service-card" style="color:#000">
                     <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-                      <h5 class="service-card__title mt-4" style="margin-bottom: .5em; font-size: 1.6em; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></h5>
+                      <h5 class="service-card__title mt-4" style="margin-bottom: .5em; font-size: 1.6em; font-weight: 600;text-transform: uppercase; font-family: UniSansRegular !important"><?php echo $item["tarjeta_titulo"] ?></h5>
                       <p class="service-card__desc"><?php echo $item["tarjeta_subtitulo"] ?></p>
                       <p><?php echo $item["descripcion"] ?></p>
 

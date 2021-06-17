@@ -6,10 +6,10 @@ $countid=0;
 ?>
 
 
-<section class="services-section" style="padding: 3em;">
+<section class="services-section" style="padding: 3em; style=background: #fff">
 <div class="grid">
       <?php  
-      if (get_field("tarjeta")){
+      if (get_field("tarjeta", "option")){
       foreach (get_field("tarjeta", "option") as $key=> $item) {?>
         <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-2 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
           <div class="service-card" style="color:#000">
