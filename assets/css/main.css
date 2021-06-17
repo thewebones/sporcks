@@ -441,7 +441,6 @@ html, body {
 .lang-selector__toggle img {
     height: 2rem;
     width: auto;
-    margin-top: -5px;
 }
 .lang-selector__menu {
     min-width: 6rem;
