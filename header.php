@@ -132,7 +132,7 @@
             
                 <div class="grid grid--fluid <?php if (!is_front_page()) echo "fondo_dinamico"?>">
                     <nav class="navbar__nav col-start-1 col-width-12 navbar__nav--animated">
-                        <button class="navbar__toggle" id="navbarToggle"></button>
+                        <button class="navbar__toggle" id="navbarToggle"><span></span><span></span><span></span></button>
                         <a class="navbar__logo-wrap" href="<?php echo get_site_url(); ?>">
                         <img class="navbar__logo" src="<?php echo get_field("logo","option") ?>"></a>
                         <ul class="navbar__list">

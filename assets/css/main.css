@@ -256,6 +256,7 @@ html, body {
 
 .card{
     width:28%;
+    height: fit-content;
     background-color:black;
     display:flex;
     justify-content:center;
@@ -295,7 +296,6 @@ html, body {
     align-items:center;
 }
 .comparte h1,h4,p{
-
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
 }

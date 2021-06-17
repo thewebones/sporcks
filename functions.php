@@ -205,3 +205,10 @@ function repeater_get_post_meta( $repeater_key, $post_id, $sub_field_keys ) {
     return $repeater_output;
 }
 
+function add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+	}
+	add_action('upload_mimes', 'add_file_types_to_uploads');

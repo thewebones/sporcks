@@ -5,7 +5,7 @@
 $the_query = new WP_Query( $args );
 $contador=0;
 ?>
-<div>
+
 <div class="all-cards">
 
 <?php if($the_query->have_posts() ) :
@@ -28,7 +28,7 @@ $contador=0;
         <p class="mt-3"><strong>EPISODIO <?php echo $contador ?></strong></p>
         <p class="mt-3" style="font-size:13px"><strong><?php echo get_post_meta( get_the_ID(), 'frase_principal', true );?></strong></p>
         <button class="btn btn-mio my-5"><a class="linkHover" href="<?php the_permalink(); ?>"><strong>VIDEO COMPLETO</strong></a></button>
-        </div>
+    </div>
     
 <?php
     $contador++;
@@ -37,4 +37,4 @@ $contador=0;
 else:
 endif;
 ?>
- 
+ </div>
