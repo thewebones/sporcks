@@ -135,7 +135,7 @@ RESPONSIVE BREAKPOINTS
     font-weight: 900;
     src: local("Uni Sans Regular"), url(webfonts/Uni-Sans-Regular.ttf) format("truetype");
 }
-    
+
 
 
 *,
@@ -262,7 +262,6 @@ html, body {
 
 .card{
     width:28%;
-    height: fit-content;
     background-color:black;
     display:flex;
     justify-content:center;
@@ -302,6 +301,7 @@ html, body {
     align-items:center;
 }
 .comparte h1,.comparte h4,.comparte p{
+
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
 }
@@ -441,6 +441,7 @@ html, body {
 .lang-selector__toggle img {
     height: 2rem;
     width: auto;
+    margin-top: -5px;
 }
 .lang-selector__menu {
     min-width: 6rem;
@@ -523,12 +524,6 @@ html, body {
 .wp-block-embed iframe {
     width: 100%;
     height: 600px;
-    margin: 0;
-    padding: 0;
-}
-.wp-block-embed {
-    margin: 0;
-    padding: 0;
 }
 @media (max-width: 340px) and (-webkit-min-device-pixel-ratio: 1) {
     .sox-card__wrapper {
@@ -715,8 +710,6 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-
-
 .btn-icon:hover {
     background-color: #ffd204 !important;
     border: none !important;
@@ -747,12 +740,6 @@ html, body {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
 }
-@media only screen and (max-width: 600px) {
-    .service-card__title {
-        text-align: center !important;
-    }
-}
-
 .service-card__desc {
     text-align: center;
     margin-bottom: 0;
@@ -9097,8 +9084,7 @@ html, body {
 }
 
 @media only screen and (max-width: 600px)  {
-    
-    #carouselControls .d-block {
+    #carouselControls  img {
         height: 350px !important;
         object-fit: cover !important;
     }
