@@ -294,7 +294,7 @@ html, body {
     flex-direction: column;
     align-items:center;
 }
-.comparte h1,h4,p{
+.comparte h1,.comparte h4,.comparte p{
 
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
