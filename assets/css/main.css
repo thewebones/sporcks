@@ -524,6 +524,12 @@ html, body {
 .wp-block-embed iframe {
     width: 100%;
     height: 600px;
+    margin: 0;
+    padding: 0;
+}
+.wp-block-embed {
+    margin: 0;
+    padding: 0;
 }
 @media (max-width: 340px) and (-webkit-min-device-pixel-ratio: 1) {
     .sox-card__wrapper {
@@ -9093,7 +9099,7 @@ html, body {
 
 @media only screen and (max-width: 600px)  {
     
-    #carouselControls .carousel-inner img {
+    #carouselControls .d-block {
         height: 350px !important;
         object-fit: cover !important;
     }
