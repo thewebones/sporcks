@@ -267,6 +267,7 @@ html, body {
     justify-content:center;
     flex-direction:column;
     margin:15px;
+    height: fit-content;
 }
 
 
@@ -369,6 +370,7 @@ html, body {
     .mobile-port-hidden {
         display: none !important;
     }
+    
 }
 
 @media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -9069,7 +9071,7 @@ html, body {
 @media (min-width: 768px) {
     .reflexionmeta p {
         color: white;
-    }
+    }}
 .convictory {
     font-size: 18px;
     padding: 3px 25px;
