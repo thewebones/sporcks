@@ -6,7 +6,7 @@ $countid=0;
 ?>
 
 
-<section class="services-section" style="padding: 3em; style=background: #fff">
+<section class="services-section" style="padding: 3em; background: #fff">
 <div class="grid">
       <?php  
       if (get_field("tarjeta", "option")){
