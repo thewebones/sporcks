@@ -135,7 +135,7 @@ RESPONSIVE BREAKPOINTS
     font-weight: 900;
     src: local("Uni Sans Regular"), url(webfonts/Uni-Sans-Regular.ttf) format("truetype");
 }
-    
+
 
 
 *,
@@ -262,7 +262,6 @@ html, body {
 
 .card{
     width:28%;
-    height: fit-content;
     background-color:black;
     display:flex;
     justify-content:center;
@@ -302,6 +301,7 @@ html, body {
     align-items:center;
 }
 .comparte h1,.comparte h4,.comparte p{
+
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
 }
@@ -524,11 +524,14 @@ html, body {
 .wp-block-embed iframe {
     width: 100%;
     height: 600px;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 }
 .wp-block-embed {
     margin-bottom: -5px;
+=======
+>>>>>>> 6ce2ed115b7c1361647a881b2dffe1193dd1e87c
 }
 @media (max-width: 340px) and (-webkit-min-device-pixel-ratio: 1) {
     .sox-card__wrapper {
@@ -715,8 +718,6 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-
-
 .btn-icon:hover {
     background-color: #ffd204 !important;
     border: none !important;
@@ -750,7 +751,6 @@ html, body {
 @media only screen and (max-width: 600px) {
     .service-card__title {
         text-align: center !important;
-        color: red !important;
     }
 }
 
@@ -9097,9 +9097,14 @@ html, body {
     color: white;
 }
 
+<<<<<<< HEAD
 @media (max-width: 600px)  {
     
      .carousel-item img {
+=======
+@media only screen and (max-width: 600px)  {
+    #carouselControls  img {
+>>>>>>> 6ce2ed115b7c1361647a881b2dffe1193dd1e87c
         height: 350px !important;
         object-fit: cover !important;
     }
