@@ -66,6 +66,14 @@
   </a>
 </div>
 
+<style>
+  @media only screen and (max-width: 600px)  {
+    #carouselControls  img {
+        height: 350px !important;
+        object-fit: cover !important;
+    }
+}
+</style> 
  
 
 
