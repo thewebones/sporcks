@@ -271,7 +271,7 @@ html, body {
 }
 
 
-.card p,h4,h1{
+.card p,.card h4,.card h1{
     color:white;
     font-family:Prompt, sans-serif;
 }
@@ -304,10 +304,10 @@ html, body {
 .comparte h1,.comparte h4,.comparte p{
     font-weight: bold !important;
     font-family:Prompt, sans-serif;
+    color:white;
 }
 .comparte h1{
     font-size:3rem;
-    color: black !important;
 }
 .comparte h4{
     font-size:1.8rem;
@@ -478,6 +478,7 @@ html, body {
     .banner__wrap {
         max-width: 100%;
     }
+
 }
 .banner__wrap .swiper-slide > * {
     width: calc(100% - 4rem);
