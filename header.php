@@ -19,7 +19,7 @@
     <link rel="icon" type="image/jpg" sizes="32x32" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/favicon.png">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/swiper-bundle.min.css">
-    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/css/main.css">
+    <link rel="stylesheet" href="https://new.sporcks.com/wp-content/themes/sporcks/assets/css/main.css">
     
  
  

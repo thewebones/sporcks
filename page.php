@@ -20,7 +20,9 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-
+            if(is_shop())
+                get_template_part( 'template-parts/shop-templates' );
+            else
 			get_template_part( 'template-parts/content', 'page' );
 
 
