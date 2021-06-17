@@ -527,6 +527,14 @@ html, body {
 .wp-block-embed iframe {
     width: 100%;
     height: 600px;
+<<<<<<< HEAD
+    margin: 0;
+    padding: 0;
+}
+.wp-block-embed {
+    margin-bottom: -5px;
+=======
+>>>>>>> 6ce2ed115b7c1361647a881b2dffe1193dd1e87c
 }
 @media (max-width: 340px) and (-webkit-min-device-pixel-ratio: 1) {
     .sox-card__wrapper {
@@ -743,6 +751,12 @@ html, body {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
 }
+@media only screen and (max-width: 600px) {
+    .service-card__title {
+        text-align: center !important;
+    }
+}
+
 .service-card__desc {
     text-align: center;
     margin-bottom: 0;
@@ -9084,11 +9098,4 @@ html, body {
 
 .reflexionmeta p {
     color: white;
-}
-
-@media only screen and (max-width: 600px)  {
-    #carouselControls  img {
-        height: 350px !important;
-        object-fit: cover !important;
-    }
 }
