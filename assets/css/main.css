@@ -9097,14 +9097,9 @@ html, body {
     color: white;
 }
 
-<<<<<<< HEAD
-@media (max-width: 600px)  {
     
-     .carousel-item img {
-=======
 @media only screen and (max-width: 600px)  {
     #carouselControls  img {
->>>>>>> 6ce2ed115b7c1361647a881b2dffe1193dd1e87c
         height: 350px !important;
         object-fit: cover !important;
     }
