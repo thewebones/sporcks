@@ -501,7 +501,7 @@ html, body {
     display: none;
 }
 .banner__button-next {
-    right: -2px;
+    right: -2px !important;
 }
 .banner__button-prev {
     left: -2px;
