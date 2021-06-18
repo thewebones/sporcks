@@ -50,9 +50,12 @@
           </div>
         </div>
         <div class="running__grid">
-          <section class="sox-collection-section sox-collection-section--no-padding">
+
+        <section class="sox-collection-section sox-collection-section--no-padding">
             <div class="grid mobile-port-hidden-not-now">
         <?php
+        $arrayColStart=[1,4,7,10];
+        $arrayTabletLandColStart=[1,7,1,7]; 
         $args = array(
             'post_type' => 'product',
             'posts_per_page' => 12
@@ -60,24 +63,41 @@
         $loop = new WP_Query( $args );
         if ( $loop->have_posts() ) {
             while ( $loop->have_posts() ) : $loop->the_post();
-             $id_portada=get_post_meta( get_the_ID(), '_thumbnail_id', true );?>
+                 $product = wc_get_product( get_the_ID() );
+               
+                $cat_id=$product->get_category_ids()[0];
+                $name = get_term_by( 'id', $cat_id, 'product_cat' )->name;
+            
+                $attribute_taxonomies = wc_get_attribute_taxonomies();
+                $lista_talla=get_terms( wc_attribute_taxonomy_name(array_values($attribute_taxonomies)[0]->attribute_name));
+               
              
-                <div class="col-start-1 col-width-3 tablet-land-col-start-1 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
-                <div class="sox-card">
-                  <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/pair-red-sox.jpg"></a>
-                    <p class="sox-card__desc">go dad - calcetin running</p>
-                    <h5 class="sox-card__price">17.95€</h5>
+               
+                ?>
+
+            <div class="col-start-1 col-width-3 tablet-land-col-start-1 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+               <div class="sox-card">
+                  <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="<?php echo $product->get_image(); ?>"></a>
+                    <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
+                    <p class="sox-card__desc"><?php echo $name?></p>
+                    <h5 class="sox-card__price"><?php echo $product->get_price() ?></h5>
                   </div>
                   <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/MG_6526.jpg"></a>
-                    <p class="sox-card__desc">go dad - calcetin running</p>
-                    <h5 class="sox-card__price">17.95€</h5>
+                    <p class="sox-card__desc"><?php echo $product->get_name()?></p>
+                    <p class="sox-card__desc"><?php echo $name?></p>
+                    <h5 class="sox-card__price"><?php echo $product->get_price() ?></h5>
                     <div class="sox-card__shop-tools">
                       <div class="sox-card__sizes">
+                        
+                        <?php foreach($lista_talla as $talla){ ?>
                         <div class="sox-card__size-item">
                           <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-K3YJYM" name="radioGroup0" checked="checked">
-                          <label class="sox-card__size-label" for="sizeRadio-0-K3YJYM"><span>xs</span><span class="sox-card__size-info">(35-37)</span></label>
+                          <label class="sox-card__size-label" for="sizeRadio-0-K3YJYM"><span><?php echo $talla->name ?></span><span class="sox-card__size-info"><?php echo $talla->description ?></span></label>
                         </div>
-                        <div class="sox-card__size-item">
+                        <?php  
+                        }
+                        ?>
+                        <!-- <div class="sox-card__size-item">
                           <input class="sox-card__size-radio" type="radio" id="sizeRadio-1-_Q715S" name="radioGroup0">
                           <label class="sox-card__size-label" for="sizeRadio-1-_Q715S"><span>s</span><span class="sox-card__size-info">(35-37)</span></label>
                         </div>
@@ -92,14 +112,16 @@
                         <div class="sox-card__size-item">
                           <input class="sox-card__size-radio" type="radio" id="sizeRadio-4-WYH0ZP" name="radioGroup0">
                           <label class="sox-card__size-label" for="sizeRadio-4-WYH0ZP"><span>xl</span><span class="sox-card__size-info">(35-37)</span></label>
-                        </div>
+                        </div> -->
                       </div>
                       <button class="sox-card__cart-btn" type="button">AÑADIR</button>
                     </div>
                   </div>
                 </div>
-              </div>       
-        <?php
+              </div>     
+           
+
+        <?php 
               /*   $term_list = wp_get_post_terms(get_the_ID(),'product_cat',array('fields'=>'ids'));
                 $cat_id = (int)$term_list[0];
                 $term = get_term_by( 'id', $cat_id, 'product_cat' );
@@ -113,7 +135,7 @@
         wp_reset_postdata();
         ?>
         </div>
-    </section>
+    </section> 
     </div>
     </ul><!–/.products–>
     </div>   
@@ -123,7 +145,13 @@
 </article><!-- #post-<?php the_ID(); ?> -->
 
 
-<!-- <div class="running__wrapper">
+<!--
+<div class="col-start-1 col-width-3 tablet-land-col-start-1 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">    
+<div class="col-start-4 col-width-3 tablet-land-col-start-7 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+<div class="col-start-7 col-width-3 tablet-land-col-start-1 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+<div class="col-start-10 col-width-3 tablet-land-col-start-7 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+
+<div class="running__wrapper">
         <div class="grid">
           <div class="col-start-1 col-width-12">
             <h1 class="running__title">running</h1>
