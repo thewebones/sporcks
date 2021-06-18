@@ -21,9 +21,9 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
             if(is_shop())
-                get_template_part( 'template-parts/shop-templates' );
+                get_template_part( 'template-parts/shop-templates','page' );
             else
-			get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content');
 
 
 

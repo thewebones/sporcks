@@ -19,7 +19,7 @@
     <link rel="icon" type="image/jpg" sizes="32x32" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/favicon.png">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://new.sporcks.com/wp-content/themes/sporcks/assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/css/main.css">
     
  
  
@@ -139,7 +139,7 @@
                             <?php if(get_field("menu_principal_repeater_","option")){ 
                             foreach (get_field("menu_principal_repeater_","option") as $item){    
                             ?>
-                            <li class="navbar__item"><a class="navbar__link" href="<?php echo $item["link_menu"]["url"] ?>"><?php echo $item["texto_menu"] ?></a></li>
+                            <li class="navbar__item"><a class="navbar__link" href="<?php echo $item["link_menu"]["url"] ?>"><?php echo $item["link_menu"]["title"] ?></a></li>
                            
                         <?php }} ?>
                             </ul>
