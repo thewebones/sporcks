@@ -139,7 +139,7 @@
                             <?php if(get_field("menu_principal_repeater_","option")){ 
                             foreach (get_field("menu_principal_repeater_","option") as $item){    
                             ?>
-                            <li class="navbar__item"><a class="navbar__link" href="<?php echo $item["link_menu"]["url"] ?>"><?php echo $item["texto_menu"] ?></a></li>
+                            <li class="navbar__item"><a class="navbar__link" href="<?php echo $item["link_menu"]["url"] ?>"><?php echo $item["link_menu"]["title"] ?></a></li>
                            
                         <?php }} ?>
                             </ul>

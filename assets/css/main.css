@@ -174,7 +174,7 @@ html, body {
     display :flex;
     justify-content: center;
     flex-flow: row wrap;
-    padding:30px 40px;
+    padding:30px 80px;
 }
 .imageDiv{
     width:100%;
@@ -208,9 +208,9 @@ html, body {
 }
 .scene{
     width: 100%;
-    height: 250px;
+    height: 205px;
     border: 1ox solif #CCC;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     perspective: 600px;
 }
 
@@ -315,9 +315,10 @@ html, body {
 }
 .comparte p{
     font-size:1.2rem;
+    text-align: center;
 }
 .btn-mio a{
-    color:white;
+    color:white !important;
 }
 .btn-mio a:hover{
     color:#e0dddd !important;
@@ -441,9 +442,8 @@ html, body {
     outline: none;
 }
 .lang-selector__toggle img {
-    height: 2rem;
+    height: 2rem !important;
     width: auto;
-    margin-top: -5px;
 }
 .lang-selector__menu {
     min-width: 6rem;
@@ -1682,6 +1682,7 @@ html, body {
 
 .cart-toggler {
     cursor: pointer;
+    height:2rem !important;
 }
 
 .animated-width {
@@ -2185,12 +2186,12 @@ html, body {
     text-decoration: none;
 }
 .socials__icon {
-    height: 3.5rem;
+    height: 3.5rem !important;
     width: 3rem;
 }
 @media (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1) {
     .socials__icon {
-        height: 2.8rem;
+        height: 2.8rem !important;
         width: 2.2rem;
     }
 }
@@ -2559,7 +2560,7 @@ html, body {
     }
 }
 .navbar__logo {
-    height: 4.5rem;
+    height: 4.5rem !important;
     width: auto;
     transition: height 0.2s linear;
 }
@@ -2661,7 +2662,7 @@ html, body {
     outline: none;
 }
 .navbar__tool-btn img {
-    height: 2rem;
+    height: 2rem !important;
     width: auto;
 }
 .navbar--collapsed .navbar__backdrop {
@@ -2709,6 +2710,7 @@ html, body {
 }
 
 .footer {
+    margin-top:-10px;
     background-color: #191919;
     padding: 8rem 0 6rem;
     color: #fff;
@@ -9092,8 +9094,5 @@ html, body {
 
 
 .reflexionmeta p {
-    color: white;
-}
-.jjj{
     color: white;
 }
