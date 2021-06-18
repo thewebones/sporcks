@@ -221,7 +221,7 @@ html, body {
     cursor:pointer;
     transform-style:preserve-3d;
     transform-origin: center right;
-    transition: transform 0.8s;
+    transition: transform 0.3s;
     top:0;
 }
 .card__face{
@@ -237,7 +237,7 @@ html, body {
 }
 
 .card__face--back{
-    background-color: rgba(223, 211, 211, 0.788);
+    background-color: rgba(255, 255, 255, 0.9);
     transform:rotateY(180deg);
 }
 
@@ -248,7 +248,7 @@ html, body {
 .card__face--front{
     background-color: rgba(133, 4, 4, 0);
 }
-
+git add
 
 
 .linkHover{
