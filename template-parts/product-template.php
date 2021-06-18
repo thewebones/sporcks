@@ -7,101 +7,160 @@
  */
 $product = wc_get_product( get_the_ID() );
 ?>
-<h1>gdsjkfhsdfyhsjdgsdg</h1>
 
-<h1>gdsjkfhsdfyhsjdgsdg</h1>
-<h1>gdsjkfhsdfyhsjdgsdg</h1>
-<h1>gdsjkfhsdfyhsjdgsdg</h1>
-<h1><?php echo get_the_ID() ?></h1>
-<h1><?php echo $product->get_price() ?></h1>
+<!-- breadcrumb -->
+<ul class="breadcrumb mt-5">
+      <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Inicio</a></li>
+      <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Ciclismo</a></li>
+      <li class="breadcrumb__item">MONT TENDRE PINK - Calcetin ciclismo</li>
+</ul>
+<!-- /breadcrumb -->
 
-<?php
-//// Get Product ID
-//
-//echo $product->get_id();
-//
-//// Get Product General Info
-//
-//echo $product->get_type();
-//echo $product->get_name();
-//echo $product->get_slug();
-//echo $product->get_date_created();
-//echo $product->get_date_modified();
-//echo $product->get_status();
-//echo $product->get_featured();
-//echo $product->get_catalog_visibility();
-//echo $product->get_description();
-//echo $product->get_short_description();
-//echo $product->get_sku();
-//echo $product->get_menu_order();
-//echo $product->get_virtual();
-//get_permalink( echo $product->get_id() );
-//
-//// Get Product Prices
-//
-//echo $product->get_price();
-//echo $product->get_regular_price();
-//echo $product->get_sale_price();
-//echo $product->get_date_on_sale_from();
-//echo $product->get_date_on_sale_to();
-//echo $product->get_total_sales();
-//
-//// Get Product Tax, Shipping & Stock
-//
-//echo $product->get_tax_status();
-//echo $product->get_tax_class();
-//echo $product->get_manage_stock();
-//echo $product->get_stock_quantity();
-//echo $product->get_stock_status();
-//echo $product->get_backorders();
-//echo $product->get_sold_individually();
-//echo $product->get_purchase_note();
-//echo $product->get_shipping_class_id();
-//
-//// Get Product Dimensions
-//
-//echo $product->get_weight();
-//echo $product->get_length();
-//echo $product->get_width();
-//echo $product->get_height();
-//echo $product->get_dimensions();
-//
-//// Get Linked Products
-//
-//echo $product->get_upsell_ids();
-//echo $product->get_cross_sell_ids();
-//echo $product->get_parent_id();
-//
-//// Get Product Variations and Attributes
-//
-//echo $product->get_children(); // get variations
-//echo json_encode($product->get_attributes(""));
-//echo $product->get_default_attributes();
-echo $product->get_attribute( 'talla' ); //get specific attribute value
-//
-//// Get Product Taxonomies
-//
-echo $product->get_categories();
-//echo $product->get_category_ids();
-//echo $product->get_tag_ids();
-//
-//// Get Product Downloads
-//
-//echo $product->get_downloads();
-//echo $product->get_download_expiry();
-//echo $product->get_downloadable();
-//echo $product->get_download_limit();
-//
-//// Get Product Images
-//
-//echo $product->get_image_id();
-echo $product->get_image();
-//echo $product->get_gallery_image_ids();
-//
-//// Get Product Reviews
-//
-//echo $product->get_reviews_allowed();
-//echo $product->get_rating_counts();
-//echo $product->get_average_rating();
-//echo $product->get_review_count();
-//?>
+
+<!-- Galery -->
+<div class="grid product-details-section__content">
+      <div class="col-start-1 col-width-8 tablet-col-start-1 tablet-col-width-7 mobile-land-col-start-1 mobile-land-col-width-12">
+        <div class="product-slider">
+          <div class="product-slider__wrap">
+            <div class="swiper-container product-slider__gallery-thumbs swiper-container-initialized swiper-container-vertical swiper-container-thumbs">
+              <div class="swiper-wrapper" id="swiper-wrapper-c77c04f6d21f7f5a" aria-live="polite" style="transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s; margin-bottom: 150px">
+              
+            <?php
+            $count = 1;
+            $total=count($product->get_gallery_image_ids(), COUNT_RECURSIVE); 
+            
+                if($product->get_gallery_image_ids()){
+                    foreach ($product->get_gallery_image_ids() as $item) {?>
+                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="<?php $count ?>/<?php $total ?>" style="height: 104px; margin-bottom: 10px;">
+                         <img class="product-slider__img mt-3" src="<?php echo wp_get_attachment_image_src($item,'full')[0];?>">
+                    </div>
+                    
+            <?php $count ++; } } ?>     
+
+              </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
+            </span>
+            </div>
+            <!-- Imagen de la Galeria -->
+            <div class="swiper-container product-slider__container swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-wrapper" id="swiper-wrapper-eebe994fee266b3b" aria-live="polite" style="transform: translate3d(-1575px, 0px, 0px); transition: all 0ms ease 0s;">
+              <?php
+                $count = 1;
+                $total=count($product->get_gallery_image_ids(), COUNT_RECURSIVE); 
+                
+                if($product->get_gallery_image_ids()){
+                    foreach ($product->get_gallery_image_ids() as $item) {?>
+                     <div class="swiper-slide" role="group" aria-label="1 / 5" style="width: 525px;">
+                        <span style="display: inline-block; position: relative; overflow: hidden;">
+                            <img class="product-slider__img" src="<?php echo wp_get_attachment_image_src($item,'full')[0];?>" style="display: block;">
+                            <img role="presentation" alt="" src="<?php echo wp_get_attachment_image_src($item,'full')[0];?>" class="zoomImg" style="position: absolute; top: -432px; left: -926.714px; opacity: 0; width: 1500px; height: 1500px; border: none; max-width: none; max-height: none;">
+                            </span>
+                     </div>
+                    
+              <?php $count ++; } } ?>   
+     
+              </div>
+              <div class="swiper-button-prev product-slider__button-prev product-slider__default-btn" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+              <div class="swiper-button-next product-slider__button-next product-slider__default-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+              <div class="swiper-button-prev product-slider__pagination-btn product-slider__button-prev" style="display:none;" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+              <div class="swiper-button-prev product-slider__pagination-btn product-slider__button-next" style="display:none;" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <div class="product-slider__pagination-wrap">
+              <div class="swiper-button-prev product-slider__pagination-btn product-slider__button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+              <div class="swiper-pagination product-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+              <div class="swiper-button-next product-slider__pagination-btn product-slider__button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-eebe994fee266b3b" aria-disabled="false"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- Producto -->
+      <div class="col-start-9 col-width-4 tablet-col-start-8 tablet-col-width-5 mobile-land-col-start-1 mobile-land-col-width-12">
+        <div class="product-info">
+          <h1 class="product-info__name"><?php echo $product->get_name(); ?></h1>
+          <h2 class="product-info__type"></h2>
+          <h2 class="product-info__price"><?php echo $product->get_price(); ?></h2>
+          <form class="product-info__form">
+            <div class="product-info__sizes">
+              <h3 class="product-info__size-heading">Talla</h3>
+              <div class="product-info__sizes-wrap">
+                <div class="size-check">
+                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-s" checked="">
+                  <label class="size-check__label" for="radio-size-s"><?php echo $product->get_attribute( 'size' )[0]; ?></label>
+                  <span class="size-check__info">3 - 5.5 <?php echo $product->get_attribute( 'size' )[0]?></span>
+                </div>
+                <div class="size-check">
+                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-m">
+                  <label class="size-check__label" for="radio-size-m"><?php echo $product->get_attribute( 'size' )[3]; ?></label>
+                  <span class="size-check__info">5.6 - 8</span>
+                </div>
+                <div class="size-check">
+                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-l">
+                  <label class="size-check__label" for="radio-size-l"><?php echo $product->get_attribute( 'size' )[6]; ?></label>
+                  <span class="size-check__info">8.6 - 11.6</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-info__quantity">
+              <h3 class="product-info__quantity-heading">Quantity</h3>
+              <input class="product-info__quantity-input" type="number" value="1" min="1">
+            </div>
+            <button class="product-info__button button button--outline">add to cart</button>
+          </form>
+          <div class="product-info__content">
+
+            <p class="product-info__content-paragraph"><?php echo $product->get_short_description(); ?></p>
+          
+          </div><br>
+
+          <!-- Tabs -->
+          <div class="product-info__collapse">
+            <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseFeatures" role="button" aria-expanded="false" aria-controls="collapseFeatures"><?php echo get_field("features_titulo"); ?></button>
+            <div class="collapse product-info__collapse-content" id="collapseFeatures">
+              <p><?php echo get_field("features_contenido"); ?></p>
+              
+            </div>
+          </div>
+          <div class="product-info__collapse">
+            <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseSizing" role="button" aria-expanded="false" aria-controls="collapseSizing"><?php echo get_field("sizing_titulo"); ?></button>
+            <div class="collapse product-info__collapse-content" id="collapseSizing">
+              <p><?php echo get_field("sizing_contenido"); ?></p>
+            </div>
+          </div>
+          <div class="product-info__collapse">
+            <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseShipping" role="button" aria-expanded="false" aria-controls="collapseShipping"><?php echo get_field("shipping_titulo"); ?></button>
+            <div class="collapse product-info__collapse-content" id="collapseShipping">
+              <p><?php echo get_field("shipping_contenido"); ?></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Caracteristicas -->
+    <div class="product-features-section">
+      <div class="grid">
+        <div class="col-start-4 col-width-6 tablet-land-col-start-3 tablet-land-col-width-8 tablet-col-start-2 tablet-col-width-10 mobile-col-start-1 mobile-col-width-12">
+          <h2 class="product-features-section__title">caracteristicas del calcetin</h2>
+          <div class="product-feature-bar">
+          <?php 
+            if(get_field("caracteristicas")){
+            foreach (get_field("caracteristicas") as $item) {?>
+           <div class="product-feature-bar__text-wrap">
+                    <h3 class="product-feature-bar__text1 mt-5"><?php echo  $item["nombre_caracteristica"]; ?></h3>
+                    <h4 class="product-feature-bar__text2 mt-5"><?php echo  $item["descripcion_caracteristica"]; ?></h4>
+           </div>
+
+           <div class="product-feature-bar__progress-wrap">
+                <span class="product-feature-bar__progress-line"></span>
+                <div class="product-feature-bar__progress-bar animated-width on-scroll" data-width="<?php echo $item["porciento"]; ?>%" style="width: 100%;"></div>
+           </div>
+
+          <?php }} ?>
+                
+
+          </div>
+        </div>
+      </div>
+    </div>
