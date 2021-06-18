@@ -10,7 +10,7 @@
 <?php if(get_field("altura_completa") == 1 ) {?>
 <section class="bg-cta-section bg-cta-section--full-height" >
     <?php } else {?>
-    <section class="bg-cta-section bg-cta-section--full-height" style="height: 65vh" >
+    <section class="bg-cta-section bg-cta-section--full-height" style="height: 80vh" >
     <?php } ?>
       <div class="bg-cta-section__image" style="background-image:url(<?php echo get_field("image")["url"]?>)"></div>
       <div class="bg-cta-section__backdrop"></div>

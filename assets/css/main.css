@@ -7960,7 +7960,7 @@ html, body {
 }
 .hero-content-section__description {
     font: 1.6rem/1.618 Prompt, sans-serif;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 0;
     font-weight: 300;
     color: black !important;

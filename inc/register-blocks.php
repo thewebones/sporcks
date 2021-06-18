@@ -166,3 +166,21 @@ acf_register_block_type(array(
     'keywords'          => array('meta'),
     'category' => 'widgets'
 ));
+acf_register_block_type(array(
+    'name'              => 'back-atletas',
+    'title'             => __('back atletas'),
+    'description'       => __('boton back-atletas'),
+    'render_template'   => 'template-parts/blocks/back-atletas/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('meta','boton back' ),
+    'category' => 'widgets'
+));
+acf_register_block_type(array(
+    'name'              => 'new-colection',
+    'title'             => __('new-colection'),
+    'description'       => __('coleccion de productos nuevos'),
+    'render_template'   => 'template-parts/blocks/new-colection/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('meta','productos nuevos' ),
+    'category' => 'widgets'
+));
