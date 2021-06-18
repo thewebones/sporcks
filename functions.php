@@ -212,3 +212,4 @@ function add_file_types_to_uploads($file_types){
 	return $file_types;
 	}
 	add_action('upload_mimes', 'add_file_types_to_uploads');
+
