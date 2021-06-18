@@ -212,3 +212,8 @@ function add_file_types_to_uploads($file_types){
 	return $file_types;
 	}
 	add_action('upload_mimes', 'add_file_types_to_uploads');
+
+	remove_action( 'woocommerce_single_product_summary' ,'woocommerce_template_single_excerpt', 20);
+	add_action( 'woocommerce_single_product_summary' ,'woocommerce_template_single_excerpt', 50);
+
+	remove_action( 'woocommerce_single_product_summary' ,'woocommerce_template_single_meta', 40);
