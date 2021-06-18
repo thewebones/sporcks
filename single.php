@@ -22,11 +22,13 @@ get_header();
                 get_template_part( 'template-parts/atletas-template', get_post_type() );
             if ( 'meta_post' === get_post_type() )
 		        get_template_part( 'template-parts/meta-template', get_post_type() );
-                
+            if ( 'product' === get_post_type() )
+                get_template_part( 'template-parts/product-template', get_post_type() );
 
 
 
-			// If comments are open or we have at least one comment, load up the comment template.
+
+            // If comments are open or we have at least one comment, load up the comment template.
 
 
 		endwhile; // End of the loop.
