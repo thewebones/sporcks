@@ -9,11 +9,10 @@ $product = wc_get_product( get_the_ID() );
 ?>
 
 <!-- breadcrumb -->
-<ul class="breadcrumb mt-5">
-      <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Inicio</a></li>
-      <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Ciclismo</a></li>
-      <li class="breadcrumb__item">MONT TENDRE PINK - Calcetin ciclismo</li>
+<ul class="breadcrumb mt-5" >
+      <li class="breadcrumb__item"><?php echo woocommerce_breadcrumb(); ?></li>
 </ul>
+
 <!-- /breadcrumb -->
 
 
@@ -84,21 +83,16 @@ $product = wc_get_product( get_the_ID() );
             <div class="product-info__sizes">
               <h3 class="product-info__size-heading">Talla</h3>
               <div class="product-info__sizes-wrap">
-                <div class="size-check">
-                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-s" checked="">
-                  <label class="size-check__label" for="radio-size-s"><?php echo $product->get_attribute( 'size' )[0]; ?></label>
-                  <span class="size-check__info">3 - 5.5 <?php echo $product->get_attribute( 'size' )[0]?></span>
-                </div>
-                <div class="size-check">
-                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-m">
-                  <label class="size-check__label" for="radio-size-m"><?php echo $product->get_attribute( 'size' )[3]; ?></label>
-                  <span class="size-check__info">5.6 - 8</span>
-                </div>
-                <div class="size-check">
-                  <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-l">
-                  <label class="size-check__label" for="radio-size-l"><?php echo $product->get_attribute( 'size' )[6]; ?></label>
-                  <span class="size-check__info">8.6 - 11.6</span>
-                </div>
+                
+                <?php $attribute_taxonomies = wc_get_attribute_taxonomies();
+                $lista_talla=get_terms( wc_attribute_taxonomy_name(array_values($attribute_taxonomies)[0]->attribute_name));
+                foreach ($lista_talla as $l){ ?>
+                    <div class="size-check">
+                        <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-<?php echo ($l->name);?>" checked="">
+                        <label class="size-check__label" for="radio-size-<?php echo ($l->name);?>"><?php echo ($l->name); ?></label>
+                        <span class="size-check__info"><?php echo ($l->description); ?></span>                 
+                    </div>
+                <?php } ?>
               </div>
             </div>
             <div class="product-info__quantity">
