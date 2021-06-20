@@ -127,7 +127,7 @@ if( ! empty( $my_posts ) ){
     </ul>
     </div>   
 </div>
-<?php the_content(); ?>
+<?php //the_content(); ?>
 
 
 
