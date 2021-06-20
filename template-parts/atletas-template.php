@@ -7,8 +7,10 @@
  */
 
 ?>
-
-<div class="breadcrumb-simple"><a class="breadcrumb-simple__item" href="<?php get_field ("back")["link"] ?>"><?php get_field ("back")["title"] ?> </a>
+<div style="height:103px;"></div>
+<div class="breadcrumb-simple">
+    <a class="breadcrumb-simple__item" href="<?php echo get_field("back_atletas", "option")["url"]; ?>">
+        <?php echo get_field("back_atletas","option")["title"]; ?> </a>
 </div>
 <section class="image-section image-section--bigger">
    <?php $id_portada=get_post_meta( get_the_ID(), 'portada', true );?>
