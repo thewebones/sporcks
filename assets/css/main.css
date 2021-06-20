@@ -160,8 +160,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: #000000;
-   /*  font: 1.6rem/1.618 Prompt, sans-serif;
-    font-weight: 300; */
+    font: 1.6rem/1.618 Prompt, sans-serif;
+     /*font-weight: 300; */
     background-color: #fff;
 }
 
@@ -172,6 +172,14 @@ html, body {
 .fondo_dinamico{
     background:black;
 }
+
+/* cambios a sox-cart linea 514 */
+.collection-card {
+    display:flex;
+    margin-top:4rem;
+    flex-flow:wrap;
+}
+
 
 
 .all-cards{
@@ -345,6 +353,20 @@ html, body {
     }
 }
 
+@media (max-width: 1200px)and (min-width: 340px) {
+    .sox-card{
+        width:40% !important;
+        margin:5px 5% !important;
+    }
+}
+@media (max-width: 340px){
+    .sox-card{
+        width:100% !important;
+        margin:10px 2rem !important;
+    }
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .blog-post-gallery *:nth-child(n) {
         -ms-grid-column: 1;
@@ -514,6 +536,8 @@ html, body {
 .sox-card {
     position: relative;
     display: block;
+    width:25%;
+    margin-top:10px;
 }
 .sox-card__wrapper {
     background: #fff;
@@ -612,7 +636,7 @@ html, body {
     margin-bottom: 2rem;
 }
 .sox-card__price {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.2rem;
 }
 .sox-card__shop-tools {
@@ -738,7 +762,7 @@ html, body {
 }
 .service-card__img {
     width: 100%;
-    height: 6rem;
+    height: 6rem !important;
     -o-object-position: center;
     object-position: center;
     -o-object-fit: contain;
@@ -1989,7 +2013,7 @@ html, body {
 .select__label {
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 .select__control {
