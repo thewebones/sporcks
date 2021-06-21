@@ -160,8 +160,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: #000000;
-   /*  font: 1.6rem/1.618 Prompt, sans-serif;
-    font-weight: 300; */
+    font: 1.6rem/1.618 Prompt, sans-serif;
+     /*font-weight: 300; */
     background-color: #fff;
 }
 
@@ -172,6 +172,14 @@ html, body {
 .fondo_dinamico{
     background:black;
 }
+
+/* cambios a sox-cart linea 514 */
+.collection-card {
+    display:flex;
+    margin-top:4rem;
+    flex-flow:wrap;
+}
+
 
 
 .all-cards{
@@ -226,7 +234,7 @@ html, body {
     cursor:pointer;
     transform-style:preserve-3d;
     transform-origin: center right;
-    transition: transform 0.8s;
+    transition: transform 0.3s;
     top:0;
 }
 .card__face{
@@ -242,7 +250,7 @@ html, body {
 }
 
 .card__face--back{
-    background-color: rgba(223, 211, 211, 0.788);
+    background-color: rgba(255, 255, 255, 0.9);
     transform:rotateY(180deg);
 }
 
@@ -253,7 +261,6 @@ html, body {
 .card__face--front{
     background-color: rgba(133, 4, 4, 0);
 }
-
 
 
 .linkHover{
@@ -344,6 +351,20 @@ html, body {
         font-size: 13px;
         color:white;
     }
+}
+
+@media (max-width: 1200px)and (min-width: 340px) {
+    .sox-card{
+        width:40% !important;
+        margin:5px 5% !important;
+    }
+}
+@media (max-width: 340px){
+    .sox-card{
+        width:100% !important;
+        margin:10px 2rem !important;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -516,6 +537,8 @@ html, body {
 .sox-card {
     position: relative;
     display: block;
+    width:25%;
+    margin-top:10px;
 }
 .sox-card__wrapper {
     background: #fff;
@@ -622,7 +645,7 @@ a .button .add_to_cart_button .product_type_simple {
     margin-bottom: 2rem;
 }
 .sox-card__price {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.2rem;
 }
 .sox-card__shop-tools {
@@ -748,7 +771,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .service-card__img {
     width: 100%;
-    height: 6rem;
+    height: 6rem !important;
     -o-object-position: center;
     object-position: center;
     -o-object-fit: contain;
@@ -2001,7 +2024,7 @@ a .button .add_to_cart_button .product_type_simple {
 .select__label {
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 .select__control {
@@ -7971,7 +7994,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .hero-content-section__description {
     font: 1.6rem/1.618 Prompt, sans-serif;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 0;
     font-weight: 300;
     color: black !important;

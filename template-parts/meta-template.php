@@ -11,7 +11,7 @@
 <div class="metainvisible text-center" style=" padding:100px 0px 100px 0px; background: black; color: white; width: 100%;">
     <h2 style="font-size: 28px; font-weight:800; text-transform: lowercase;"><?php echo get_post_meta( get_the_ID(), 'meta_de', true );?><h2>
     <h1 class="hero-content-section__title mb-5" style="color: white; text-transform: uppercase; margin-top: inherit;"><?php echo get_post_meta( get_the_ID(), 'nombre_atleta', true );?></h1>
-    <div class="text-center" style="width:70% ; margin-left: auto; margin-right: auto; ">
+    <div class="text-center" style="width:33% ; margin-left: auto; margin-right: auto;">
         <p class="text-center" style="font-family: GTAmericaExpandedRegula;line-height: 15px; font-size: 15px;"> <?php echo get_post_meta( get_the_ID(), 'frase_principal', true );?> </p>
     </div>
 </div>
@@ -22,8 +22,8 @@
 <div class="reflexionmeta" style=" background: black; color: white;">
     <section class="main row  align-items-center" style="width:80% ; margin-left: auto; margin-right:auto;">
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-2 order-md-1 text-center">
-        <h2 style="font-size: 22px; font-weight:900; text-align:left; margin-bottom: 50px; text-transform: uppercase; "><?php echo get_post_meta( get_the_ID(), 'reflexion', true );?></h2>
-        <p style="font-family: GTAmericaExpandedRegular; font-size: 16px; text-align: left; line-height: 15px;"><?php echo get_post_meta( get_the_ID(), 'texto_reflexion', true );?></p>
+        <h2 style="font-size: 22px; font-weight:900; width: 66%; text-align:left; margin-bottom: 50px; text-transform: uppercase; "><?php echo get_post_meta( get_the_ID(), 'reflexion', true );?></h2>
+        <p style="font-family: GTAmericaExpandedRegular; width: 85%; font-size: 16px; text-align: left; line-height: 15px;"><?php echo get_post_meta( get_the_ID(), 'texto_reflexion', true );?></p>
      </div>
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-2 text-center">
          <?php $id_imagen_simple=get_post_meta( get_the_ID(), 'imagen_simple', true );?>
