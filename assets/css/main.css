@@ -790,10 +790,10 @@ a .button .add_to_cart_button .product_type_simple {
 }
 
 .service-card__desc {
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 0;
     font-size: 1.2rem;
-    max-width: 25rem;
+    max-width: 25rem !important;
     font-weight: 400;
 }
 
@@ -1800,12 +1800,14 @@ a .button .add_to_cart_button .product_type_simple {
 .blog-post-content p {
     margin:auto;
     width: 50%;
-    text-align: justify !important;
+    text-align: justify;
     margin-bottom: 5rem;
     color: #000000 !important;
     font: 1.6rem/1.618 Prompt, sans-serif !important;
     margin-top: 5rem;
 }
+
+
 
 .wp-block-image img {
     width: 100%;
