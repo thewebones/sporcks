@@ -9163,3 +9163,18 @@ a .button .add_to_cart_button .product_type_simple {
 .entry-footer{
     display:none;
 }
+
+.form-row {
+    flex-direction: column !important;
+    
+}
+.form-row input {
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    line-height: 1;
+    border: 1px solid #000000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 4rem;
+}
