@@ -8,17 +8,20 @@
 ?>
 <section class="sox-collection-section">
     <h2 class="sox-collection-section__title sox-collection-section__title--bigger"><?php echo get_field("titulo")?></h2>
+	 <div class="collection-card">
     <?php
-
+	$cont=1;
     if (get_field("nuevos_productos")){
     foreach (get_field("nuevos_productos") as $item) {
+		$start="col-start-".$cont;
        $product=wc_get_product(array_values($item)[0]);
+		if($product !=null){
        $id_product=(array_values($item)[0]);
         $cat_id=$product->get_category_ids()[0];
         $name = get_term_by( 'id', $cat_id, 'product_cat' )->name;
         ?>
-    <div class="grid mobile-port-hidden-not-now">
-        <div class="col-start-1 col-width-3 tablet-land-col-start-1 tablet-land-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+   
+
             <div class="sox-card">
                 <div class="sox-card__wrapper sox-card__wrapper--visble">
                     <a class="sox-card__image-wrap" href="ficha-producto.html">
@@ -52,7 +55,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <?php } }?>
+
+    
+    <?php } $cont+=3; } }?>
+     </div>
 </section>

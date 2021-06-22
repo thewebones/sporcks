@@ -27,7 +27,7 @@
      </div>
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-2 text-center">
          <?php $id_imagen_simple=get_post_meta( get_the_ID(), 'imagen_simple', true );?>
-         <img class="imagenmeta" style="width: 366px; aspect-ratio: auto 366 / 513; margin-top:70px; margin-bottom:80px;" src="<?php echo wp_get_attachment_image_src($id_imagen_simple,'full')[0] ; ?> ">
+         <img class="img-fluid" style="width: 366px; aspect-ratio: auto 366 / 513; margin-top:70px; margin-bottom:80px;" src="<?php echo wp_get_attachment_image_src($id_imagen_simple,'full')[0] ; ?> ">
      </div>
     </section>
 </div>

@@ -16,7 +16,7 @@
             <h2 class="hero-content-section__subtitle"><?php echo get_field("texto2")?></h2>
             <?php }?>
             <?php if(get_field("texto3")){ ?>
-            <p class="hero-content-section__description"><?php echo get_field("texto3")?></p>
+            <p class="hero-content-section__description" style="margin-bottom: 50px"><?php echo get_field("texto3")?></p>
             <?php }?>
 
         </div>

@@ -33,8 +33,8 @@
                             <h4 class="athlete-details-section__age"><?php echo get_post_meta( get_the_ID(), 'edad', true );?> </h4></h4>
                             <p><?php echo get_post_meta( get_the_ID(), 'edad_titulo', true );?></p>
                         </div>
-                        <?php $id_país=get_post_meta( get_the_ID(), 'país', true );?>
-                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_país,'full')[0] ; ?> ">
+                        <?php $id_país=get_post_meta( get_the_ID(), 'pais', true );?>
+                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_pais,'full')[0] ; ?> ">
                     </div>
                 </div>
             </div>
@@ -204,6 +204,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
+
                 <?php the_content(); ?>
                 <?php
                 $arrayColStart=[1,4,7,10];
@@ -213,16 +214,18 @@
 
                 <section class="services-section">
                     <div class="grid">
-                        <?php  foreach (get_field("benefices",'option') as $key=> $item) {?>
-                            <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
-                                <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
-                                    <div class="service-card__delimiter"></div>
-                                    <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
-                                    <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                        <?php
+                        if (get_field("benefices")){
+                            foreach (get_field("benefices") as $key=> $item) {?>
+                                <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+                                    <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
+                                        <div class="service-card__delimiter"></div>
+                                        <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
+                                        <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        <?php } ?>
+                            <?php } }?>
 
                     </div>
                 </section>
