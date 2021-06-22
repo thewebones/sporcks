@@ -85,7 +85,7 @@
     ?>
 
 
-          <section class="services-section" style="padding: 0px !important; background: #fff">
+          <section class="services-section" style="padding: 30px !important; background: #fff">
           <div class="grid">
                 <?php  
                 if (get_field("tarjeta", "option")){
