@@ -1767,7 +1767,7 @@ a .button .add_to_cart_button .product_type_simple {
         text-align: justify;
         margin-bottom: 5rem;
         color: #000000 !important;
-        font: 1.6rem/1.618 Prompt, sans-serif 
+        font: 1.6rem/1.618 Prompt, sans-serif; 
         margin-top: 5rem;     
     }
     .card{
