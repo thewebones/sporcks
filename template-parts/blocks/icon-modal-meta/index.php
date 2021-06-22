@@ -14,7 +14,7 @@ $countid=0;
         <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-2 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
           <div class="service-card" style="color:#000">
           <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-            <p class="service-card__title mt-4" style="margin-bottom: .5em; font-size: 16px; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></p>
+            <p class="service-card__title mt-4 text-center" style="margin-bottom: .5em; font-size: 16px; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></p>
             <p class="service-card__desc"><?php echo $item["tarjeta_subtitulo"] ?></p>
             <p><?php echo $item["descripcion"] ?></p>
 
