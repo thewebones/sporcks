@@ -33,8 +33,8 @@
                             <h4 class="athlete-details-section__age"><?php echo get_post_meta( get_the_ID(), 'edad', true );?> </h4></h4>
                             <p><?php echo get_post_meta( get_the_ID(), 'edad_titulo', true );?></p>
                         </div>
-                        <?php $id_país=get_post_meta( get_the_ID(), 'pais', true );?>
-                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_pais,'full')[0] ; ?> ">
+                        <?php $id_país=get_post_meta( get_the_ID(), 'país', true );?>
+                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_país,'full')[0] ; ?> ">
                     </div>
                 </div>
             </div>
@@ -49,183 +49,35 @@
                 <div class="athlete-details-section__highlights">
                     <?php echo get_post_meta( get_the_ID(), 'career_highlights', true );?> </h2>
                 </div>
-<!--                <h2 class="athlete-details-section__heading">laura's socks</h2>-->
-<!--            </div>-->
-<!--        </div><br>-->
-<!--        <div class="grid">-->
-<!--            <div class="col-start-1 col-width-3 tablet-col-start-1 tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">-->
-<!--                <div class="sox-card">-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/kick-ass-blue-sox.png"></a>-->
-<!--                        <p class="sox-card__desc">kick ass blue - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                    </div>-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/MG_6526.jpg"></a>-->
-<!--                        <p class="sox-card__desc">kick ass blue - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                        <div class="sox-card__shop-tools">-->
-<!--                            <div class="sox-card__sizes">-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-ABTJJE" name="radioGroup0" checked="checked">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-0-ABTJJE"><span>xs</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-1-EP987P" name="radioGroup0">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-1-EP987P"><span>s</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-2-LJ7HNQ" name="radioGroup0">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-2-LJ7HNQ"><span>m</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-3-6GR5J_" name="radioGroup0">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-3-6GR5J_"><span>l</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-4-3W0PW1" name="radioGroup0">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-4-3W0PW1"><span>xl</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <button class="sox-card__cart-btn" type="button">AÑADIR</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-start-4 col-width-3 tablet-col-start-7 tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">-->
-<!--                <div class="sox-card">-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/kick-ass-pink-sox.png"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                    </div>-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/MG_6526.jpg"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                        <div class="sox-card__shop-tools">-->
-<!--                            <div class="sox-card__sizes">-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-RP1IYB" name="radioGroup1" checked="checked">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-0-RP1IYB"><span>xs</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-1-WJ78_7" name="radioGroup1">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-1-WJ78_7"><span>s</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-2-DMA9LA" name="radioGroup1">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-2-DMA9LA"><span>m</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-3-17D66E" name="radioGroup1">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-3-17D66E"><span>l</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-4-BIGSWP" name="radioGroup1">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-4-BIGSWP"><span>xl</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <button class="sox-card__cart-btn" type="button">AÑADIR</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-start-7 col-width-3 tablet-col-start-1 tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">-->
-<!--                <div class="sox-card">-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/kick-ass-pink-sox.png"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                    </div>-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/MG_6526.jpg"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                        <div class="sox-card__shop-tools">-->
-<!--                            <div class="sox-card__sizes">-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-8OPSHJ" name="radioGroup2" checked="checked">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-0-8OPSHJ"><span>xs</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-1-QKVOWB" name="radioGroup2">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-1-QKVOWB"><span>s</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-2-NLVMJN" name="radioGroup2">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-2-NLVMJN"><span>m</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-3-ODU5TW" name="radioGroup2">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-3-ODU5TW"><span>l</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-4-GKPNLT" name="radioGroup2">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-4-GKPNLT"><span>xl</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <button class="sox-card__cart-btn" type="button">AÑADIR</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-start-10 col-width-3 tablet-col-start-7 tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">-->
-<!--                <div class="sox-card">-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/kick-ass-pink-sox.png"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                    </div>-->
-<!--                    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="ficha-producto.html"><img class="sox-card__image" src="img/MG_6526.jpg"></a>-->
-<!--                        <p class="sox-card__desc">kick ass pink - calcetin,triatlon laura philipp</p>-->
-<!--                        <h5 class="sox-card__price">17.95€</h5>-->
-<!--                        <div class="sox-card__shop-tools">-->
-<!--                            <div class="sox-card__sizes">-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-PA820H" name="radioGroup3" checked="checked">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-0-PA820H"><span>xs</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-1-3HKD41" name="radioGroup3">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-1-3HKD41"><span>s</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-2-3P2JJZ" name="radioGroup3">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-2-3P2JJZ"><span>m</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-3-OZOROO" name="radioGroup3">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-3-OZOROO"><span>l</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                                <div class="sox-card__size-item">-->
-<!--                                    <input class="sox-card__size-radio" type="radio" id="sizeRadio-4-TWLH8J" name="radioGroup3">-->
-<!--                                    <label class="sox-card__size-label" for="sizeRadio-4-TWLH8J"><span>xl</span><span class="sox-card__size-info">(35-37)</span></label>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <button class="sox-card__cart-btn" type="button">AÑADIR</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-                <?php the_content(); ?>
-                <?php
-                $arrayColStart=[1,4,7,10];
-                $arraytablet=[1,7,1,7];
-                ?>
 
 
-                <section class="services-section">
-                    <div class="grid">
-                        <?php
-                        if (get_field("benefices")){
-                            foreach (get_field("benefices") as $key=> $item) {?>
-                                <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
-                                    <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
-                                        <div class="service-card__delimiter"></div>
-                                        <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
-                                        <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
-                                    </div>
-                                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                            <?php } }?>
 
-                    </div>
-                </section>
+
+
+<?php the_content(); ?>
+<?php
+$arrayColStart=[1,4,7,10];
+$arraytablet=[1,7,1,7];
+?>
+
+
+<section class="services-section">
+    <div class="grid">
+        <?php if(get_field("benefices",'option')) { foreach (get_field("benefices",'option') as $key=> $item) {?>
+            <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+                <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
+                    <div class="service-card__delimiter"></div>
+                    <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
+                    <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                </div>
+            </div>
+
+        <?php }} ?>
+
+    </div>
+</section>
