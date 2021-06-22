@@ -93,7 +93,7 @@
                   <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-2 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
                     <div class="service-card" style="color:#000">
                     <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-                      <h5 class="service-card__title mt-4" style="margin-bottom: .5em; font-size: 1.6em; font-weight: 600;text-transform: uppercase; font-family: UniSansRegular !important; text-align: center"><?php echo $item["tarjeta_titulo"] ?></h5>
+                      <p class="service-card__title mt-4" style="margin-bottom: .5em; font-size: 16px; font-weight: 600;text-transform: uppercase; font-family: UniSansRegular !important; text-align: center"><?php echo $item["tarjeta_titulo"] ?></p>
                       <p class="service-card__desc"><?php echo $item["tarjeta_subtitulo"] ?></p>
                       <p><?php echo $item["descripcion"] ?></p>
 
@@ -114,7 +114,7 @@
                           </div>
                           <div class="modal-body">
                               <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-                              <h5 class="service-card__title text-center mb-3 mt-3" style="font-size: 1.6em; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></h5>
+                              <p class="service-card__title text-center mb-3 mt-3" style="font-size: 16px; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></p>
                               <p class="text-center" style="font-size: 1.4em; font-weight: 400; line-height: 1.4em; text-align: center; padding-right:50px; padding-left:50px"><?php echo $item["tarjeta_descripcion"] ?></p>
                           </div>
                           </div>
