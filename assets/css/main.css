@@ -792,6 +792,9 @@ a .button .add_to_cart_button .product_type_simple {
     .service-card__title {
         text-align: center !important;
     }
+    .service-card__desc {
+        text-align: center !important;
+    }
 }
 
 .service-card__desc {
@@ -1761,10 +1764,10 @@ a .button .add_to_cart_button .product_type_simple {
     .blog-post-content p {
         margin:auto;
         width: 90% !important;
-        text-align: justify !important;
+        text-align: justify;
         margin-bottom: 5rem;
         color: #000000 !important;
-        font: 1.6rem/1.618 Prompt, sans-serif !important;
+        font: 1.6rem/1.618 Prompt, sans-serif 
         margin-top: 5rem;     
     }
     .card{
