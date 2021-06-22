@@ -19,7 +19,7 @@ $countid=0;
             <p><?php echo $item["descripcion"] ?></p>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn-icon" data-toggle="modal" data-target="#modal<?php echo $countid ?>" style="border: 1px solid #191919; display: inline; padding: 6.5px 13px; background: transparent; color:#000; font-size: 13px">
+            <button type="button" class="btn-icon" data-toggle="modal" data-target="#modal<?php echo $countid ?>" style="border: 1px solid #191919; display: inline; padding: 3px 10px; background: transparent; color:#000; font-size: 13px">
             + INFO ‣
             </button>
 
