@@ -797,9 +797,11 @@ a .button .add_to_cart_button .product_type_simple {
 .service-card__desc {
     text-align: center !important;
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     max-width: 25rem !important;
     font-weight: 400;
+    margin-top: 0 !important;
+    width: 100% !important;
 }
 
 .newsletter-form {
@@ -1797,7 +1799,7 @@ a .button .add_to_cart_button .product_type_simple {
 .blog-post-content__text + * {
     margin-top: 2.5rem;
     color: #000000 !important;
-    font: 1.6rem/1.618 Prompt, sans-serif !important;
+    font: 1.6rem/1.618 Prompt, sans-serif;
     text-align: justify;
     margin-bottom: 0;
     font-weight: 300;
@@ -1808,7 +1810,7 @@ a .button .add_to_cart_button .product_type_simple {
     text-align: justify;
     margin-bottom: 5rem;
     color: #000000 !important;
-    font: 1.6rem/1.618 Prompt, sans-serif !important;
+    font: 1.6rem/1.618 Prompt, sans-serif;
     margin-top: 5rem;
 }
 
