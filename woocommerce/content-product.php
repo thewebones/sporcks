@@ -40,6 +40,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 
+var_dump($product);
 ?>
 
 <div class="sox-card">
