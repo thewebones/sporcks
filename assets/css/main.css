@@ -1777,7 +1777,7 @@ a .button .add_to_cart_button .product_type_simple {
     }
     .blog-post-content p {
         margin:auto;
-        width: 90% !important;
+        width: 500px !important;
         text-align: justify;
         margin-bottom: 5rem;
         color: #000000 !important;
@@ -1823,7 +1823,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .blog-post-content p {
     margin:auto;
-    width: 50%;
+    width: 500px !important;
     text-align: justify;
     margin-bottom: 5rem;
     color: #000000 !important;
@@ -8247,7 +8247,7 @@ a .button .add_to_cart_button .product_type_simple {
 
 .image-section__image {
     width: 100% !important;
-    max-height: 60rem !important;
+    max-height: 100% !important;
     -o-object-fit: cover !important;
     object-fit: cover !important;
     -o-object-position: center !important;
