@@ -97,7 +97,7 @@ $product = wc_get_product( get_the_ID() );
             </div>
             <div class="product-info__quantity">
               <h3 class="product-info__quantity-heading">Quantity</h3>
-              <input class="product-info__quantity-input" type="number" value="1" min="1">
+              <!-- <input class="product-info__quantity-input" type="number" value="1" min="1"> -->
             </div>
             <?php
                             echo apply_filters(
@@ -107,13 +107,16 @@ $product = wc_get_product( get_the_ID() );
                                     esc_url( $product->add_to_cart_url() ),
                                     esc_attr( $product->get_id() ),
                                     esc_attr( $product->get_sku() ),
-                                    
+                                
                                     $product->is_purchasable() ? 'add_to_cart_button' : '',
                                     esc_attr( $product->product_type ),
                                     esc_html( $product->add_to_cart_text() )
                                 ),
                                 $product
-                            );?>
+                            );
+
+                      
+                            ?>
             <!-- <button class="product-info__button button button--outline">add to cart</button> -->
           </form>
           <div class="product-info__content">

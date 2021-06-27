@@ -59,9 +59,9 @@
                         <div class="service-card__delimiter"></div>
                         <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
                         <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                        </div>
                     </div>
-                </div>
-
+                </div>  
             <?php }} ?>
 
         </div>
