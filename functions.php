@@ -223,3 +223,14 @@ function add_file_types_to_uploads($file_types){
 	}
 	add_action('upload_mimes', 'add_file_types_to_uploads');
 
+
+add_action('wp_ajax_nopriv_talla_producto', 'talla_producto');
+add_action('wp_ajax_talla_producto', 'talla_producto');
+
+function talla_producto(){
+	$data=$_POST['metaData'];
+	var_dump($data);
+
+	
+	wp_die();
+}

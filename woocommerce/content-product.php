@@ -16,6 +16,12 @@
  */
 ?>
 <?php
+
+/* $talla=$_POST['talla'];
+$productId=$_POST['productId'];
+var_dump($talla);
+var_dump($productId); */
+
 $argsCategoria = array(
     'taxonomy' => 'product_cat',
     'orderby' => 'name',
@@ -24,51 +30,51 @@ $argsCategoria = array(
   
   $cats = get_categories($argsCategoria);
   
-  $argsTalla=array(
-  'talla'=>'pa_talla'
-  );
-  
-  $tallas=get_terms($argsTalla);
+ 
 defined( 'ABSPATH' ) || exit;
 
 global $product;
-
+$tallas=$product->get_available_variations();
 $cat_id=$product->get_category_ids()[0];
 $name = get_term_by( 'id', $cat_id, 'product_cat' )->name;
 // Ensure visibility.
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+$idImagenCover=get_post_meta( $product->id, 'imagen_hover', true );
+$urlImagenHover=wp_get_attachment_image_src($idImagenCover,'full')[0];
 
-var_dump($product);
+  var_dump($product->get_available_variations()[0]['variation_id']);  
 ?>
 
 <div class="sox-card">
-
-	<div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
+    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
         <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
         <p class="sox-card__desc"><?php echo $name?></p>
-        <h5 class="sox-card__price"><?php echo $product->get_price() ?></h5>
+        <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
     </div>
-    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo get_field("imagen_hover") ?>"></a>
+    
+    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo $urlImagenHover ?>"></a>
         <p class="sox-card__desc"><?php echo $product->get_name()?></p>
         <p class="sox-card__desc"><?php echo $name?></p>
-        <h5 class="sox-card__price"><?php echo $product->get_price() ?></h5>
-        <div class="sox-card__shop-tools">
+        <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
+        <div action="" class="sox-card__shop-tools" method="POST">
             <div class="sox-card__sizes">
                 <?php foreach($tallas as $index=>$talla){ ?>
                    
-                    <div class="sox-card__size-item">
-                        <input class="sox-card__size-radio" type="radio" id="sizeRadio-<?php echo $product->id . $talla->name ?>" name="radioGroup0" checked="checked">
-                        <label class="sox-card__size-label" for="sizeRadio-<?php echo $product->id . $talla->name ?>"><span><?php echo $talla->name ?></span><span class="sox-card__size-info"><?php echo $talla->description ?></span></label>
+                    <div class="sox-card__size-item" >
+                        <input class="sox-card__size-radio" type="radio" name="talla" value="<?php echo $talla['attributes']['attribute_pa_talla'] ?>" id="sizeRadio-<?php echo $product->id . $talla['attributes']['attribute_pa_talla']  ?>"  >
+                        <label class="sox-card__size-label" for="sizeRadio-<?php echo $product->id . $talla['attributes']['attribute_pa_talla']  ?>"><span><?php echo $talla['attributes']['attribute_pa_talla'] ?></span><span class="sox-card__size-info"><?php echo $talla->description ?></span></label>
                     </div>
                 <?php  
-                $cont++;
-                                                }?>
+                }?>
             </div> 
-            <button class="sox-card__cart-btn" type="button"><a href="<?php the_permalink(); ?>">AÑADIR</a></button>
+            <!-- <input name="productId" type="hidden" value="<?php echo $product->id ?>"/> -->
+            <button class="sox-card__cart-btn" onClick="sendTalla(event)" type="submit">AÑADIR</button>
+      
       </div>
-     
+      <button class="f" ><a href="http://localhost/sporck/shop//?add-to-cart=203&attribute_pa_talla=qq">AÑADIR</a></button>
+               
     </div>
     
 </div>

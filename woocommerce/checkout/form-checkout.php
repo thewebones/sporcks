@@ -29,10 +29,12 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 
+
+<div style="height:200px"></div>
 <form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 <?php if ( $checkout->get_checkout_fields() ) : ?>
-
+		
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 		<div class="col-12 row" id="customer_details">
