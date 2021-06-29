@@ -239,13 +239,14 @@ function quantity_inputs_for_loop_ajax_add_to_cart( $html, $product ) {
         ) ) );
 
         // Embedding the quantity field to Ajax add to cart button
-        $html = sprintf( '%s<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">%s</a>',
+        $html = sprintf( '%s<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" data-variation="%s" class="%s">%s</a>',
             woocommerce_quantity_input( array(), $product, false ),
             esc_url( $product->add_to_cart_url() ),
             esc_attr( isset( $quantity ) ? $quantity : 1 ),
 			
             esc_attr( $product->get_id() ),
             esc_attr( $product->get_sku() ),
+            esc_attr( 'XS' ),
             esc_attr( isset( $class ) ? $class : 'button' ),
             esc_html( $product->add_to_cart_text() )
         );
@@ -258,6 +259,11 @@ function archives_quantity_fields_script(){
     ?>
     <script type='text/javascript'>
         jQuery(function($){
+            $('.size-check__control').click( function() {
+//                alert($(this).val())
+                $('a.ajax_add_to_cart').attr('data-product_id', $(this).id);
+                $(".added_to_cart").remove(); // Optional: Removing other previous "view cart" buttons
+            })
             // Update data-quantity
             $(document.body).on('click input', 'input.qty', function() {
                 $(this).parent().parent().find('a.ajax_add_to_cart').attr('data-quantity', $(this).val());
@@ -273,3 +279,15 @@ function archives_quantity_fields_script(){
     </script>
     <?php
 }
+
+//add_action( 'woocommerce_add_cart_item_data', 'save_in_cart_my_custom_product_field', 10, 2 );
+//function save_in_cart_my_custom_product_field( $cart_item_data, $product_id ) {
+//    if( isset( $_POST['variation_id'] ) ) {
+//        $cart_item_data[ 'variation_id' ] = $_POST['variation_id'];
+//
+//        // When add to cart action make an unique line item
+//        $cart_item_data['unique_key'] = md5( microtime().rand() );
+//        WC()->session->set( 'custom_data', $_POST['custom_pa_color'] );
+//    }
+//    return $cart_item_data;
+//}

@@ -71,6 +71,7 @@
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/swiper-bundle.min.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/js/main.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/js/add_ajax.js"></script>
        <?php wp_footer();?>
 </body>
 
