@@ -243,6 +243,7 @@ function quantity_inputs_for_loop_ajax_add_to_cart( $html, $product ) {
             woocommerce_quantity_input( array(), $product, false ),
             esc_url( $product->add_to_cart_url() ),
             esc_attr( isset( $quantity ) ? $quantity : 1 ),
+			
             esc_attr( $product->get_id() ),
             esc_attr( $product->get_sku() ),
             esc_attr( isset( $class ) ? $class : 'button' ),
