@@ -4,13 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/template-parts/blocks/new-colection/index.php" line="27" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="pa robe">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/simple.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/woocommerce/single-product/product-image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/woocommerce/single-product/product-thumbnails.php" />
+    <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/add_ajax.js" afterPath="$PROJECT_DIR$/assets/js/add_ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php" afterPath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,16 +20,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="post-template.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/post-template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="261" column="38" lean-forward="true" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+            <state relative-caret-position="5100">
+              <caret line="261" column="38" lean-forward="false" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -76,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4960">
-              <caret line="248" column="0" lean-forward="true" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+              <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
               <folding>
                 <marker date="1623780796451" expanded="true" signature="17252:17272" ph="..." />
               </folding>
@@ -84,11 +72,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="variable.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="add_ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/add_ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="340">
+              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -273,7 +271,29 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loop" />
+              <option name="myItemId" value="single-product" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sporcks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="woocommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="single-product" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add-to-cart" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,7 +368,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -476,7 +496,9 @@
       <workItem from="1624806902672" duration="69000" />
       <workItem from="1624889075634" duration="4552000" />
       <workItem from="1624909924986" duration="718000" />
-      <workItem from="1624977894244" duration="76000" />
+      <workItem from="1624977894244" duration="692000" />
+      <workItem from="1625071019175" duration="82000" />
+      <workItem from="1625074678356" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -583,17 +605,25 @@
       <option name="project" value="LOCAL" />
       <updated>1624910475093</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="woo">
+      <created>1624977984420</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1624977984420</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178279000" />
+    <option name="totallyTimeSpent" value="179026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1030" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -630,7 +660,8 @@
     <MESSAGE value="fix the content" />
     <MESSAGE value="fix  blog" />
     <MESSAGE value="pa robe" />
-    <option name="LAST_COMMIT_MESSAGE" value="pa robe" />
+    <MESSAGE value="woo" />
+    <option name="LAST_COMMIT_MESSAGE" value="woo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,13 +670,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174500">
@@ -928,7 +952,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4960">
-          <caret line="248" column="0" lean-forward="true" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
           <folding>
             <marker date="1623780796451" expanded="true" signature="17252:17272" ph="..." />
           </folding>
@@ -937,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/add_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="340">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -953,8 +977,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="261" column="38" lean-forward="true" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+        <state relative-caret-position="5100">
+          <caret line="261" column="38" lean-forward="false" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
