@@ -50,9 +50,12 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5100">
-              <caret line="261" column="38" lean-forward="false" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="975">
+              <caret line="436" column="1" lean-forward="true" selection-start-line="292" selection-start-column="0" selection-end-line="436" selection-end-column="1" />
+              <folding>
+                <marker date="1625074514382" expanded="true" signature="11015:11131" ph="..." />
+                <marker date="1625074514382" expanded="true" signature="11551:11999" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,9 +75,11 @@
       <file leaf-file-name="variable.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="-279">
+              <caret line="35" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#647#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +87,8 @@
       <file leaf-file-name="add_ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/add_ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="100">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -506,7 +511,7 @@
       <workItem from="1624909924986" duration="718000" />
       <workItem from="1624977894244" duration="692000" />
       <workItem from="1625071019175" duration="82000" />
-      <workItem from="1625074678356" duration="2271000" />
+      <workItem from="1625074678356" duration="2662000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -655,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1625077266607</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="select">
+      <created>1625077894737</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1625077894737</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181248000" />
+    <option name="totallyTimeSpent" value="181639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="119" width="1920" height="1003" extended-state="6" />
@@ -1004,14 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/add_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/product-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2140">
@@ -1022,17 +1026,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5100">
-          <caret line="261" column="38" lean-forward="false" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+        <state relative-caret-position="975">
+          <caret line="436" column="1" lean-forward="true" selection-start-line="292" selection-start-column="0" selection-end-line="436" selection-end-column="1" />
+          <folding>
+            <marker date="1625074514382" expanded="true" signature="11015:11131" ph="..." />
+            <marker date="1625074514382" expanded="true" signature="11551:11999" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/add_ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-279">
+          <caret line="35" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#647#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
