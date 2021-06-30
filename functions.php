@@ -243,6 +243,7 @@ function quantity_inputs_for_loop_ajax_add_to_cart( $html, $product ) {
             woocommerce_quantity_input( array(), $product, false ),
             esc_url( $product->add_to_cart_url() ),
             esc_attr( isset( $quantity ) ? $quantity : 1 ),
+			
             esc_attr( $product->get_id() ),
             esc_attr( $product->get_sku() ),
             esc_attr( 'XS' ),
@@ -290,6 +291,15 @@ function archives_quantity_fields_script(){
 //    }
 //    return $cart_item_data;
 //}
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 40 );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 8 );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 function variation_radio_buttons($html, $args) {
     $args = wp_parse_args(apply_filters('woocommerce_dropdown_variation_attribute_options_args', $args), array(
         'options'          => false,

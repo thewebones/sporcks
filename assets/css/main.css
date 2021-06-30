@@ -9184,3 +9184,46 @@ a .button .add_to_cart_button .product_type_simple {
     border-radius: 0;
     border: 1px solid #000000;
 }
+.woocommerce-page div.product div.summary {
+    width: 100% !important;
+    
+}
+.woocommerce .woocommerce-breadcrumb {
+    width: 100%;
+    padding: 3rem !important;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    font-size: 20px !important;    
+}
+
+.woocommerce div.product form.cart div.quantity {
+   float: unset !important;
+   margin-top: 10px !important;
+   margin-bottom: 10px !important;
+}
+
+.woocommerce div.product .product_title {
+    text-align: center !important;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    text-align: center !important;
+    color: #000 !important;
+}
+.single_add_to_cart_button {
+    padding: 1.2rem 1rem 1.3rem !important;
+    border: 2px solid #000000 !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+    transition: all 0.2s ease-in-out !important;
+    background-color: transparent !important;
+}
+
+.single_add_to_cart_button:hover {
+    background: #000000 !important;
+    color: #ffd204 !important;
+}
