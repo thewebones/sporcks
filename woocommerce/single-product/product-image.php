@@ -36,6 +36,7 @@ $wrapper_classes   = apply_filters(
 	)
 );
 ?>
+
 <div class="grid product-details-section__content">
     <div class="col-start-1 col-width-8 tablet-col-start-1 tablet-col-width-7 mobile-land-col-start-1 mobile-land-col-width-12">
         <div class="product-slider">
@@ -46,7 +47,7 @@ $wrapper_classes   = apply_filters(
                             <img class="product-slider__img mt-3" src="<?php echo wp_get_attachment_image_src($post_thumbnail_id,'full')[0];?>">
                         </div>
                         <?php
-                        $count = 1;
+                        $count = 0;
                         $total=count($product->get_gallery_image_ids(), COUNT_RECURSIVE);
 
                         if($product->get_gallery_image_ids()){
@@ -64,6 +65,12 @@ $wrapper_classes   = apply_filters(
                 <!-- Imagen de la Galeria -->
                 <div class="swiper-container product-slider__container swiper-container-initialized swiper-container-horizontal">
                     <div class="swiper-wrapper" id="swiper-wrapper-eebe994fee266b3b" aria-live="polite" style="transform: translate3d(-1575px, 0px, 0px); transition: all 0ms ease 0s;">
+                    <div class="swiper-slide" role="group" aria-label="1 / 5" style="width: 525px;">
+                        <span style="display: inline-block; position: relative; overflow: hidden;">
+                            <img class="product-slider__img" src="<?php echo wp_get_attachment_image_src($post_thumbnail_id,'full')[0];?>" style="display: block;">
+                            <img role="presentation" alt="" src="<?php echo wp_get_attachment_image_src($post_thumbnail_id,'full')[0];?>" class="zoomImg" style="position: absolute; top: -432px; left: -926.714px; opacity: 0; width: 1500px; height: 1500px; border: none; max-width: none; max-height: none;">
+                            </span>
+                                </div>
                         <?php
                         $count = 1;
                         $total=count($product->get_gallery_image_ids(), COUNT_RECURSIVE);
@@ -93,7 +100,8 @@ $wrapper_classes   = apply_filters(
             </div>
         </div>
     </div>
-</div>
+
+
 <!--<div class="--><?php //echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?><!--" data-columns="--><?php //echo esc_attr( $columns ); ?><!--" style="opacity: 0; transition: opacity .25s ease-in-out;">-->
 <!---->
 <!--    <figure class="woocommerce-product-gallery__wrapper">-->
