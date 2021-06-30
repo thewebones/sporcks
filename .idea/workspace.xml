@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/add_ajax.js" afterPath="$PROJECT_DIR$/assets/js/add_ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php" afterPath="$PROJECT_DIR$/woocommerce/single-product/add-to-cart/variable.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -498,7 +495,7 @@
       <workItem from="1624909924986" duration="718000" />
       <workItem from="1624977894244" duration="692000" />
       <workItem from="1625071019175" duration="82000" />
-      <workItem from="1625074678356" duration="49000" />
+      <workItem from="1625074678356" duration="396000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -612,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1624977984420</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="select">
+      <created>1625074736202</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1625074736202</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179026000" />
+    <option name="totallyTimeSpent" value="179373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1030" extended-state="6" />
@@ -661,7 +665,8 @@
     <MESSAGE value="fix  blog" />
     <MESSAGE value="pa robe" />
     <MESSAGE value="woo" />
-    <option name="LAST_COMMIT_MESSAGE" value="woo" />
+    <MESSAGE value="select" />
+    <option name="LAST_COMMIT_MESSAGE" value="select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
