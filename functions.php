@@ -321,7 +321,7 @@ function variation_radio_buttons($html, $args) {
         $options    = $attributes[$attribute];
     }
 
-    $radios = '<div class="product-info__sizes">
+    $radios = '<div class="product-info__sizes aa">
               <h3 class="product-info__size-heading">Size</h3>
               <div class="product-info__sizes-wrap">';
 
@@ -358,6 +358,7 @@ function variation_radio_buttons($html, $args) {
 add_filter('woocommerce_dropdown_variation_attribute_options_html', 'variation_radio_buttons', 20, 2);
 
 function variation_check($active, $variation) {
+
     if(!$variation->is_in_stock() && !$variation->backorders_allowed()) {
         return false;
     }
