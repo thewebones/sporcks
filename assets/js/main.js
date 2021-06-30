@@ -20,7 +20,10 @@
     }
     )
   }
+
+ 
   const sendTalla=(event)=>{
+    e.preventDefault();
     const arrayRadioButton=event.currentTarget.parentElement.children[0].children;
     console.log(arrayRadioButton);
     for(let i=0;i<arrayRadioButton.length;i++){
