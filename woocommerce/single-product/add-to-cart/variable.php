@@ -52,6 +52,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				<?php endforeach; ?>
 			</tbody>
 		</table>
+		
 
 		<div class="single_variation_wrap">
 			<?php
@@ -59,7 +60,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				 * Hook: woocommerce_before_single_variation.
 				 */
 				do_action( 'woocommerce_before_single_variation' );
-
+				?><h3 class="qua">Quantity</h3><?php
 				/**
 				 * Hook: woocommerce_single_variation. Used to output the cart button and placeholder for variation data.
 				 *
@@ -72,8 +73,10 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				/**
 				 * Hook: woocommerce_after_single_variation.
 				 */
+				
 				do_action( 'woocommerce_after_single_variation' );
 			?>
+			
 		</div>
 	<?php endif; ?>
 

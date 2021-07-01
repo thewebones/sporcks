@@ -9227,3 +9227,7 @@ a .button .add_to_cart_button .product_type_simple {
     background: #000000 !important;
     color: #ffd204 !important;
 }
+.qua {
+    text-align: center;
+    margin-bottom: -33px;
+}
