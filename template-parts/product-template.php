@@ -97,7 +97,7 @@ $product = wc_get_product( get_the_ID() );
             </div>
             <div class="product-info__quantity">
               <h3 class="product-info__quantity-heading">Quantity</h3>
-              <!-- <input class="product-info__quantity-input" type="number" value="1" min="1"> -->
+              <input class="product-info__quantity-input" type="number" value="1" min="1">
             </div>
             <?php
                             echo apply_filters(

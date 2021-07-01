@@ -1,20 +1,53 @@
 
-
-   var card=document.getElementsByClassName("cardPrueba")[0];
   function mostrar(event){
     if(!event.currentTarget.classList.contains("is-flipped"))
     event.currentTarget.classList.add("is-flipped");
   /* card.classList.add('is-flipped'); */
   }
-    
-
-
   const ocultar=(event)=>{
     event.currentTarget.classList.remove("is-flipped");
   } 
+   
+  const product_variable=(event)=>{
+     const allbuttons=document.getElementsByClassName("btn-variable");
+     for(let i=0;i<allbuttons.length;i++){
+     allbuttons[i].disabled=true;
+     allbuttons[i].classList.remove("btn-variable-hover");
+     allbuttons[i].children[0].removeAttribute("href"); 
+    }
+     const button=event.currentTarget.parentElement.parentElement.children[2];
+     button.disabled=false;
+     button.classList.add("btn-variable-hover");
+     const urlidProducto=event.currentTarget.parentElement.parentElement.children[1].value; 
+     const idTalla=event.currentTarget.children[2].value;
+     const nameTalla=event.currentTarget.children[0].value;
+     button.children[0].setAttribute("href",urlidProducto+"&variation_id="+idTalla+"&attribute_pa_talla="+nameTalla);
+   
+  }
 
-  
+  const postWordpress=(metaData)=>{
+    $.post("http:\/\/localhost\/sporck\/wp-admin\/admin-ajax.php",
+    data={
+      action:"talla_producto",
+      metaData:metaData
+    },
+    (data,status)=>{
+    console.log(data);
+    console.log(status);
+    }
+    )
+  }
 
+ 
+  const sendTalla=(event)=>{
+    e.preventDefault();
+    const arrayRadioButton=event.currentTarget.parentElement.children[0].children;
+    console.log(arrayRadioButton);
+    for(let i=0;i<arrayRadioButton.length;i++){
+      if(arrayRadioButton[i].children[0].checked)
+      console.log(arrayRadioButton[i].children[0].value);
+    }
+}
 
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

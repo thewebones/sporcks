@@ -223,6 +223,17 @@ function add_file_types_to_uploads($file_types){
 	}
 	add_action('upload_mimes', 'add_file_types_to_uploads');
 
+
+add_action('wp_ajax_nopriv_talla_producto', 'talla_producto');
+add_action('wp_ajax_talla_producto', 'talla_producto');
+
+function talla_producto(){
+	$data=$_POST['metaData'];
+	var_dump($data);
+
+	
+	wp_die();
+}
 /**
  * Adjust the quantity input values
  */
@@ -280,7 +291,7 @@ function variation_radio_buttons($html, $args) {
         $options    = $attributes[$attribute];
     }
 
-    $radios = '<div class="product-info__sizes">
+    $radios = '<div class="product-info__sizes aa">
               <h3 class="product-info__size-heading">Size</h3>
               <div class="product-info__sizes-wrap">';
 
@@ -317,6 +328,7 @@ function variation_radio_buttons($html, $args) {
 add_filter('woocommerce_dropdown_variation_attribute_options_html', 'variation_radio_buttons', 20, 2);
 
 function variation_check($active, $variation) {
+
     if(!$variation->is_in_stock() && !$variation->backorders_allowed()) {
         return false;
     }
