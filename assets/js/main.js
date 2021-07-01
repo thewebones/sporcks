@@ -8,6 +8,23 @@
     event.currentTarget.classList.remove("is-flipped");
   } 
    
+  const product_variable=(event)=>{
+     const allbuttons=document.getElementsByClassName("btn-variable");
+     for(let i=0;i<allbuttons.length;i++){
+     allbuttons[i].disabled=true;
+     allbuttons[i].classList.remove("btn-variable-hover");
+     allbuttons[i].children[0].removeAttribute("href"); 
+    }
+     const button=event.currentTarget.parentElement.parentElement.children[2];
+     button.disabled=false;
+     button.classList.add("btn-variable-hover");
+     const urlidProducto=event.currentTarget.parentElement.parentElement.children[1].value; 
+     const idTalla=event.currentTarget.children[2].value;
+     const nameTalla=event.currentTarget.children[0].value;
+     button.children[0].setAttribute("href",urlidProducto+"&variation_id="+idTalla+"&attribute_pa_talla="+nameTalla);
+   
+  }
+
   const postWordpress=(metaData)=>{
     $.post("http:\/\/localhost\/sporck\/wp-admin\/admin-ajax.php",
     data={
