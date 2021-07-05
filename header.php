@@ -155,7 +155,7 @@
                                 <a class="dropdown-item lang-selector__item" href="#">ES</a>
                                 <a class="dropdown-item lang-selector__item" href="#">EN</a></div>
                             </div>
-                            <button onClick="mostrarMenu()" class="navbar__tool-btn" id="cartToggler" type="button">
+                            <button  class="navbar__tool-btn" id="cartToggler" type="button">
                             <img class="cart-toggler" src="<?php echo get_field("boton_menu_lateral_icono","option")?>"/></button>
                         </div>
                     </nav>
