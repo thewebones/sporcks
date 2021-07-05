@@ -18,7 +18,7 @@ $the_query = new WP_Query( $args );
     <div class="athlete-card">
         <a class="athlete-card__img-wrap" href="<?php the_permalink(); ?> ">
             <?php $id_perfil=get_post_meta( get_the_ID(), 'perfil', true ); ?>
-            <img class="athlete-card__img" src="<?php echo   wp_get_attachment_image_src($id_perfil,'full')[0] ; ?>">
+            <img class="athlete-card__img" src="<?php echo  wp_get_attachment_image_src($id_perfil,'full')[0] ; ?>">
             <?php $id_imagen_hover=get_post_meta( get_the_ID(), 'imagen_hover', true ); ?>
             <img class="athlete-card__img athlete-card__img--hidden" src="<?php echo   wp_get_attachment_image_src($id_imagen_hover,'full')[0] ; ?>">
         </a>

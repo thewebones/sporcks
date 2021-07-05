@@ -15,21 +15,7 @@
  * @package     WooCommerce\Templates
  * @version     3.6.0
  */
-$argsTalla=array(
-    'talla'=>'pa_talla'
-    );
-    
-$tallas=get_terms($argsTalla);
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-$argsCategoria = array(
-    'taxonomy' => 'product_cat',
-    'orderby' => 'name',
-    'order'   => 'ASC'
-  );
-  
-  $cats = get_categories($argsCategoria);
+
 ?>
 
 <div class="running__wrapper">
@@ -52,6 +38,6 @@ $argsCategoria = array(
               </div>
             </form>
           </div>
-        </div>    
+</div>    
 
         

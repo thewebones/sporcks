@@ -88,7 +88,7 @@ $product = wc_get_product( get_the_ID() );
                 $lista_talla=get_terms( wc_attribute_taxonomy_name(array_values($attribute_taxonomies)[0]->attribute_name));
                 foreach ($lista_talla as $l){ ?>
                     <div class="size-check">
-                        <input class="size-check__control" type="radio" name="sizeGroup1" id="radio-size-<?php echo ($l->name);?>" checked="">
+                        <input class="size-check__control" type="radio" name="data-variation" id="radio-size-<?php echo 279;?>" checked="" value="<?php echo ($l->name);?>">
                         <label class="size-check__label" for="radio-size-<?php echo ($l->name);?>"><?php echo ($l->name); ?></label>
                         <span class="size-check__info"><?php echo ($l->description); ?></span>                 
                     </div>
@@ -107,13 +107,16 @@ $product = wc_get_product( get_the_ID() );
                                     esc_url( $product->add_to_cart_url() ),
                                     esc_attr( $product->get_id() ),
                                     esc_attr( $product->get_sku() ),
-                                    
+
                                     $product->is_purchasable() ? 'add_to_cart_button' : '',
                                     esc_attr( $product->product_type ),
                                     esc_html( $product->add_to_cart_text() )
                                 ),
                                 $product
-                            );?>
+                            );
+
+
+                            ?>
             <!-- <button class="product-info__button button button--outline">add to cart</button> -->
           </form>
           <div class="product-info__content">

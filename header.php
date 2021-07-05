@@ -38,8 +38,9 @@
         <div class="cart__header">
           <div class="cart__row">
             <div class="cart__title-wrap">
-              <div class="cart__title"><img src="img/db-cart.svg">Cart Shopping cart (1)</div>
-              <button class="cart__close cart-toggler" type="button"><img src="img/close-icon.svg"></button>
+              <div class="cart__title">
+              <img src="img/db-cart.svg">Cart Shopping cart (1)</div>
+              <button class="cart__close cart-toggler" type="button">X</button>
             </div>
           </div>
           <div class="cart__row">

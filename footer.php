@@ -37,7 +37,7 @@
 			<?php if($menus["repeater_items_menu_"]) {?>
 				<?php foreach ($menus["repeater_items_menu_"] as $itemsMenu) {?>
 				<?php if($itemsMenu["link_texto_item_menu"]) {?>
-					<dd class="footer__list-item"><a href="<?php echo $itemsMenu["link_texto_item_menu"] ?>"><?php echo $itemsMenu['texto_informacion_item_menu'] ?></a></a></dd>
+					<dd class="footer__list-item"><a href="<?php echo $itemsMenu["link_texto_item_menu"]["url"] ?>"><?php echo $itemsMenu['texto_informacion_item_menu'] ?></a></a></dd>
 				<?php } else{?>
 					<dd class="footer__list-item"><span><?php echo $itemsMenu['texto_informacion_item_menu'] ?></span></dd>
 			<?php } ?>
@@ -71,6 +71,7 @@
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/swiper-bundle.min.js"></script>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/vendors/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/js/main.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/assets/js/add_ajax.js"></script>
        <?php wp_footer();?>
 </body>
 
