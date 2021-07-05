@@ -24,7 +24,7 @@
     });
 
   $('#cartToggler').click(function () {
-      alert('hcvhvn')
+
       $('.cart').addClass("visible");
   })
 
