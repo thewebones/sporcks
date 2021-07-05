@@ -6,7 +6,9 @@
  * Time: 12:51 PM
  */
 ?>
-<section class="sox-collection-section">
+<br>
+<br>
+<section class="sox-collection-section" style="margin-right:14%; margin-left:14%;">
     <h2 class="sox-collection-section__title sox-collection-section__title--bigger"><?php echo get_field("titulo")?></h2>
 	 <div class="collection-card">
     <?php
