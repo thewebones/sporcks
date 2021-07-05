@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e11cd94-f412-4c0b-9822-a2b2ae558c4e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/add_ajax.js" afterPath="$PROJECT_DIR$/assets/js/add_ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/blocks/new-colection/index.php" afterPath="$PROJECT_DIR$/template-parts/blocks/new-colection/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +30,7 @@
       <file leaf-file-name="product-template.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template-parts/product-template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
+            <state relative-caret-position="1840">
               <caret line="107" column="62" lean-forward="false" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="62" />
               <folding />
             </state>
@@ -541,7 +538,7 @@
       <workItem from="1625074678356" duration="4117000" />
       <workItem from="1625196813167" duration="30000" />
       <workItem from="1625282437087" duration="34000" />
-      <workItem from="1625497697456" duration="1808000" />
+      <workItem from="1625497697456" duration="1862000" />
     </task>
     <task id="LOCAL-00001" summary="Proudly-addtive">
       <created>1623172052077</created>
@@ -711,11 +708,18 @@
       <option name="project" value="LOCAL" />
       <updated>1625081247674</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="new colection">
+      <created>1625500380170</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1625500380170</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184966000" />
+    <option name="totallyTimeSpent" value="185020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1030" extended-state="6" />
@@ -761,7 +765,8 @@
     <MESSAGE value="pa robe" />
     <MESSAGE value="woo" />
     <MESSAGE value="select" />
-    <option name="LAST_COMMIT_MESSAGE" value="select" />
+    <MESSAGE value="new colection" />
+    <option name="LAST_COMMIT_MESSAGE" value="new colection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1094,7 +1099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/product-template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
+        <state relative-caret-position="1840">
           <caret line="107" column="62" lean-forward="false" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="62" />
           <folding />
         </state>
