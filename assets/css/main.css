@@ -21,122 +21,125 @@ RESPONSIVE BREAKPOINTS
 /**
   mixin to autogenerate GRID layout
  */
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 100;*/
+    /*src: local("Prompt Thin"), url(webfonts/Prompt-Thin.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 200;*/
+    /*src: local("Prompt ExtraLight"), url(webfonts/Prompt-ExtraLight.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 300;*/
+    /*src: local("Prompt Light"), url(webfonts/Prompt-Light.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local("Prompt Regular"), url(webfonts/Prompt-Regular.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*src: local("Prompt Bold"), url(webfonts/Prompt-Bold.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 500;*/
+    /*src: local("Prompt Medium"), url(webfonts/Prompt-Medium.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 600;*/
+    /*src: local("Prompt SemiBold"), url(webfonts/Prompt-SemiBold.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 800;*/
+    /*src: local("Prompt ExtraBold"), url(webfonts/Prompt-ExtraBold.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: normal;*/
+    /*font-weight: 900;*/
+    /*src: local("Prompt Black"), url(webfonts/Prompt-Black.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 100;*/
+    /*src: local("Prompt ThinItalic"), url(webfonts/Prompt-ThinItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 200;*/
+    /*src: local("Prompt ExtraLightItalic"), url(webfonts/Prompt-ExtraLightItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 300;*/
+    /*src: local("Prompt LightItalic"), url(webfonts/Prompt-LightItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 400;*/
+    /*src: local("Prompt Italic"), url(webfonts/Prompt-Italic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 700;*/
+    /*src: local("Prompt BoldItalic"), url(webfonts/Prompt-BoldItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 500;*/
+    /*src: local("Prompt MediumItalic"), url(webfonts/Prompt-MediumItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 600;*/
+    /*src: local("Prompt SemiBoldItalic"), url(webfonts/Prompt-SemiBoldItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 800;*/
+    /*src: local("Prompt ExtraBoldItalic"), url(webfonts/Prompt-ExtraBoldItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Prompt";*/
+    /*font-style: italic;*/
+    /*font-weight: 900;*/
+    /*src: local("Prompt BlackItalic"), url(webfonts/Prompt-BlackItalic.ttf) format("truetype");*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "UniSansRegular";*/
+    /*font-style: normal;*/
+    /*font-weight: 900;*/
+    /*src: local("Uni Sans Regular"), url(webfonts/Uni-Sans-Regular.ttf) format("truetype");*/
+/*}*/
 @font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 100;
-    src: local("Prompt Thin"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Thin.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 200;
-    src: local("Prompt ExtraLight"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraLight.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Prompt Light"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Light.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Prompt Regular"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Regular.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Prompt Bold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Bold.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 500;
-    src: local("Prompt Medium"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Medium.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 600;
-    src: local("Prompt SemiBold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-SemiBold.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Prompt ExtraBold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraBold.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: normal;
-    font-weight: 900;
-    src: local("Prompt Black"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Black.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 100;
-    src: local("Prompt ThinItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ThinItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 200;
-    src: local("Prompt ExtraLightItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraLightItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 300;
-    src: local("Prompt LightItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-LightItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 400;
-    src: local("Prompt Italic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Italic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 700;
-    src: local("Prompt BoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-BoldItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 500;
-    src: local("Prompt MediumItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-MediumItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 600;
-    src: local("Prompt SemiBoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-SemiBoldItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 800;
-    src: local("Prompt ExtraBoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraBoldItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Prompt";
-    font-style: italic;
-    font-weight: 900;
-    src: local("Prompt BlackItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-BlackItalic.ttf) format("truetype");
-}
-@font-face {
-    font-family: "UniSansRegular";
-    font-style: normal;
-    font-weight: 900;
-    src: local("Uni Sans Regular"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Uni-Sans-Regular.ttf) format("truetype");
-}
+font-family: "prueba";
 
-
+src: url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,900;1,900&display=swap');
+}
 
 
 
@@ -170,42 +173,6 @@ html, body {
     background:black;
 }
 
-.navbar{
-    display:none;
-}
-.product_type_simple
-
-.paginado{
-    display:flex;
-    justify-content:center;
-    margin:20px 0;
-}
-.linkPaginas{
-    display:flex;
-    height: 20px;
-    width: 20px;
-    border-radius: 5px;
-    background: #b8b6b6;
-    justify-content:center;
-    margin-left: 5px;
-    color:gray;
-    align-items:center;
-    border: none;
-}
-.ocultar{
-   display:none;
-}
-.linkCurrent{
-    background: gray;
-    color:white;
-    cursor:default;
-}
-
-.linkPaginas:hover{
-    background: gray;
-    color:white;
-    text-decoration:none;
-}
 /* cambios a sox-cart linea 514 */
 .collection-card {
     display:flex;
@@ -214,26 +181,6 @@ html, body {
     clear:both;
 }
 
-.bapf_body select{
-    padding: 1rem 8rem 1rem 1rem;
-    border-radius: 0;
-    border: 1px solid #000000;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 300;
-    font-size: 1.2rem !important;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width:fit-content;
-    background: url(http://localhost/sporck/wp-content/themes/sporcks/img/chevron-down-icon.png) no-repeat 95%;
-    background-size: 3.5rem 3rem;
-}
-.bapf_head h3{
-text-transform: uppercase;
-font-size: 1.2rem;
-font-weight: bold;
-margin-bottom: 1.5rem;
-}
 
 .all-cards{
     background-color:black;
@@ -275,6 +222,7 @@ margin-bottom: 1.5rem;
 .scene{
     width: 100%;
     height: 205px;
+    border: 1px solid #CCC;
     margin: 40px 0 0 0;
     perspective: 600px;
 }
@@ -490,6 +438,7 @@ margin-bottom: 1.5rem;
 }
 .button--outline {
     padding: 1.2rem 1rem 1.3rem !important;
+    border: 2px solid #000000 !important;
     font-weight: 600 !important;
     color: #000000 !important;
     transition: all 0.2s ease-in-out !important;
@@ -497,7 +446,7 @@ margin-bottom: 1.5rem;
 
 .button--outline:hover {
     background: #000000 !important;
-    color: white !important;
+    color: #ffd204 !important;
 }
 
 .lang-selector {
@@ -612,13 +561,10 @@ margin-bottom: 1.5rem;
 }
 
 .wp-block-embed iframe {
-    margin-bottom: -25px !important;
+    margin-bottom: -15px;
     width: 100%;
     height: 650px;
 }
-
-
-
 a .button .add_to_cart_button .product_type_simple {
     background-color: #0259AF !important;
 }
@@ -797,39 +743,16 @@ a .button .add_to_cart_button .product_type_simple {
     font-weight: 600;
     transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 }
-.btn-variable{
-    background-color: #ffd204;
-    padding: 8px;
-    height: auto;
-    width: 100%;
-    max-height: 4rem;
-    text-transform: uppercase;
-    border: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
-}
-.btn-variable a{
-    color: black;
-    text-decoration:none;
-}
-.btn-variable-hover:hover{
-    background-color: #000000;
-}
-.btn-variable-hover:hover a{
-    color:white !important;
-}
 .sox-card__cart-btn:hover {
     background-color: #000000;
-}
-
-.sox-card__cart-btn:hover a{
-    color:white !important;
 }
 .sox-card__cart-btn a{
     color: black;
     text-decoration:none;
 }
-
+.sox-card__cart-btn:hover a{
+    color: #fff;
+}
 .service-card {
     display: flex;
     flex-direction: column;
@@ -1191,7 +1114,7 @@ a .button .add_to_cart_button .product_type_simple {
 .product-info__button {
     margin-top: 2rem !important;
     width: 100% !important;
-    background: #ffd204 !important;
+    background: transparent !important;
     font-size: 16px !important;
 }
 .product-info__content-heading, .product-info__content-paragraph {
@@ -1840,7 +1763,7 @@ a .button .add_to_cart_button .product_type_simple {
     }
     .blog-post-content p {
         margin:auto;
-        width: 500px !important;
+        width: 90% !important;
         text-align: justify;
         margin-bottom: 5rem;
         color: #000000 !important;
@@ -1886,7 +1809,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .blog-post-content p {
     margin:auto;
-    width: 500px !important;
+    width: 50%;
     text-align: justify;
     margin-bottom: 5rem;
     color: #000000 !important;
@@ -2126,6 +2049,7 @@ a .button .add_to_cart_button .product_type_simple {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    
 }
 .select__control:focus {
     outline: none;
@@ -8310,7 +8234,7 @@ a .button .add_to_cart_button .product_type_simple {
 
 .image-section__image {
     width: 100% !important;
-    max-height: 100% !important;
+    max-height: 60rem !important;
     -o-object-fit: cover !important;
     object-fit: cover !important;
     -o-object-position: center !important;
@@ -9217,79 +9141,8 @@ a .button .add_to_cart_button .product_type_simple {
 }
 
 
+
+
 .reflexionmeta p {
     color: white;
-}
-
-.entry-footer{
-    display:none;
-}
-
-.form-row {
-    flex-direction: column !important;
-    
-}
-.form-row input {
-    padding: 0.8rem 1rem;
-    border-radius: 5px;
-    line-height: 1;
-    border: 1px solid #000000;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    min-height: 4rem;
-}
-.quantity {
-    text-align: center;
-}
-.woocommerce .quantity .qty {
-    padding: 0.5rem 1rem;
-    font-size: 1.4rem;
-    width: 75px !important;
-    text-align: center;
-    border-radius: 0;
-    border: 1px solid #000000;
-}
-.woocommerce-page div.product div.summary {
-    width: 100% !important;
-    
-}
-.woocommerce .woocommerce-breadcrumb {
-    width: 100%;
-    padding: 3rem !important;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    margin-bottom: 2rem;
-    background-color: #fff;
-    font-size: 20px !important;    
-}
-
-.woocommerce div.product form.cart div.quantity {
-   float: unset !important;
-   margin-top: 10px !important;
-   margin-bottom: 10px !important;
-}
-
-.woocommerce div.product .product_title {
-    text-align: center !important;
-}
-.woocommerce div.product p.price, .woocommerce div.product span.price {
-    text-align: center !important;
-    color: #000 !important;
-}
-.single_add_to_cart_button {
-    padding: 1.2rem 1rem 1.3rem !important;
-    border: 2px solid #000000 !important;
-    font-weight: 600 !important;
-    color: #000000 !important;
-    transition: all 0.2s ease-in-out !important;
-    background-color: transparent !important;
-}
-
-.single_add_to_cart_button:hover {
-    background: #000000 !important;
-    color: #ffd204 !important;
 }

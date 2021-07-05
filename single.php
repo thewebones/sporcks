@@ -31,7 +31,7 @@ get_header();
             // If comments are open or we have at least one comment, load up the comment template.
 
 
-		endwhile; // End of the loop.
+        endwhile; // End of the loop.
 		?>
 
 	</main><!-- #main -->
