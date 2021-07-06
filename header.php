@@ -82,6 +82,7 @@
           </div>
           <div class="cart__row"><a class="cart__promo-toggler" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Promo code</a>
             <div class="collapse" id="collapseExample">
+
               <input class="cart__promo-input" type="text">
               <button class="cart__promo-button">
                 <svg class="sc-iELTvK dIuXzo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
