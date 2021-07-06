@@ -284,8 +284,6 @@ $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
 
 	<?php endif; ?>
 	
-
-	
 	
 
 </form>
