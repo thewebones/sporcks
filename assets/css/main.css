@@ -2366,7 +2366,7 @@ a .button .add_to_cart_button .product_type_simple {
     margin-bottom: 0.5rem;
     line-height: 1;
 }
-.checkout-form__input {
+.checkout-form__input span input{
     padding: 0.8rem 1rem;
     border-radius: 5px;
     line-height: 1;
@@ -2376,16 +2376,16 @@ a .button .add_to_cart_button .product_type_simple {
     appearance: none;
     min-height: 4rem;
 }
-.checkout-form__input::-webkit-input-placeholder {
+.checkout-form__input span input::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input::-moz-placeholder {
+.checkout-form__input span input::-moz-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input:-ms-input-placeholder {
+.checkout-form__input span input:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input::placeholder {
+.checkout-form__input span input::placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
 .checkout-form__control-info {
@@ -9129,6 +9129,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .checkout__wrapper {
     padding: 2rem 0;
+    width: 100%;
 }
 #primary{
     margin-top: -35px;
