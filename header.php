@@ -39,7 +39,7 @@
           <div class="cart__row">
             <div class="cart__title-wrap">
               <div class="cart__title">
-              <img src="img/db-cart.svg">Cart Shopping cart (1)</div>
+                  <img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/db-cart.svg" alt="">Cart Shopping cart (<?php echo WC()->cart->get_cart_contents_count() ?>)</div>
               <button class="cart__close cart-toggler" type="button">X</button>
             </div>
           </div>
@@ -55,21 +55,30 @@
         </div>
         <div class="cart__body">
           <div class="cart__row">
-            <div class="cart-item"><img class="cart-item__img" src="img/single-orange-sox.jpg">
+              <?php $cart=WC()->cart;
+//
+
+              foreach ($cart->get_cart() as $cart_item_key=>$cart_item){
+                  $product = $cart_item['data'];
+
+              ?>
+            <div class="cart-item"><img class="cart-item__img" src="<?php echo wp_get_attachment_image_src($product->get_image_id(),'full')[0];?>">
               <div class="cart-item__content">
-                <div class="cart-item__name">Orange sox</div>
-                <div class="cart-item__combination">Talla M</div>
+                  <div class="cart-item__name"><a style="color: black" href="<?php echo $product->get_permalink( $cart_item ); ?>"><?php echo $product->get_title( $cart_item ); ?></a></div>
+                <div class="cart-item__combination">Talla <?php echo $product->get_attribute('talla'); ?></div>
                 <div class="cart-item__amount inc-dec-handler">Quantity
                   <button class="cart-item__amount-btn dec-btn" type="button">-</button><span class="cart-item__amount-value inc-dec-value">1</span>
-                  <input class="cart-item__amount-value inc-dec-control" type="number" hidden="" value="1" min="0">
+                  <input class="cart-item__amount-value inc-dec-control" type="number" hidden="" value="<?php echo $cart_item['quantity'] ?>" min="0">
                   <button class="cart-item__amount-btn inc-btn" type="button">+</button>
                 </div>
                 <div class="cart-item__footer">
-                  <button class="cart-item__remove-btn" type="button">Remove</button>
-                  <div class="cart-item__total">139 EUR</div>
+
+                  <a href="<?php echo WC()->cart->get_remove_url( $cart_item_key );?>" class="cart-item__remove-btn" type="button">Remove</a>
+                  <div class="cart-item__total"><?php echo WC()->cart->get_product_subtotal( $product, $cart_item['quantity'] );; ?> EUR</div>
                 </div>
               </div>
             </div>
+             <?php } ?>
           </div>
           <div class="cart__row"><a class="cart__promo-toggler" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Promo code</a>
             <div class="collapse" id="collapseExample">
@@ -85,7 +94,7 @@
           <div class="cart__row">
             <div class="cart__payment">
               <p>We accept:</p>
-              <div class="cart__pay-methods"><img src="img/mc.png" alt="mc" title="mc"><img src="img/visa.png" alt="visa" title="visa"><img src="img/maestro.png" alt="maestro" title="maestro"><img src="img/paypal.png" alt="paypal" title="paypal"><img src="img/amex.png" alt="amex" title="amex"></div>
+              <div class="cart__pay-methods"><img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/mc.png" alt="mc" title="mc"><img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/visa.png" alt="visa" title="visa"><img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/maestro.png" alt="maestro" title="maestro"><img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/paypal.png" alt="paypal" title="paypal"><img src="<?php echo get_site_url(); ?>/wp-content/themes/sporcks/img/amex.png" alt="amex" title="amex"></div>
             </div>
           </div>
           <div class="cart__row">
@@ -100,13 +109,13 @@
         <div class="cart__footer">
           <div class="cart__row">
             <div class="cart__totals-table">
-              <div class="cart__totals-row"><span>Subtotal</span><span>139 EUR</span></div>
-              <div class="cart__totals-row"><span>Shipping</span><span>7 EUR</span>
+              <div class="cart__totals-row"><span>Subtotal</span><span><?php echo WC()->cart->get_cart_subtotal() ?> EUR</span></div>
+              <div class="cart__totals-row"><span>Shipping</span><span><?php echo WC()->cart->get_cart_shipping_total() ?></span>
               </div>
             </div>
           </div>
           <div class="cart__row">
-            <div class="cart__totals-values"><span>Total</span><span>146 EUR</span></div><a class="button button--outline" href="checkout.html">Proceed to checkout</a>
+            <div class="cart__totals-values"><span>Total</span><span><?php echo WC()->cart->get_cart_total() ?> EUR</span></div><a class="button button--outline" href="<?php echo wc_get_checkout_url()?>">Proceed to checkout</a>
             <button class="cart__back-btn cart-toggler" type="button">Continue shopping</button>
           </div>
         </div>
