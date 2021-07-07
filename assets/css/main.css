@@ -2285,6 +2285,7 @@ a .button .add_to_cart_button .product_type_simple {
 .checkout-form__row {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
 }
 .checkout-form__row:not(:last-child) {
     margin-bottom: 2rem;
@@ -9241,4 +9242,13 @@ a .button .add_to_cart_button .product_type_simple {
 .single_add_to_cart_button:hover {
     background: #000000 !important;
     color: #ffd204 !important;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    padding: 1.2rem 1rem 1.3rem !important;
+    border: 2px solid #000000 !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+    transition: all 0.2s ease-in-out !important;
+    background-color: transparent !important;
 }
