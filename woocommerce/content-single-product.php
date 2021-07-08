@@ -119,4 +119,39 @@ if ( post_password_required() ) {
         </div>
     </div>
 </div>
+<?php
+/**
+ * Hook: woocommerce_after_single_product_summary.
+ *
+ * @hooked woocommerce_output_product_data_tabs - 10
+ * @hooked woocommerce_upsell_display - 15
+ * @hooked woocommerce_output_related_products - 20
+ */
+do_action( 'woocommerce_after_single_product_summary' );
+?>
+<?php
+$arrayColStart=[1,4,7,10];
+$arraytablet=[1,7,1,7];
+?>
+<style>
+    @media (min-width: 1200px) {
+        .services-section.container,.related.container {
+            max-width: 1340px !important;
+        }
+    }
+</style>
+<section class="services-section container">
+    <div class="grid">
+        <?php if(get_field("benefices",'option')) { foreach (get_field("benefices",'option') as $key=> $item) {?>
+            <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+                <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
+                    <div class="service-card__delimiter"></div>
+                    <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
+                    <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                </div>
+            </div>
 
+        <?php }} ?>
+
+    </div>
+</section>

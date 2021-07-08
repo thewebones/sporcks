@@ -2105,7 +2105,7 @@ a .button .add_to_cart_button .product_type_simple {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
+
 }
 .select__control:focus {
     outline: none;
@@ -9162,6 +9162,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .checkout__wrapper {
     padding: 2rem 0;
+    width: 100%;
 }
 #primary{
     margin-top: -35px;
@@ -9198,23 +9199,17 @@ a .button .add_to_cart_button .product_type_simple {
 }
 
 
-
-
 .reflexionmeta p {
     color: white;
 }
 
-.single_add_to_cart_button:hover {
-    background: #000000 !important;
-    color: #ffd204 !important;
+.entry-footer{
+    display:none;
 }
-.qua {
-    text-align: center;
-    margin-bottom: -33px;
-}
+
 .form-row {
     flex-direction: column !important;
-
+    
 }
 .form-row input {
     padding: 0.8rem 1rem;
@@ -9239,7 +9234,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .woocommerce-page div.product div.summary {
     width: 100% !important;
-
+    
 }
 .woocommerce .woocommerce-breadcrumb {
     width: 100%;
@@ -9251,7 +9246,7 @@ a .button .add_to_cart_button .product_type_simple {
     color: #000000;
     margin-bottom: 2rem;
     background-color: #fff;
-    font-size: 20px !important;
+    font-size: 20px !important;    
 }
 
 .woocommerce div.product form.cart div.quantity {
@@ -9292,4 +9287,23 @@ a .button .add_to_cart_button .product_type_simple {
 .sockscollections {
     display: flex;
     padding: 0 12%;
+}
+.select2-selection{
+
+    background: transparent;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    line-height: 1;
+    border: 1px solid #000000 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 4rem;
+}
+.select2-selection__rendered{
+    color: black !important;
+}
+.select2-selection__arrow{
+    margin-top: 1%;
+    margin-right: 2%;
 }
