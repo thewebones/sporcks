@@ -41,4 +41,3 @@
        
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </section>
- 

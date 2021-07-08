@@ -61,8 +61,8 @@
                         <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
                         </div>
                     </div>
-                </div>  
+                 
             <?php }} ?>
-
+            </div> 
         </div>
     </section>

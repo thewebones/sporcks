@@ -5,13 +5,16 @@
  * Date: 6/18/2021
  * Time: 12:51 PM
  */
+$arrayColStart=[1,4,7,10];
+$arraytablet=[1,7,1,7];
 ?>
 <section class="sox-collection-section">
     <h2 class="sox-collection-section__title sox-collection-section__title--bigger"><?php echo get_field("titulo")?></h2>
+    <div class="grid mobile-port-hidden-not-now">
     <?php
 
     if (get_field("nuevos_productos")){
-    foreach (get_field("nuevos_productos") as $item) {
+    foreach (get_field("nuevos_productos") as $key=>$item) {
        $product=wc_get_product(array_values($item)[0]);
        $id_product=(array_values($item)[0]);
         $cat_id=$product->get_category_ids()[0];
@@ -61,4 +64,5 @@
 </div>
 
     <?php } }?>
+    </div>
 </section>

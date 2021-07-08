@@ -22,4 +22,14 @@
             }
         });
     });
+
+  $('#cartToggler').click(function () {
+
+      $('.cart').addClass("visible");
+  })
+
+
+
+
+
 })(jQuery);

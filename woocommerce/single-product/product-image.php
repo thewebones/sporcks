@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Note: `wc_get_gallery_image_html` was added in WC 3.3.2 and did not exist prior. This check protects against theme overrides being used on older versions of WC.
 if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
-	return;
+    return;
 }
 
 global $product;
@@ -27,13 +27,13 @@ global $product;
 $columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
 $post_thumbnail_id = $product->get_image_id();
 $wrapper_classes   = apply_filters(
-	'woocommerce_single_product_image_gallery_classes',
-	array(
-		'woocommerce-product-gallery',
-		'woocommerce-product-gallery--' . ( $post_thumbnail_id ? 'with-images' : 'without-images' ),
-		'woocommerce-product-gallery--columns-' . absint( $columns ),
-		'images',
-	)
+    'woocommerce_single_product_image_gallery_classes',
+    array(
+        'woocommerce-product-gallery',
+        'woocommerce-product-gallery--' . ( $post_thumbnail_id ? 'with-images' : 'without-images' ),
+        'woocommerce-product-gallery--columns-' . absint( $columns ),
+        'images',
+    )
 );
 ?>
 
@@ -65,12 +65,12 @@ $wrapper_classes   = apply_filters(
                 <!-- Imagen de la Galeria -->
                 <div class="swiper-container product-slider__container swiper-container-initialized swiper-container-horizontal">
                     <div class="swiper-wrapper" id="swiper-wrapper-eebe994fee266b3b" aria-live="polite" style="transform: translate3d(-1575px, 0px, 0px); transition: all 0ms ease 0s;">
-                    <div class="swiper-slide" role="group" aria-label="1 / 5" style="width: 525px;">
+                        <div class="swiper-slide" role="group" aria-label="1 / 5" style="width: 525px;">
                         <span style="display: inline-block; position: relative; overflow: hidden;">
                             <img class="product-slider__img" src="<?php echo wp_get_attachment_image_src($post_thumbnail_id,'full')[0];?>" style="display: block;">
                             <img role="presentation" alt="" src="<?php echo wp_get_attachment_image_src($post_thumbnail_id,'full')[0];?>" class="zoomImg" style="position: absolute; top: -432px; left: -926.714px; opacity: 0; width: 1500px; height: 1500px; border: none; max-width: none; max-height: none;">
                             </span>
-                                </div>
+                        </div>
                         <?php
                         $count = 1;
                         $total=count($product->get_gallery_image_ids(), COUNT_RECURSIVE);
@@ -102,21 +102,21 @@ $wrapper_classes   = apply_filters(
     </div>
 
 
-<!--<div class="--><?php //echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?><!--" data-columns="--><?php //echo esc_attr( $columns ); ?><!--" style="opacity: 0; transition: opacity .25s ease-in-out;">-->
-<!---->
-<!--    <figure class="woocommerce-product-gallery__wrapper">-->
-<!--		--><?php
-//		if ( $post_thumbnail_id ) {
-//			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
-//		} else {
-//			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-//			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-//			$html .= '</div>';
-//		}
-//
-//		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
-//
-//		do_action( 'woocommerce_product_thumbnails' );
-//		?>
-<!--	</figure>-->
-<!--</div>-->
+    <!--<div class="--><?php //echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?><!--" data-columns="--><?php //echo esc_attr( $columns ); ?><!--" style="opacity: 0; transition: opacity .25s ease-in-out;">-->
+    <!---->
+    <!--    <figure class="woocommerce-product-gallery__wrapper">-->
+    <!--		--><?php
+    //		if ( $post_thumbnail_id ) {
+    //			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+    //		} else {
+    //			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+    //			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+    //			$html .= '</div>';
+    //		}
+    //
+    //		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+    //
+    //		do_action( 'woocommerce_product_thumbnails' );
+    //		?>
+    <!--	</figure>-->
+    <!--</div>-->

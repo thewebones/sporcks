@@ -24,99 +24,99 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
- $args = array(
-	' delimiter ' => ' / '
+$args = array(
+    ' delimiter ' => ' / '
 );
 woocommerce_breadcrumb( $args );
 
 do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
-	echo get_the_password_form(); // WPCS: XSS ok.
-	return;
+    echo get_the_password_form(); // WPCS: XSS ok.
+    return;
 }
 ?>
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-	<?php
-	/**
-	 * Hook: woocommerce_before_single_product_summary.
-	 *
-	 * @hooked woocommerce_show_product_sale_flash - 10
-	 * @hooked woocommerce_show_product_images - 20
-	 */
-	do_action( 'woocommerce_before_single_product_summary' );
-	?>
+    <?php
+    /**
+     * Hook: woocommerce_before_single_product_summary.
+     *
+     * @hooked woocommerce_show_product_sale_flash - 10
+     * @hooked woocommerce_show_product_images - 20
+     */
+    do_action( 'woocommerce_before_single_product_summary' );
+    ?>
 
-	<div class="summary entry-summary col-start-9 col-width-4 tablet-col-start-8 tablet-col-width-5 mobile-land-col-start-1 mobile-land-col-width-12">
-		<?php
-		/**
-		 * Hook: woocommerce_single_product_summary.
-		 *
-		 * @hooked woocommerce_template_single_title - 5
-		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
-		 * @hooked woocommerce_template_single_excerpt - 20
-		 * @hooked woocommerce_template_single_add_to_cart - 30
-		 * @hooked woocommerce_template_single_meta - 40
-		 * @hooked woocommerce_template_single_sharing - 50
-		 * @hooked WC_Structured_Data::generate_product_data() - 60
-		 */
-		do_action( 'woocommerce_single_product_summary' );
-		?>
-		 <div class="product-info__collapse mt-5">
+    <div class="summary entry-summary col-start-9 col-width-4 tablet-col-start-8 tablet-col-width-5 mobile-land-col-start-1 mobile-land-col-width-12">
+        <?php
+        /**
+         * Hook: woocommerce_single_product_summary.
+         *
+         * @hooked woocommerce_template_single_title - 5
+         * @hooked woocommerce_template_single_rating - 10
+         * @hooked woocommerce_template_single_price - 10
+         * @hooked woocommerce_template_single_excerpt - 20
+         * @hooked woocommerce_template_single_add_to_cart - 30
+         * @hooked woocommerce_template_single_meta - 40
+         * @hooked woocommerce_template_single_sharing - 50
+         * @hooked WC_Structured_Data::generate_product_data() - 60
+         */
+        do_action( 'woocommerce_single_product_summary' );
+        ?>
+        <div class="product-info__collapse mt-5">
             <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseFeatures" role="button" aria-expanded="false" aria-controls="collapseFeatures"><?php echo get_field("features_titulo"); ?></button>
             <div class="collapse product-info__collapse-content" id="collapseFeatures">
-              <p><?php echo get_field("features_contenido"); ?></p>
-              
+                <p><?php echo get_field("features_contenido"); ?></p>
+
             </div>
-          </div>
-          <div class="product-info__collapse">
+        </div>
+        <div class="product-info__collapse">
             <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseSizing" role="button" aria-expanded="false" aria-controls="collapseSizing"><?php echo get_field("sizing_titulo"); ?></button>
             <div class="collapse product-info__collapse-content" id="collapseSizing">
-              <p><?php echo get_field("sizing_contenido"); ?></p>
+                <p><?php echo get_field("sizing_contenido"); ?></p>
             </div>
-          </div>
-          <div class="product-info__collapse">
+        </div>
+        <div class="product-info__collapse">
             <button class="product-info__collapse-toggler" data-toggle="collapse" href="#collapseShipping" role="button" aria-expanded="false" aria-controls="collapseShipping"><?php echo get_field("shipping_titulo"); ?></button>
             <div class="collapse product-info__collapse-content" id="collapseShipping">
-              <p><?php echo get_field("shipping_contenido"); ?></p>
-              
+                <p><?php echo get_field("shipping_contenido"); ?></p>
+
             </div>
-          </div>
         </div>
-      </div>
     </div>
-	</div>
+</div>
+</div>
+</div>
 
 
 </div>
 
 <!-- Caracteristicas -->
 <div class="product-features-section">
-      <div class="grid">
+    <div class="grid">
         <div class="col-start-4 col-width-6 tablet-land-col-start-3 tablet-land-col-width-8 tablet-col-start-2 tablet-col-width-10 mobile-col-start-1 mobile-col-width-12">
-          <h2 class="product-features-section__title">caracteristicas del calcetin</h2>
-          <div class="product-feature-bar">
-          <?php 
-            if(get_field("caracteristicas")){
-            foreach (get_field("caracteristicas") as $item) {?>
-           <div class="product-feature-bar__text-wrap">
-                    <h3 class="product-feature-bar__text1 mt-5"><?php echo  $item["nombre_caracteristica"]; ?></h3>
-                    <h4 class="product-feature-bar__text2 mt-5"><?php echo  $item["descripcion_caracteristica"]; ?></h4>
-           </div>
+            <h2 class="product-features-section__title">caracteristicas del calcetin</h2>
+            <div class="product-feature-bar">
+                <?php
+                if(get_field("caracteristicas")){
+                    foreach (get_field("caracteristicas") as $item) {?>
+                        <div class="product-feature-bar__text-wrap">
+                            <h3 class="product-feature-bar__text1 mt-5"><?php echo  $item["nombre_caracteristica"]; ?></h3>
+                            <h4 class="product-feature-bar__text2 mt-5"><?php echo  $item["descripcion_caracteristica"]; ?></h4>
+                        </div>
 
-           <div class="product-feature-bar__progress-wrap">
-                <span class="product-feature-bar__progress-line"></span>
-                <div class="product-feature-bar__progress-bar animated-width on-scroll" data-width="<?php echo $item["porciento"]; ?>%" style="width: 100%;"></div>
-           </div>
+                        <div class="product-feature-bar__progress-wrap">
+                            <span class="product-feature-bar__progress-line"></span>
+                            <div class="product-feature-bar__progress-bar animated-width on-scroll" data-width="<?php echo $item["porciento"]; ?>%" style="width: 100%;"></div>
+                        </div>
 
-          <?php }} ?>
-                
+                    <?php }} ?>
 
-          </div>
+
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
