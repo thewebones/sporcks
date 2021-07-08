@@ -20,8 +20,10 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-2 order-md-1 text-center" style="text-align: left">
             <h1 class="hero-content-section__title mb-5" style="color: white; text-transform: uppercase; text-align: left; margin-top: inherit;"><?php echo get_field("convictory_meta")?></h1>
             <h2 style="font-size: 22px; width: 185px; font-weight:900; text-align:left; margin-bottom: 50px; text-transform: uppercase; "><?php echo get_field("edicion_especial")?></h2>
+            <div style="width: 80%">
             <p class= "mb-5" style="font-family: GTAmericaExpandedRegular; font-size: 15px; color:white !important; text-align: left; line-height: 15px;"><?php echo get_field("edicion_texto")?></p>
             <p style="font-family: GTAmericaExpandedRegular; margin-bottom: 50px; font-size: 15px; color:white !important; text-align: left; line-height: 15px;"><?php echo get_field("edicion_texto2")?></p>
+            </div>
             <div style="text-align: left; margin-bottom: 20px">
             <a class="convictory" style="text-align: left; " href="<?php echo get_field("boton_comprar")["link"]?>"><?php echo get_field("boton_comprar")["title"]?></a>
             </div>

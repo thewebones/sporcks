@@ -9287,6 +9287,7 @@ a .button .add_to_cart_button .product_type_simple {
 .sockscollections {
     display: flex;
     padding: 0 12%;
+    flex-wrap: wrap;
 }
 .select2-selection{
 
