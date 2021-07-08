@@ -8259,7 +8259,7 @@ a .button .add_to_cart_button .product_type_simple {
 
 .image-section__image {
     width: 100% !important;
-    max-height: 100% !important;
+    max-height: 80rem !important;
     -o-object-fit: cover !important;
     object-fit: cover !important;
     -o-object-position: center !important;

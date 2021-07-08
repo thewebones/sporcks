@@ -5,7 +5,7 @@
        foreach (get_field("galeria") as $item) {
             if($item["ancho"] == "1") { ?>
         <div class="col-12 mb-5">
-        <img src="<?php echo $item["imagen"] ?>" style="height:100% !important; width:100% !important">
+        <img src="<?php echo $item["imagen"] ?>" style="width:100% !important; max-height: 80rem !important;">
         </div>
 
             <?php } 
