@@ -21,14 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+	<section class="related products container">
 
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
-			<h2 style="color: red"><?php echo esc_html( $heading ); ?></h2>
+			<h2 class="sox-collection-section__title"><?php echo esc_html( $heading ); ?></h2>
 		<?php endif; ?>
 		
 		<?php woocommerce_product_loop_start(); ?>
@@ -52,3 +52,5 @@ if ( $related_products ) : ?>
 endif;
 
 wp_reset_postdata();
+?>
+
