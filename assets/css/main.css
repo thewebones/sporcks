@@ -9289,3 +9289,7 @@ a .button .add_to_cart_button .product_type_simple {
     transition: all 0.2s ease-in-out !important;
     background-color: transparent !important;
 }
+.sockscollections {
+    display: flex;
+    padding: 0 12%;
+}
