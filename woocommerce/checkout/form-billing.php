@@ -187,22 +187,12 @@ defined( 'ABSPATH' ) || exit;
     </div>
 
 </div>
-	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
 </div>
 
-
- <!-- // woocommerce_form_field( 'billing_country', $fields['billing_country'], $checkout->get_value( 'billing_country' ) );
-        // woocommerce_form_field( 'billing_first_name', $fields['billing_first_name'], $checkout->get_value( 'billing_first_name' ) );
-
-//        woocommerce_form_field( 'billing_country', $fields['billing_country'], $checkout->get_value( 'billing_country' ) );
-//        woocommerce_form_field( 'billing_country', $fields['billing_country'], $checkout->get_value( 'billing_country' ) );
-//        woocommerce_form_field( 'billing_country', $fields['billing_country'], $checkout->get_value( 'billing_country' ) );
-//        woocommerce_form_field( 'billing_country', $fields['billing_country'], $checkout->get_value( 'billing_country' ) );
-
-			foreach ( $fields as $key => $field ) {
-                echo 'key:'. $key;
+	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
 
 
 
-			}
-		?> -->
+
+
+
