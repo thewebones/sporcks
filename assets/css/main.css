@@ -2118,6 +2118,7 @@ a .button .add_to_cart_button .product_type_simple {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
 }
 .select__control:focus {
     outline: none;
@@ -9295,4 +9296,28 @@ a .button .add_to_cart_button .product_type_simple {
     color: #000000 !important;
     transition: all 0.2s ease-in-out !important;
     background-color: transparent !important;
+}
+.sockscollections {
+    display: flex;
+    padding: 0 12%;
+    flex-wrap: wrap;
+}
+.select2-selection{
+
+    background: transparent;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    line-height: 1;
+    border: 1px solid #000000 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 4rem;
+}
+.select2-selection__rendered{
+    color: black !important;
+}
+.select2-selection__arrow{
+    margin-top: 1%;
+    margin-right: 2%;
 }

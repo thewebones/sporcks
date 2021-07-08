@@ -10,7 +10,7 @@ $arraytablet=[1,7,1,7];
 ?>
 <section class="sox-collection-section">
     <h2 class="sox-collection-section__title sox-collection-section__title--bigger"><?php echo get_field("titulo")?></h2>
-    <div class="grid mobile-port-hidden-not-now">
+    <div class="sockscollections">
     <?php
 
     if (get_field("nuevos_productos")){
