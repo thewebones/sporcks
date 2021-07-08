@@ -21,125 +21,122 @@ RESPONSIVE BREAKPOINTS
 /**
   mixin to autogenerate GRID layout
  */
-@font-face {
+ @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 100;
-    src: local("Prompt Thin"), url(webfonts/Prompt-Thin.ttf) format("truetype");
+    src: local("Prompt Thin"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Thin.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 200;
-    src: local("Prompt ExtraLight"), url(webfonts/Prompt-ExtraLight.ttf) format("truetype");
+    src: local("Prompt ExtraLight"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraLight.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 300;
-    src: local("Prompt Light"), url(webfonts/Prompt-Light.ttf) format("truetype");
+    src: local("Prompt Light"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Light.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 400;
-    src: local("Prompt Regular"), url(webfonts/Prompt-Regular.ttf) format("truetype");
+    src: local("Prompt Regular"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Regular.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 700;
-    src: local("Prompt Bold"), url(webfonts/Prompt-Bold.ttf) format("truetype");
+    src: local("Prompt Bold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Bold.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 500;
-    src: local("Prompt Medium"), url(webfonts/Prompt-Medium.ttf) format("truetype");
+    src: local("Prompt Medium"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Medium.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 600;
-    src: local("Prompt SemiBold"), url(webfonts/Prompt-SemiBold.ttf) format("truetype");
+    src: local("Prompt SemiBold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-SemiBold.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 800;
-    src: local("Prompt ExtraBold"), url(webfonts/Prompt-ExtraBold.ttf) format("truetype");
+    src: local("Prompt ExtraBold"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraBold.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 900;
-    src: local("Prompt Black"), url(webfonts/Prompt-Black.ttf) format("truetype");
+    src: local("Prompt Black"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Black.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 100;
-    src: local("Prompt ThinItalic"), url(webfonts/Prompt-ThinItalic.ttf) format("truetype");
+    src: local("Prompt ThinItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ThinItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 200;
-    src: local("Prompt ExtraLightItalic"), url(webfonts/Prompt-ExtraLightItalic.ttf) format("truetype");
+    src: local("Prompt ExtraLightItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraLightItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 300;
-    src: local("Prompt LightItalic"), url(webfonts/Prompt-LightItalic.ttf) format("truetype");
+    src: local("Prompt LightItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-LightItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 400;
-    src: local("Prompt Italic"), url(webfonts/Prompt-Italic.ttf) format("truetype");
+    src: local("Prompt Italic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-Italic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 700;
-    src: local("Prompt BoldItalic"), url(webfonts/Prompt-BoldItalic.ttf) format("truetype");
+    src: local("Prompt BoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-BoldItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 500;
-    src: local("Prompt MediumItalic"), url(webfonts/Prompt-MediumItalic.ttf) format("truetype");
+    src: local("Prompt MediumItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-MediumItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 600;
-    src: local("Prompt SemiBoldItalic"), url(webfonts/Prompt-SemiBoldItalic.ttf) format("truetype");
+    src: local("Prompt SemiBoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-SemiBoldItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 800;
-    src: local("Prompt ExtraBoldItalic"), url(webfonts/Prompt-ExtraBoldItalic.ttf) format("truetype");
+    src: local("Prompt ExtraBoldItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-ExtraBoldItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "Prompt";
     font-style: italic;
     font-weight: 900;
-    src: local("Prompt BlackItalic"), url(webfonts/Prompt-BlackItalic.ttf) format("truetype");
+    src: local("Prompt BlackItalic"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Prompt-BlackItalic.ttf) format("truetype");
 }
 @font-face {
     font-family: "UniSansRegular";
     font-style: normal;
     font-weight: 900;
-    src: local("Uni Sans Regular"), url(webfonts/Uni-Sans-Regular.ttf) format("truetype");
+    src: local("Uni Sans Regular"), url(https://new.sporcks.com/wp-content/themes/sporcks/webfonts/Uni-Sans-Regular.ttf) format("truetype");
 }
-@font-face {
-font-family: "prueba";
 
-src: url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,900;1,900&display=swap');
-}
+
 
 
 
@@ -561,10 +558,13 @@ html, body {
 }
 
 .wp-block-embed iframe {
-    margin-bottom: -15px;
+    margin-bottom: -25px !important;
     width: 100%;
     height: 650px;
 }
+
+
+
 a .button .add_to_cart_button .product_type_simple {
     background-color: #0259AF !important;
 }
@@ -743,16 +743,39 @@ a .button .add_to_cart_button .product_type_simple {
     font-weight: 600;
     transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 }
+.btn-variable{
+    background-color: #ffd204;
+    padding: 8px;
+    height: auto;
+    width: 100%;
+    max-height: 4rem;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+.btn-variable a{
+    color: black;
+    text-decoration:none;
+}
+.btn-variable-hover:hover{
+    background-color: #000000;
+}
+.btn-variable-hover:hover a{
+    color:white !important;
+}
 .sox-card__cart-btn:hover {
     background-color: #000000;
+}
+
+.sox-card__cart-btn:hover a{
+    color:white !important;
 }
 .sox-card__cart-btn a{
     color: black;
     text-decoration:none;
 }
-.sox-card__cart-btn:hover a{
-    color: #fff;
-}
+
 .service-card {
     display: flex;
     flex-direction: column;
@@ -1114,7 +1137,7 @@ a .button .add_to_cart_button .product_type_simple {
 .product-info__button {
     margin-top: 2rem !important;
     width: 100% !important;
-    background: transparent !important;
+    background: #ffd204 !important;
     font-size: 16px !important;
 }
 .product-info__content-heading, .product-info__content-paragraph {
@@ -1765,7 +1788,7 @@ a .button .add_to_cart_button .product_type_simple {
     }
     .blog-post-content p {
         margin:auto;
-        width: 90% !important;
+        width: 500px !important;
         text-align: justify;
         margin-bottom: 5rem;
         color: #000000 !important;
@@ -1811,7 +1834,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .blog-post-content p {
     margin:auto;
-    width: 50%;
+    width: 500px !important;
     text-align: justify;
     margin-bottom: 5rem;
     color: #000000 !important;
@@ -2263,6 +2286,7 @@ a .button .add_to_cart_button .product_type_simple {
 .checkout-form__row {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
 }
 .checkout-form__row:not(:last-child) {
     margin-bottom: 2rem;
@@ -2344,7 +2368,7 @@ a .button .add_to_cart_button .product_type_simple {
     margin-bottom: 0.5rem;
     line-height: 1;
 }
-.checkout-form__input {
+.checkout-form__input span input{
     padding: 0.8rem 1rem;
     border-radius: 5px;
     line-height: 1;
@@ -2354,16 +2378,16 @@ a .button .add_to_cart_button .product_type_simple {
     appearance: none;
     min-height: 4rem;
 }
-.checkout-form__input::-webkit-input-placeholder {
+.checkout-form__input span input::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input::-moz-placeholder {
+.checkout-form__input span input::-moz-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input:-ms-input-placeholder {
+.checkout-form__input span input:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
-.checkout-form__input::placeholder {
+.checkout-form__input span input::placeholder {
     color: rgba(0, 0, 0, 0.2);
 }
 .checkout-form__control-info {
@@ -8236,7 +8260,7 @@ a .button .add_to_cart_button .product_type_simple {
 
 .image-section__image {
     width: 100% !important;
-    max-height: 60rem !important;
+    max-height: 80rem !important;
     -o-object-fit: cover !important;
     object-fit: cover !important;
     -o-object-position: center !important;
@@ -9200,9 +9224,9 @@ a .button .add_to_cart_button .product_type_simple {
 }
 
 .woocommerce div.product form.cart div.quantity {
-    float: unset !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+   float: unset !important;
+   margin-top: 10px !important;
+   margin-bottom: 10px !important;
 }
 
 .woocommerce div.product .product_title {
@@ -9224,4 +9248,13 @@ a .button .add_to_cart_button .product_type_simple {
 .single_add_to_cart_button:hover {
     background: #000000 !important;
     color: #ffd204 !important;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    padding: 1.2rem 1rem 1.3rem !important;
+    border: 2px solid #000000 !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+    transition: all 0.2s ease-in-out !important;
+    background-color: transparent !important;
 }
