@@ -170,12 +170,7 @@ html, body {
     background:black;
 }
 
-.navbar{
-    display:none;
-}
-.product_type_simple
-
-.paginado{
+.paginado {
     display:flex;
     justify-content:center;
     margin:20px 0;
