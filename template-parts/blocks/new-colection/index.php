@@ -10,7 +10,7 @@ $arraytablet=[1,7,1,7];
 ?>
 <section class="sox-collection-section">
     <h2 class="sox-collection-section__title sox-collection-section__title--bigger"><?php echo get_field("titulo")?></h2>
-    <div class="grid mobile-port-hidden-not-now">
+    <div class="sockscollections">
     <?php
 
     if (get_field("nuevos_productos")){
@@ -26,7 +26,7 @@ $arraytablet=[1,7,1,7];
         $urlImagenHover=wp_get_attachment_image_src($idImagenCover,'full')[0];
         ?>
     <div class="sox-card">
-    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
+    <div class="sox-card__wrapper sox-card__wrapper--visible"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
         <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
         <p class="sox-card__desc"><?php echo $name?></p>
         <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>

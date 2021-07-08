@@ -367,6 +367,19 @@ html, body {
 *:focus {
     outline: none !important;
 }
+.berocket_single_filter_widget select{
+    padding: 1rem 8rem 1rem 1rem;
+    border-radius: 0;
+    border: 1px solid #000000;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://new.sporcks.com/wp-content/themes/sporcks/img/chevron-down-icon.png) no-repeat 95%;
+    background-size: 3.5rem 3rem;
+}
 
 @media (max-width: 576px)and (min-width: 320px) {
     .comparte h1 {
@@ -2105,6 +2118,7 @@ a .button .add_to_cart_button .product_type_simple {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
 }
 .select__control:focus {
     outline: none;
@@ -9283,6 +9297,11 @@ a .button .add_to_cart_button .product_type_simple {
     transition: all 0.2s ease-in-out !important;
     background-color: transparent !important;
 }
+.sockscollections {
+    display: flex;
+    padding: 0 12%;
+    flex-wrap: wrap;
+}
 .select2-selection{
 
     background: transparent;
@@ -9301,4 +9320,9 @@ a .button .add_to_cart_button .product_type_simple {
 .select2-selection__arrow{
     margin-top: 1%;
     margin-right: 2%;
+}
+@media (max-width: 1441px) {
+    .convictorycontent {
+     padding-left: 0 !important;
+    }
 }
