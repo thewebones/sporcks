@@ -170,6 +170,37 @@ html, body {
     background:black;
 }
 
+.paginado {
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+.linkPaginas{
+    display:flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: #b8b6b6;
+    justify-content:center;
+    margin-left: 5px;
+    color:gray;
+    align-items:center;
+    border: none;
+}
+.ocultar{
+   display:none;
+}
+.linkCurrent{
+    background: gray;
+    color:white;
+    cursor:default;
+}
+
+.linkPaginas:hover{
+    background: gray;
+    color:white;
+    text-decoration:none;
+}
 /* cambios a sox-cart linea 514 */
 .collection-card {
     display:flex;

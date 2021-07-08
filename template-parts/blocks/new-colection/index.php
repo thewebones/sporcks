@@ -19,43 +19,49 @@ $arraytablet=[1,7,1,7];
        $id_product=(array_values($item)[0]);
         $cat_id=$product->get_category_ids()[0];
         $name = get_term_by( 'id', $cat_id, 'product_cat' )->name;
+        $tallas=null;
+        if($product->is_type('variable'))
+        $tallas=$product->get_available_variations();
+        $idImagenCover=get_post_meta( $product->id, 'imagen_hover', true );
+        $urlImagenHover=wp_get_attachment_image_src($idImagenCover,'full')[0];
         ?>
-
-        <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
-        <div class="sox-card">
-                <div class="sox-card__wrapper sox-card__wrapper--visble">
-                    <a class="sox-card__image-wrap" href="<?php echo $product->get_permalink() ?>">
-                    <img class="sox-card__image" src=" <?php echo $product->get_image() ?></a>
-                    <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
-                    <p class="sox-card__desc"><?php echo $name ?></p>
-                    <h5 class="sox-card__price"><?php echo $product->get_price() ?>$</h5>
-                </div>
-                <div class="sox-card__wrapper sox-card__wrapper--hidden">
-                    <?php $id_imagen_hover=get_post_meta( $id_product, 'imagen_hover', true );?>
-                    <a class="sox-card__image-wrap" href="<?php echo $product->get_permalink() ?>">
-                        <img class="sox-card__image" src="<?php echo wp_get_attachment_image_src($id_imagen_hover,'full')[0] ; ?>"></a>
-                    <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
-                    <p class="sox-card__desc"><?php echo $name ?></p>
-                    <h5 class="sox-card__price"><?php echo $product->get_price() ?>$</h5>
-                    <div class="sox-card__shop-tools">
-                          <div class="sox-card__sizes">
-                              <?php $attribute_taxonomies = wc_get_attribute_taxonomies();
-                              $lista_talla=get_terms( wc_attribute_taxonomy_name(array_values($attribute_taxonomies)[0]->attribute_name));
-                              foreach ($lista_talla as $l){ ?>
-                            <div class="sox-card__size-item">
-                                <input class="sox-card__size-radio" type="radio" id="sizeRadio-0-TT7_Y2" name="radioGroup0" checked="checked">
-                                <label class="sox-card__size-label" for="sizeRadio-0-TT7_Y2"><span><?php echo($l->name);?></span>
-                                    <span class="sox-card__size-info"><?php echo($l->description);?></span></label>
-
-                           </div>
-                              <?php } ?>
-                        </div>
-
-                        <button class="sox-card__cart-btn" type="button">AÑADIR</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="sox-card">
+    <div class="sox-card__wrapper sox-card__wrapper--visble"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
+        <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
+        <p class="sox-card__desc"><?php echo $name?></p>
+        <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
+    </div>
+    
+    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo $urlImagenHover ?>"></a>
+        <p class="sox-card__desc"><?php echo $product->get_name()?></p>
+        <p class="sox-card__desc"><?php echo $name?></p>
+        <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
+        <div class="sox-card__shop-tools">
+        <?php if($tallas){?>
+            <div class="sox-card__sizes mb-2">
+                <?php foreach($tallas as $index=>$talla){ ?>
+                   <div class="sox-card__size-item form_radio" onClick="product_variable(event)">
+                        <input class="sox-card__size-radio" name="talla" type="radio" value="<?php echo $talla['attributes']['attribute_pa_talla'] ?>" id="sizeRadio-<?php echo $product->id . $talla['attributes']['attribute_pa_talla']  ?>"  >
+                        <label class="sox-card__size-label" for="sizeRadio-<?php echo $product->id . $talla['attributes']['attribute_pa_talla']  ?>"><span><?php echo $talla['attributes']['attribute_pa_talla'] ?></span><span class="sox-card__size-info"><?php echo $talla->description ?></span></label>
+                        <input type="hidden" value=<?php echo $talla['variation_id'] ?>></input>
+                   </div>
+                <?php  }?>
+            </div> 
+        <input type="hidden" value="?add-to-cart=<?php echo $product->id ?>"/>  
+        <button class="btn-variable" disabled>            
+        <a rel="nofollow" data-quantity="1">AÑADIR</a> 
+        
+        </button>
+         <?php  } 
+          else{
+            ?>
+            <button class="sox-card__cart-btn">
+            <a  rel="nofollow" href="?add-to-cart=<?php echo $product->id ?>" data-quantity="1">AÑADIR</a>
+            </button>
+            <?php } ?>
+    </div>
+    </div>
+</div>
 
     <?php } }?>
     </div>
