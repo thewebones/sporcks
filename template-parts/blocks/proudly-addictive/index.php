@@ -14,7 +14,7 @@
             <div class="mb-5" style="width: 60%">
             <p class="proudly-addictive-section__text"><?php echo get_field("texto2")?></p>
             </div>
-            <a class="proudly-addictive-section__text proudly-addictive-section__link" href="<?php echo get_field("boton")["link"]?>"><?php echo get_field("boton")["title"]?></a>
+            <a class="proudly-addictive-section__text proudly-addictive-section__link" href="<?php echo get_field("boton")["url"]?>"><?php echo get_field("boton")["title"]?></a>
         </div>
     </div>
 </section>

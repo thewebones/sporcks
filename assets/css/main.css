@@ -9304,7 +9304,7 @@ a .button .add_to_cart_button .product_type_simple {
 }
 .sockscollections {
     display: flex;
-    padding: 0 12%;
+    padding: 0 16%;
     flex-wrap: wrap;
 }
 .select2-selection{
@@ -9329,5 +9329,13 @@ a .button .add_to_cart_button .product_type_simple {
 @media (max-width: 1441px) {
     .convictorycontent {
      padding-left: 0 !important;
+    }
+}
+@media (max-width: 1400px) {
+    .contentmeta {
+        width: 80% !important;
+    }
+    .parrafometa {
+        width: 70% !important;
     }
 }

@@ -33,8 +33,8 @@
                             <h4 class="athlete-details-section__age"><?php echo get_post_meta( get_the_ID(), 'edad', true );?> </h4></h4>
                             <p><?php echo get_post_meta( get_the_ID(), 'edad_titulo', true );?></p>
                         </div>
-                        <?php $id_país=get_post_meta( get_the_ID(), 'país', true );?>
-                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_país,'full')[0] ; ?> ">
+                        <?php $id_pais=get_post_meta( get_the_ID(), 'pais', true );?>
+                        <img class="athlete-details-section__country-flag" src=" <?php echo wp_get_attachment_image_src($id_pais,'full')[0] ; ?> ">
                     </div>
                 </div>
             </div>
