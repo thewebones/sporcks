@@ -169,6 +169,9 @@ html, body {
 .fondo_dinamico{
     background:black;
 }
+.labelFormFooter{
+    font-size: 1.2rem;
+}
 
 .paginado {
     display:flex;
@@ -948,14 +951,15 @@ a .button .add_to_cart_button .product_type_simple {
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .newsletter-form__label::after {
-    background: url(img/icon-checkbox.svg) no-repeat center;
+    background: url(http://localhost/sporck/wp-content/themes/sporcks/img/icon-checkbox.svg) no-repeat center;
     background-size: 70%;
     visibility: hidden;
     opacity: 0;
 }
 .newsletter-form__check {
     margin-top: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    background:transparent;
 }
 .newsletter-form__check:checked + label::after {
     visibility: visible;
