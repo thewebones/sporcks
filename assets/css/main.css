@@ -9322,3 +9322,8 @@ a .button .add_to_cart_button .product_type_simple {
     margin-top: 1%;
     margin-right: 2%;
 }
+@media (max-width: 1441px) {
+    .convictorycontent {
+     padding-left: 0 !important;
+    }
+}
