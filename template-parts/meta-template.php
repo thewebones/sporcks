@@ -8,10 +8,10 @@
 ?>
 <div style="background: black">
 
-<div class="metainvisible text-center" style=" padding:100px 0px 100px 0px; background: black; color: white; width: 100%;">
+<div class="metainvisible text-center" style=" padding:170px 0px 100px 0px; background: black; color: white; width: 100%;">
     <h2 style="font-size: 28px; font-weight:800; text-transform: lowercase;"><?php echo get_post_meta( get_the_ID(), 'meta_de', true );?><h2>
-    <h1 class="hero-content-section__title mb-5" style="color: white; text-transform: uppercase; margin-top: inherit;"><?php echo get_post_meta( get_the_ID(), 'nombre_atleta', true );?></h1>
-    <div class="text-center" style="width:33% ; margin-left: auto; margin-right: auto;">
+    <h1 class="hero-content-section__title mb-5" style="color: white; text-transform: uppercase; margin-top: inherit; font-size: 40px"><?php echo get_post_meta( get_the_ID(), 'nombre_atleta', true );?></h1>
+    <div class="parrafometa text-center" style="width:25% ; margin-left: auto; margin-right: auto;">
         <p class="text-center" style="font-family: GTAmericaExpandedRegula;line-height: 15px; font-size: 15px;"> <?php echo get_post_meta( get_the_ID(), 'frase_principal', true );?> </p>
     </div>
 </div>
@@ -19,11 +19,11 @@
 
  </div>
 </div>
-<div class="reflexionmeta" style=" background: black; color: white;">
-    <section class="main row  align-items-center" style="width:80% ; margin-left: auto; margin-right:auto;">
+<div class="reflexionmeta" style=" background: black; color: white; margin-bottom: 100px">
+    <section class="contentmeta main row  align-items-center" style="width:50% ; margin-left: auto; margin-right:auto;">
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-2 order-md-1 text-center">
-        <h2 style="font-size: 22px; font-weight:900; width: 66%; text-align:left; margin-bottom: 50px; text-transform: uppercase; "><?php echo get_post_meta( get_the_ID(), 'reflexion', true );?></h2>
-        <p style="font-family: GTAmericaExpandedRegular; width: 85%; font-size: 16px; text-align: left; line-height: 15px;"><?php echo get_post_meta( get_the_ID(), 'texto_reflexion', true );?></p>
+        <h2 style="font-size: 22px; font-weight:900; width: 90%; text-align:left; margin-bottom: 50px; text-transform: uppercase; "><?php echo get_post_meta( get_the_ID(), 'reflexion', true );?></h2>
+        <p style="font-family: GTAmericaExpandedRegular; width: 90%; font-size: 16px; text-align: left; line-height: 15px;"><?php echo get_post_meta( get_the_ID(), 'texto_reflexion', true );?></p>
      </div>
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-2 text-center">
          <?php $id_imagen_simple=get_post_meta( get_the_ID(), 'imagen_simple', true );?>
@@ -51,7 +51,7 @@
         <div class="carousel-item <?php if($count == 0) {
         echo $active;
         }?>">
-            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important; height:650px; background-size: cover ">
+            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important; height: 100%; background-size: cover ">
         </div>
         <?php $count ++; ?>
     <?php } ?>
@@ -73,59 +73,89 @@
         object-fit: cover !important;
     }
 }
-</style> 
+</style>
+
+<?php
+$arrayColStart=[1,4,7,10];
+$arraytablet=[1,7,1,7];
+?>
+<style>
+    @media (min-width: 1200px) {
+        .services-section.container,.related.container {
+            max-width: 1340px !important;
+        }
+    }
+</style>
+<section class="services-section container">
+    <div class="grid">
+        <?php if(get_field("benefices",'option')) { foreach (get_field("benefices",'option') as $key=> $item) {?>
+            <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
+                <div class="service-card"><img class="service-card__img" src=<?php echo $item["icon_benefices"] ?>>
+                    <div class="service-card__delimiter"></div>
+                    <h5 class="service-card__title"><?php echo $item["title_benefices"] ?></h5>
+                    <p class="service-card__desc"><?php echo $item["description_benefices"] ?></p>
+                </div>
+            </div>
+
+        <?php }} ?>
+
+    </div>
+</section>
+    </div>
+</section>
  
 
 
-<!-- Icon modal -->
-    <?php 
-          $arrayColStart=[3,5,7,9];
-          $arraytablet=[1,7,1,7];
-          $countid=0;
-    ?>
+<!--<!-- Icon modal -->-->
+<!--    --><?php //
+//          $arrayColStart=[3,5,7,9];
+//          $arraytablet=[1,7,1,7];
+//          $countid=0;
+//    ?>
+<!---->
+<!---->
+<!--          <section class="services-section" style="padding: 30px !important; background: #fff">-->
+<!--          <div class="grid">-->
+<!--                --><?php //
+//                if (get_field("tarjeta", "option")){
+//                foreach (get_field("tarjeta", "option") as $key=> $item) {?>
+<!--                  <div class="col-start---><?php //echo $arrayColStart[$key] ?><!-- col-width-2 tablet-col-start---><?php //echo $arraytablet[$key] ?><!-- tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">-->
+<!--                    <div class="service-card" style="color:#000">-->
+<!--                    <img class="service-card__img" src=--><?php //echo $item["tarjeta_imagen"] ?><!-->-->
+<!--                      <p class="service-card__title mt-4 text-center" style="margin-bottom: .5em; font-size: 16px; font-weight: 600;text-transform: uppercase; font-family: UniSansRegular !important; text-align: center">--><?php //echo $item["tarjeta_titulo"] ?><!--</p>-->
+<!--                      <p class="service-card__desc">--><?php //echo $item["tarjeta_subtitulo"] ?><!--</p>-->
+<!--                      <p>--><?php //echo $item["descripcion"] ?><!--</p>-->
+<!---->
+<!--                      <!-- Button trigger modal -->-->
+<!--                      <button type="button" class="btn-icon" data-toggle="modal" data-target="#modal--><?php //echo $countid ?><!--" style="border: 1px solid #191919; display: inline; padding: 3px 10px; background: transparent; color:#000; font-size: 13px">-->
+<!--                      + INFO ‣-->
+<!--                      </button>-->
+<!---->
+<!--                      <!-- Modal -->-->
+<!--                      <div class="modal fade" id="modal--><?php //echo $countid ?><!--" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--                      <div class="modal-dialog" role="document">-->
+<!--                          <div class="modal-content">-->
+<!--                          <div class="modal-header" style="border-bottom:none !important">-->
+<!--                              -->
+<!--                              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:25px">-->
+<!--                              <span aria-hidden="true">&times;</span>-->
+<!--                              </button>-->
+<!--                          </div>-->
+<!--                          <div class="modal-body">-->
+<!--                              <img class="service-card__img" src=--><?php //echo $item["tarjeta_imagen"] ?><!-->-->
+<!--                              <p class="service-card__title text-center mb-3 mt-3" style="font-size: 16px; font-weight: 600;text-transform: uppercase;">--><?php //echo $item["tarjeta_titulo"] ?><!--</p>-->
+<!--                              <p class="text-center" style="font-size: 14px; font-weight: 400; line-height: 1.4em; text-align: center; padding-right:50px; padding-left:50px">--><?php //echo $item["tarjeta_descripcion"] ?><!--</p>-->
+<!--                          </div>-->
+<!--                          </div>-->
+<!--                      </div>-->
+<!--                      </div>-->
+<!---->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  --><?php //$countid++; ?>
+<!--                 --><?php //} }?>
+<!--                -->
+<!--                </div>-->
+<!--              </section>-->
 
-
-          <section class="services-section" style="padding: 30px !important; background: #fff">
-          <div class="grid">
-                <?php  
-                if (get_field("tarjeta", "option")){
-                foreach (get_field("tarjeta", "option") as $key=> $item) {?>
-                  <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-2 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">
-                    <div class="service-card" style="color:#000">
-                    <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-                      <p class="service-card__title mt-4 text-center" style="margin-bottom: .5em; font-size: 16px; font-weight: 600;text-transform: uppercase; font-family: UniSansRegular !important; text-align: center"><?php echo $item["tarjeta_titulo"] ?></p>
-                      <p class="service-card__desc"><?php echo $item["tarjeta_subtitulo"] ?></p>
-                      <p><?php echo $item["descripcion"] ?></p>
-
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn-icon" data-toggle="modal" data-target="#modal<?php echo $countid ?>" style="border: 1px solid #191919; display: inline; padding: 3px 10px; background: transparent; color:#000; font-size: 13px">
-                      + INFO ‣
-                      </button>
-
-                      <!-- Modal -->
-                      <div class="modal fade" id="modal<?php echo $countid ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                          <div class="modal-header" style="border-bottom:none !important">
-                              
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:25px">
-                              <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              <img class="service-card__img" src=<?php echo $item["tarjeta_imagen"] ?>>
-                              <p class="service-card__title text-center mb-3 mt-3" style="font-size: 16px; font-weight: 600;text-transform: uppercase;"><?php echo $item["tarjeta_titulo"] ?></p>
-                              <p class="text-center" style="font-size: 14px; font-weight: 400; line-height: 1.4em; text-align: center; padding-right:50px; padding-left:50px"><?php echo $item["tarjeta_descripcion"] ?></p>
-                          </div>
-                          </div>
-                      </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <?php $countid++; ?>
-                 <?php } }?>
-                
-                </div>
-              </section>
 

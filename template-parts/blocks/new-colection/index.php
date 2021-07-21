@@ -26,13 +26,13 @@ $arraytablet=[1,7,1,7];
         $urlImagenHover=wp_get_attachment_image_src($idImagenCover,'full')[0];
         ?>
     <div class="sox-card">
-    <div class="sox-card__wrapper sox-card__wrapper--visible"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
+    <div class="sox-card__wrapper sox-card__wrapper--visible"><a class="sox-card__image-wrap" href="<?php echo the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"></a>
         <p class="sox-card__desc"><?php echo $product->get_name() ?></p>
         <p class="sox-card__desc"><?php echo $name?></p>
         <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
     </div>
     
-    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="<?php the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo $urlImagenHover ?>"></a>
+    <div class="sox-card__wrapper sox-card__wrapper--hidden"><a class="sox-card__image-wrap" href="<?php echo the_permalink(); ?>"><img class="sox-card__image" style="height:100%;" src="<?php echo $urlImagenHover ?>"></a>
         <p class="sox-card__desc"><?php echo $product->get_name()?></p>
         <p class="sox-card__desc"><?php echo $name?></p>
         <h5 class="sox-card__price"><?php echo $product->get_price().''.get_woocommerce_currency_symbol() ?></h5>
