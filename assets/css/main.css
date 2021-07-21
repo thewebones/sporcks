@@ -210,7 +210,7 @@ html, body {
     margin-top:4rem;
     flex-flow:wrap;
     clear:both;
-    padding:0 5%;
+
 }
 
 
@@ -9338,4 +9338,20 @@ a .button .add_to_cart_button .product_type_simple {
     .parrafometa {
         width: 70% !important;
     }
+}
+.checkout_coupon{
+    padding: 0 !important;
+    border: none !important;
+}
+.service-shop .grid{
+    max-width: 1638px !important;
+}
+.woocommerce-info {
+    border-top-color: #ffd204 !important;
+}
+.woocommerce-info::before {
+    color: #ffd204 !important;
+}
+a{
+    color: gray ;
 }
