@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
     .woocommerce table.shop_table th {
         font-weight: 500 !important;
 
-        font-size: 14px !important;}
+        font-size: 14px;}
     .woocommerce table.shop_table td{
         text-align: end;
         font-weight: 500 !important;

@@ -135,13 +135,7 @@ do_action( 'woocommerce_after_single_product_summary' );
 $arrayColStart=[1,4,7,10];
 $arraytablet=[1,7,1,7];
 ?>
-<style>
-    @media (min-width: 1200px) {
-        .services-section.container,.related.container {
-            max-width: 1340px !important;
-        }
-    }
-</style>
+
 <section class="services-section container">
     <div class="grid">
         <?php if(get_field("benefices",'option')) { foreach (get_field("benefices",'option') as $key=> $item) {?>

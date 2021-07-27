@@ -30,9 +30,9 @@
     <article>
       <div class="grid">
         <div class="col-start-2 col-width-10 tablet-col-start-1 tablet-col-width-12">
-            <section class="image-section" style="margin-top:100px">
+            <section class="image-section" style="margin-top:100px; object-position: center !important;">
           <?php if( has_post_thumbnail() ) {
-			  the_post_thumbnail( 'post-thumbnails', array('class' => 'image-section__image' ) );
+			  the_post_thumbnail( 'post-thumbnails', array('class' => 'image-section' ) );
 		  } ?>
           </section>
         </div>
@@ -51,7 +51,7 @@
     ?>
 
 
-    <section class="services-section">
+    <section class="services-section container">
         <div class="grid">
             <?php if(get_field("benefices",'option')) { foreach (get_field("benefices",'option') as $key=> $item) {?>
                 <div class="col-start-<?php echo $arrayColStart[$key] ?> col-width-3 tablet-col-start-<?php echo $arraytablet[$key] ?> tablet-col-width-6 mobile-mini-col-start-1 mobile-mini-col-width-12">

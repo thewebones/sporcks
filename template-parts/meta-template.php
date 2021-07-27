@@ -51,7 +51,7 @@
         <div class="carousel-item <?php if($count == 0) {
         echo $active;
         }?>">
-            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important; height: 100%; background-size: cover ">
+            <img class="d-block w-100" src="<?php echo get_post_meta(get_the_ID(),'imagen-'.$i,true) ?>" alt="slide" style="width: 100% !important; height: auto;">
         </div>
         <?php $count ++; ?>
     <?php } ?>
